@@ -1,0 +1,20 @@
+﻿{
+    "name":  "amlaak-content-creator",
+    "originalName":  "amlaak_content_creator",
+    "displayName":  "Amlaak Content Creator",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Marketing / Luxury Copywriting",
+    "description":  "صانع المحتوى المعتمد لشركة \"أملاك ديزاين\". مهارة متخصصة في هندسة وكتابة السكربتات الإعلانية للطبقة المخملية (A+ / High-Net-Worth) بناءً على الدستور الإعلاني الصارم للبراند.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

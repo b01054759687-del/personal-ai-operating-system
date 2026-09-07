@@ -1,0 +1,135 @@
+﻿{
+    "totalReviewRequired":  16,
+    "lastUpdated":  "2026-09-07T20:16:20.9942183+03:00",
+    "reviewPolicy":  "Review required before migration into 02-AI-ASSETS/ or adapter directories.",
+    "queue":  [
+                  {
+                      "name":  "a11y-debugging",
+                      "type":  "plugin-skill",
+                      "source":  "Chrome DevTools Plugin",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Bound to Chrome DevTools MCP port 9333; requires adapter bridge.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "chrome-devtools",
+                      "type":  "plugin-skill",
+                      "source":  "Chrome DevTools Plugin",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Requires Start-MCPWrapper.ps1 script and dedicated port 9333 profile.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "debug-optimize-lcp",
+                      "type":  "plugin-skill",
+                      "source":  "Chrome DevTools Plugin",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Specialized Core Web Vitals diagnostic; requires DevTools bridge.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "memory-leak-debugging",
+                      "type":  "plugin-skill",
+                      "source":  "Chrome DevTools Plugin",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Requires Chrome heap snapshot MCP capability.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "troubleshooting",
+                      "type":  "plugin-skill",
+                      "source":  "Chrome DevTools Plugin",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Plugin diagnostic tool; needs review for cross-tool portability.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "deep-evidence-audit",
+                      "type":  "workflow",
+                      "source":  "Antigravity Global Workflows",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Legacy workflow file; needs automated conversion to modern SKILL.md specification.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "teamwork_preview_explorer_1",
+                      "type":  "agent",
+                      "source":  "Antigravity Projects",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Project-specific multi-agent runtime; evaluate if generalizable to agents/.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "teamwork_preview_explorer_2",
+                      "type":  "agent",
+                      "source":  "Antigravity Projects",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Project-specific multi-agent column profiling runtime.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "teamwork_preview_explorer_3",
+                      "type":  "agent",
+                      "source":  "Antigravity Projects",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Project-specific multi-agent cross-sheet auditor.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "teamwork_preview_orchestrator_1",
+                      "type":  "agent",
+                      "source":  "Antigravity Projects",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Multi-agent dispatch orchestrator; extract dispatch pattern to automation-framework.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "teamwork_preview_victory_auditor_1",
+                      "type":  "agent",
+                      "source":  "Antigravity Projects",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Verification audit agent; extract pattern to 09-EVALUATION/.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "presentation-generator",
+                      "type":  "mcp-tool",
+                      "source":  "Antigravity MCP Config",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Local Node.js script dependency; path contains \u003cUSERNAME\u003e placeholder.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "windsor",
+                      "type":  "mcp-tool",
+                      "source":  "Antigravity MCP Config",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Remote SSE endpoint (https://mcp.windsor.ai); disabled, requires API key setup.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "github-mcp-server",
+                      "type":  "mcp-tool",
+                      "source":  "Antigravity MCP Config",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Docker-based transport; requires token sanitization () and Docker daemon check.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "chrome-devtools-mcp",
+                      "type":  "mcp-tool",
+                      "source":  "Antigravity MCP Config",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "PowerShell wrapper on port 9333; needs adapter isolation.",
+                      "status":  "pending_review"
+                  },
+                  {
+                      "name":  "claude-desktop-profile",
+                      "type":  "tool-config",
+                      "source":  "Claude Desktop Cache",
+                      "classification":  "REVIEW_REQUIRED",
+                      "reason":  "Account metadata and 30+ plugin flags; evaluate for Claude Code adapter mapping.",
+                      "status":  "pending_review"
+                  }
+              ]
+}

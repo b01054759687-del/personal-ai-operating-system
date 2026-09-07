@@ -1,0 +1,20 @@
+﻿{
+    "name":  "branded-playbook-generator",
+    "originalName":  "branded_playbook_generator",
+    "displayName":  "Branded Playbook Generator",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Documentation / Mermaid Workflows",
+    "description":  "توليد أدلة تشغيل وتقارير استراتيجية تفاعلية (HTML/CSS) بهوية بصرية مخصصة لأي براند، مدعومة بمخططات سير عمل رأسية (Mermaid.js)، وجداول تشغيلية، ومكتبة رسائل جاهزة بدون حشو.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

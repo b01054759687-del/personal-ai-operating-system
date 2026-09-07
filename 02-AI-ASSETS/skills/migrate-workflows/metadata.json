@@ -1,0 +1,20 @@
+﻿{
+    "name":  "migrate-workflows",
+    "originalName":  "migrate-workflows",
+    "displayName":  "Legacy Workflow Migrator",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity Builtin",
+    "classification":  "SAFE",
+    "domain":  "Migration / Tooling",
+    "description":  "Automatically migrate legacy workflows to modern skills across global and workspace configurations. Scans for existing workflows, creates target SKILL.md files, and safely archives old workflow files.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

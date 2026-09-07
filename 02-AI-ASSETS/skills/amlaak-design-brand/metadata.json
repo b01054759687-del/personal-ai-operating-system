@@ -1,0 +1,20 @@
+﻿{
+    "name":  "amlaak-design-brand",
+    "originalName":  "amlaak_design_brand",
+    "displayName":  "Amlaak Design Brand Identity",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Brand Identity / Luxury Finishing",
+    "description":  "سياق وهوية العلامة التجارية لشركة \"أملاك ديزاين\" (Amlaak Design) المتخصصة في التشطيبات والديكور الداخلي الفاخر. استخدم هذه المهارة كلما طلب المستخدم محتوى، أفكار إعلانية، أو استراتيجيات للشركة.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

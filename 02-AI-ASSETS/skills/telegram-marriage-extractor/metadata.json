@@ -1,0 +1,20 @@
+﻿{
+    "name":  "telegram-marriage-extractor",
+    "originalName":  "telegram_marriage_extractor",
+    "displayName":  "Telegram Marriage Form Extractor",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Data Extraction / Excel Processing",
+    "description":  "\"منظومة استخراج وفلترة استمارات الزواج الشرعي من Telegram Web وتصديرها لملفات Excel احترافية وفق المعايير المستهدفة الصارمة للمستخدم (القاهرة والجيزة، السن \u003c 28، الطول \u003c= 165، آنسة/عزباء لم يسبق لها الزواج).\"",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

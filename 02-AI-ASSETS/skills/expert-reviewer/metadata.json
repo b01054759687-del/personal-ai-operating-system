@@ -1,0 +1,20 @@
+﻿{
+    "name":  "expert-reviewer",
+    "originalName":  "expert_reviewer",
+    "displayName":  "Expert Reviewer (Devil\u0027s Advocate)",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Strategic Review / Adversarial Audit",
+    "description":  "المراجع الخبير الخارق: يحلل المحتوى بصرامة متناهية ويتقمص دور محامي الشيطان لاختبار الأفكار.   يعطي تقييماً رقمياً صارماً، يبرز الأعلام الحمراء والمغالطات، ويرفض تحسين الأفكار الضعيفة جداً دون بيانات إضافية.   استخدمه للحصول على نقد لاذع وموضوعي، ...",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

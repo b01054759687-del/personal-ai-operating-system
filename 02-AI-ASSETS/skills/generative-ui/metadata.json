@@ -1,0 +1,20 @@
+﻿{
+    "name":  "generative-ui",
+    "originalName":  "generative_ui",
+    "displayName":  "Generative UI Widgets",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity Builtin",
+    "classification":  "SAFE",
+    "domain":  "UI/UX / Interactive Visuals",
+    "description":  "How to render rich interactive HTML widgets inline in the chat or as standalone artifacts. Use this skill when you want to show the user diagrams, data visualizations, interactive controls, educational walkthroughs, or any rich visual content beyo...",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

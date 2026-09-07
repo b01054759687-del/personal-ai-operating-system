@@ -1,0 +1,20 @@
+﻿{
+    "name":  "github-config-sync",
+    "originalName":  "github_config_sync",
+    "displayName":  "GitHub Config Sync \u0026 Projects Backup",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "DevOps / Automation",
+    "description":  "مزامنة إعدادات GitHub: يرفع ويحدث ملفات الإعدادات والمهارات والسكريبتات   على مستودع GitHub الخاص بالمستخدم (antigravity-config-backup)،   ويقوم بمزامنة ورفع مشاريع الأكواد من F:\\AntigravityProjects إلى مستودعات مستقلة.   استخدمه لما المستخدم يطلب...",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

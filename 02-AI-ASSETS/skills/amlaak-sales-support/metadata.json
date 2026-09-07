@@ -1,0 +1,20 @@
+﻿{
+    "name":  "amlaak-sales-support",
+    "originalName":  "amlaak_sales_support",
+    "displayName":  "Amlaak Sales Support \u0026 Customer Success",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "High-Ticket Sales / Client Relations",
+    "description":  "منظومة وخبير المبيعات وخدمة العملاء (Amlaak Customer Support \u0026 Sales) لشركة \"أملاك ديزاين\". يتعامل مع عملاء الطبقة الراقية (Class A / UHNWIs)، ويدير الاعتراضات والمحادثات بالذكاء العاطفي (EQ) والمعايير الهندسية الدقيقة بدون حشو أو ابتذال.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

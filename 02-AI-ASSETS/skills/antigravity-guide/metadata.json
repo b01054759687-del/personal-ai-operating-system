@@ -1,0 +1,20 @@
+﻿{
+    "name":  "antigravity-guide",
+    "originalName":  "antigravity_guide",
+    "displayName":  "Antigravity Official Guide",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity Builtin",
+    "classification":  "SAFE",
+    "domain":  "Documentation / IDE Reference",
+    "description":  "Provides a comprehensive guide, quick reference, and sitemap for Google Antigravity (AGY), including the Antigravity CLI (agy), Antigravity 2.0, Antigravity IDE, Python SDK, slash commands, keybindings, and customizations (skills, rules, MCP, side...",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

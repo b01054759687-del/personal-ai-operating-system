@@ -1,0 +1,20 @@
+﻿{
+    "name":  "presentation-generator",
+    "originalName":  "presentation_generator",
+    "displayName":  "PowerPoint Presentation Generator",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Presentation Generation / Automation",
+    "description":  "\"مولد البرزنتيشن: يستلم أي طلب أو Prompt من المستخدم ويحوله لبرزنتيشن PowerPoint احترافي (.pptx) باستخدام MCP Tool اسمها generate_presentation. استخدمه لما المستخدم يطلب عمل برزنتيشن، عرض تقديمي، سلايدز، أو أي Presentation.\"",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

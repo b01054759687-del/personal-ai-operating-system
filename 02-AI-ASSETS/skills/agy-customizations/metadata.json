@@ -1,0 +1,20 @@
+﻿{
+    "name":  "agy-customizations",
+    "originalName":  "agy-customizations",
+    "displayName":  "Antigravity Customizations Reference",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity Builtin",
+    "classification":  "SAFE",
+    "domain":  "Architecture / AI Customization",
+    "description":  "-   Comprehensive guide and reference for the Antigravity Customization System.   Use to explain how customizations work, their loading priority, discovery mechanisms,   and to guide the creation of skills, rules, plugins, hooks, and MCP servers.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

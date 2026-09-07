@@ -1,0 +1,10 @@
+﻿{
+    "name":  "evidence-integrity-rules",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "description":  "Evidence integrity protocol (14 strict rules for live research verification, citations, and non-hallucination).",
+    "dateIngested":  "2026-09-07"
+}

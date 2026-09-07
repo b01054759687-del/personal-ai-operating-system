@@ -1,0 +1,20 @@
+﻿{
+    "name":  "harir-sewbt-brand",
+    "originalName":  "harir_sewbt_brand",
+    "displayName":  "Harir Tailoring \u0026 Sewbt ERP Brand",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity",
+    "classification":  "SAFE",
+    "domain":  "Retail / ERP / Operations",
+    "description":  "سياق وهوية العلامة التجارية لشركة \"خياط حرير للخياطة الرجالية\" (Harir Men\u0027s Tailoring) ومنظومة Sewbt ERP/CRM. استخدم هذه المهارة كلما طلب المستخدم تحليلات، أفكار تسويقية، خطط CRM، سكريبتات مكالمات، أو استراتيجيات تشغيلية للشركة.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}

@@ -1,0 +1,359 @@
+﻿{
+    "importDate":  "2026-09-07T20:15:38.4228257+03:00",
+    "backupName":  "import-backup-2026-09-07",
+    "totalAssetsTracked":  39,
+    "zeroSecretsPolicy":  "VERIFIED (Zero tokens/credentials included)",
+    "items":  [
+                  {
+                      "assetName":  "amlaak_content_creator",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\amlaak_content_creator\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\amlaak_content_creator\\SKILL.md",
+                      "sha256":  "5704DEB6775A17DE094E75AA42C3D58955F2C293795B8C59D430F3504D0A230D",
+                      "sizeBytes":  7368
+                  },
+                  {
+                      "assetName":  "amlaak_design_brand",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\amlaak_design_brand\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\amlaak_design_brand\\SKILL.md",
+                      "sha256":  "0939B20AECB230C4EA85C3433F75DF07C3D76E34D79F2FD2D737D72F5A0A4F5E",
+                      "sizeBytes":  7110
+                  },
+                  {
+                      "assetName":  "amlaak_sales_support",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\amlaak_sales_support\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\amlaak_sales_support\\SKILL.md",
+                      "sha256":  "8203E1FCCA8D70B1C60461E75C322372EA1DF3BDB0DADDD58FA17282BEE79B17",
+                      "sizeBytes":  11825
+                  },
+                  {
+                      "assetName":  "branded_playbook_generator",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\branded_playbook_generator\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\branded_playbook_generator\\SKILL.md",
+                      "sha256":  "19E5F6FF9F14D6BE9A132E1D74D3BA5CA5C6FBCC94487C56E17322EF1A48CD5E",
+                      "sizeBytes":  7541
+                  },
+                  {
+                      "assetName":  "expert_reviewer",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\expert_reviewer\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\expert_reviewer\\SKILL.md",
+                      "sha256":  "C92C9FAD00BD9D05550083B7A714C827ACEBCF7B3C8A0B580F38AE2F458C459C",
+                      "sizeBytes":  4657
+                  },
+                  {
+                      "assetName":  "github_config_sync",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\github_config_sync\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\github_config_sync\\SKILL.md",
+                      "sha256":  "37563610BC485C4A5EDB615DA19121737597BEC875839E6F7A4FAAD1DB881781",
+                      "sizeBytes":  4904
+                  },
+                  {
+                      "assetName":  "harir_sewbt_brand",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\harir_sewbt_brand\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\harir_sewbt_brand\\SKILL.md",
+                      "sha256":  "DFD27C14B2FA89886D992CF631B296B53EDFA31804531D1C347617B6479683C8",
+                      "sizeBytes":  6069
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\SKILL.md",
+                      "sha256":  "B6D5027125994B4DD6C8132B7C1817AF61B30F9764AFB0118FC64E6815C47440",
+                      "sizeBytes":  5790
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\communications.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\communications.md",
+                      "sha256":  "2B93C15621A141576055BBD7B2BAE5583EB82448F065979BAAF35467A6300BF6",
+                      "sizeBytes":  5984
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\cv-linkedin.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\cv-linkedin.md",
+                      "sha256":  "AA2CC64A32D05CC5C63CDA5FC62E8BE5D88B27BCBA99A235A8EE4E77F180A638",
+                      "sizeBytes":  5602
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\interviews-assessments.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\interviews-assessments.md",
+                      "sha256":  "F31286F8AC43DE03667DC8AA79D64264295B64974CC80359CA794BCDB2E873CF",
+                      "sizeBytes":  8568
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\job-search.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\job-search.md",
+                      "sha256":  "2262DECC9BEBAB95DCD0A7A19923EC1607D13CA6DA152B78745E9A0252A2C4BC",
+                      "sizeBytes":  6249
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\profile.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\profile.md",
+                      "sha256":  "95A445C2F0754EFA679E18BD6264D4E9FA04A45C63B2F529D1502B46A552DD64",
+                      "sizeBytes":  6793
+                  },
+                  {
+                      "assetName":  "loay-career-specialist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\loay-career-specialist\\references\\verified-results.md",
+                      "backupPath":  "raw-sources\\custom-skills\\loay-career-specialist\\references\\verified-results.md",
+                      "sha256":  "D433DD6E118E8F23297B304B0C0DE1581F7F5FBB27146FA0902FE842B2297F8D",
+                      "sizeBytes":  6059
+                  },
+                  {
+                      "assetName":  "premium_presentation_strategist",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\premium_presentation_strategist\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\premium_presentation_strategist\\SKILL.md",
+                      "sha256":  "9FCFF8CD8EBC6A110C4F7F422B253C3357901DB4B19DCE2FF0C1FAB60D0050DD",
+                      "sizeBytes":  5072
+                  },
+                  {
+                      "assetName":  "presentation_generator",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\presentation_generator\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\presentation_generator\\SKILL.md",
+                      "sha256":  "BCA5FB326BF32EBF765F0A82F2FFF9C7E4436D012B0565E65F3132E6011B1BAF",
+                      "sizeBytes":  7485
+                  },
+                  {
+                      "assetName":  "telegram_marriage_extractor",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\telegram_marriage_extractor\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\telegram_marriage_extractor\\SKILL.md",
+                      "sha256":  "5F5480E8C95645C77ED071C7A26E00853F661130E0EE8E34D8CB7F0F99AACC7D",
+                      "sizeBytes":  4619
+                  },
+                  {
+                      "assetName":  "verify-claims-and-plans",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\verify-claims-and-plans\\SKILL.md",
+                      "backupPath":  "raw-sources\\custom-skills\\verify-claims-and-plans\\SKILL.md",
+                      "sha256":  "A0E718237298A5461E0B168939E14C05A8E91B88393F343762D427690B0D43EA",
+                      "sizeBytes":  8592
+                  },
+                  {
+                      "assetName":  "verify-claims-and-plans",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\verify-claims-and-plans\\resources\\acceptance-tests.md",
+                      "backupPath":  "raw-sources\\custom-skills\\verify-claims-and-plans\\resources\\acceptance-tests.md",
+                      "sha256":  "2D49DD0648FBB7D2FF1C6A1ED990E5DE3BE692A5D616B86A49EC38F30320AD48",
+                      "sizeBytes":  5133
+                  },
+                  {
+                      "assetName":  "verify-claims-and-plans",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\verify-claims-and-plans\\resources\\audit-schema.md",
+                      "backupPath":  "raw-sources\\custom-skills\\verify-claims-and-plans\\resources\\audit-schema.md",
+                      "sha256":  "CE3AFC571990FB174BC2036AE2233EAC3397BA19963489ADB8F3D352D8B3BBCB",
+                      "sizeBytes":  4787
+                  },
+                  {
+                      "assetName":  "verify-claims-and-plans",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\verify-claims-and-plans\\resources\\plan-and-comparison-checks.md",
+                      "backupPath":  "raw-sources\\custom-skills\\verify-claims-and-plans\\resources\\plan-and-comparison-checks.md",
+                      "sha256":  "2FD4A3FBDF624DCF32C8F84547630E966DB4A8DBE588DA0056C4F79D9E704D59",
+                      "sizeBytes":  3603
+                  },
+                  {
+                      "assetName":  "verify-claims-and-plans",
+                      "assetType":  "skill",
+                      "source":  "Antigravity Config Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\config\\skills\\verify-claims-and-plans\\resources\\source-policy.md",
+                      "backupPath":  "raw-sources\\custom-skills\\verify-claims-and-plans\\resources\\source-policy.md",
+                      "sha256":  "C7C7978FA7D72A108F416F043488A08457DCD2553A8AAA688BB8A848DBC907CC",
+                      "sizeBytes":  6084
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\SKILL.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\SKILL.md",
+                      "sha256":  "79C8885E76CE449E82016B37B53DFCC3FF5AFEFD90A23EA83B24148F41F33FA1",
+                      "sizeBytes":  5465
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\hooks.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\hooks.md",
+                      "sha256":  "6C76FE162F89527B7494213F11FDB268EB508BFCA22A7AF61F86CED285340BF4",
+                      "sizeBytes":  10421
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\json_configs.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\json_configs.md",
+                      "sha256":  "10A4CC3ECBE41708646AD9BC54A7BF18E5497ED447B55EC9E8D2EDA6EF5A45E2",
+                      "sizeBytes":  3983
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\mcp_servers.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\mcp_servers.md",
+                      "sha256":  "418FADA49BB8ED1F43438FD6A355E7F51092DAA4D021EB2A43B19A1D1E2146BD",
+                      "sizeBytes":  2966
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\plugins.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\plugins.md",
+                      "sha256":  "481C2612F4729FB4FAB600AEBC5EB0D4EDA6E00D5B45084BC7523718514BF19E",
+                      "sizeBytes":  3692
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\rules.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\rules.md",
+                      "sha256":  "969A834145A09398B53CD63B7D473D8A915BF80928726650A6D2EFC602E33BBE",
+                      "sizeBytes":  1063
+                  },
+                  {
+                      "assetName":  "agy-customizations",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\agy-customizations\\docs\\skills.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\agy-customizations\\docs\\skills.md",
+                      "sha256":  "C4EBA3BC9A8775928704D1B7FEEDE20871B25F8D427C6CD6757B7EDD54B3AE60",
+                      "sizeBytes":  2650
+                  },
+                  {
+                      "assetName":  "antigravity_guide",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\antigravity_guide\\SKILL.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\antigravity_guide\\SKILL.md",
+                      "sha256":  "0999FC13D3091E8C2833019CC9AC9C2CADBE0DF356BDC80700CD7DA49915E6E7",
+                      "sizeBytes":  2955
+                  },
+                  {
+                      "assetName":  "antigravity_guide",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\antigravity_guide\\references\\app.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\antigravity_guide\\references\\app.md",
+                      "sha256":  "5ADBA0E3CA6DBF08D7AD1C2B136F88C067E175B454F0179FC7AA3C4783D9F5AB",
+                      "sizeBytes":  3852
+                  },
+                  {
+                      "assetName":  "antigravity_guide",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\antigravity_guide\\references\\cli.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\antigravity_guide\\references\\cli.md",
+                      "sha256":  "1499E0AC083227B88E74373D46672AFCCD1FFE31D0A5136BCC352FE72C582D2A",
+                      "sizeBytes":  1686
+                  },
+                  {
+                      "assetName":  "antigravity_guide",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\antigravity_guide\\references\\ide.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\antigravity_guide\\references\\ide.md",
+                      "sha256":  "E3DA87B168F25F229A14A4547D7833E8E49191F1A85346F463C01F886A64693D",
+                      "sizeBytes":  3399
+                  },
+                  {
+                      "assetName":  "antigravity_guide",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\antigravity_guide\\references\\sdk.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\antigravity_guide\\references\\sdk.md",
+                      "sha256":  "A20587F3CEDF7B8C6F7501F71FC7985D76C64007F7581690F68C0FFDC4357560",
+                      "sizeBytes":  3130
+                  },
+                  {
+                      "assetName":  "generative_ui",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\generative_ui\\SKILL.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\generative_ui\\SKILL.md",
+                      "sha256":  "D5D8078BB426A8E50D852265417322AC48BB25DD35570A6521CE279A291A0A3F",
+                      "sizeBytes":  5650
+                  },
+                  {
+                      "assetName":  "migrate-workflows",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\migrate-workflows\\SKILL.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\migrate-workflows\\SKILL.md",
+                      "sha256":  "EE8B18D875BBA52C024C609F8CBDAF5BBF60396E0F826944C38CE191590CB787",
+                      "sizeBytes":  6039
+                  },
+                  {
+                      "assetName":  "permissioned-github",
+                      "assetType":  "builtin-skill",
+                      "source":  "Antigravity Builtin Skills",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills\\permissioned-github\\SKILL.md",
+                      "backupPath":  "raw-sources\\builtin-skills\\permissioned-github\\SKILL.md",
+                      "sha256":  "5779716732C7A75681AA980C76355AE8B675F881E742B74F93E4BE14B4ABFC9D",
+                      "sizeBytes":  8293
+                  },
+                  {
+                      "assetName":  "AGENTS",
+                      "assetType":  "instruction",
+                      "source":  "Antigravity Root Config",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\AGENTS.md",
+                      "backupPath":  "raw-sources\\instructions\\AGENTS.md",
+                      "sha256":  "EFC20AFA0CE5E0D4A587BE7DC25C61B6CD072B775EDA4B985EC9846F9798F074",
+                      "sizeBytes":  8252
+                  },
+                  {
+                      "assetName":  "GEMINI",
+                      "assetType":  "instruction",
+                      "source":  "Antigravity Root Config",
+                      "originalPath":  "C:\\Users\\l\\.gemini\\GEMINI.md",
+                      "backupPath":  "raw-sources\\instructions\\GEMINI.md",
+                      "sha256":  "7907E75D06A2CE0E22E5E00D7BF77064A1F11FF54992B2E6E756B8602154E868",
+                      "sizeBytes":  2664
+                  }
+              ]
+}

@@ -1,249 +1,215 @@
 ﻿{
+    "totalActiveAssets":  19,
+    "lastUpdated":  "2026-09-07T20:16:20.9100272+03:00",
     "assets":  [
                    {
-                       "name":  "amlaak_content_creator",
+                       "name":  "amlaak-content-creator",
+                       "originalName":  "amlaak_content_creator",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-content-creator",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "amlaak_design_brand",
+                       "name":  "amlaak-design-brand",
+                       "originalName":  "amlaak_design_brand",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-design-brand",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "amlaak_sales_support",
+                       "name":  "amlaak-sales-support",
+                       "originalName":  "amlaak_sales_support",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-sales-support",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "branded_playbook_generator",
+                       "name":  "branded-playbook-generator",
+                       "originalName":  "branded_playbook_generator",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/branded-playbook-generator",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "expert_reviewer",
+                       "name":  "expert-reviewer",
+                       "originalName":  "expert_reviewer",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/expert-reviewer",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "github_config_sync",
+                       "name":  "github-config-sync",
+                       "originalName":  "github_config_sync",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/github-config-sync",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "harir_sewbt_brand",
+                       "name":  "harir-sewbt-brand",
+                       "originalName":  "harir_sewbt_brand",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/harir-sewbt-brand",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
                        "name":  "loay-career-specialist",
+                       "originalName":  "loay-career-specialist",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/loay-career-specialist",
                        "classification":  "SAFE",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "premium_presentation_strategist",
+                       "name":  "premium-presentation-strategist",
+                       "originalName":  "premium_presentation_strategist",
                        "type":  "skill",
-                       "source":  "Antigravity",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/premium-presentation-strategist",
                        "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "presentation_generator",
-                       "type":  "skill",
-                       "source":  "Antigravity",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "telegram_marriage_extractor",
-                       "type":  "skill",
-                       "source":  "Antigravity",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "verify-claims-and-plans",
-                       "type":  "skill",
-                       "source":  "Antigravity",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "agy-customizations",
-                       "type":  "skill",
-                       "source":  "Antigravity Builtin",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "antigravity_guide",
-                       "type":  "skill",
-                       "source":  "Antigravity Builtin",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "generative_ui",
-                       "type":  "skill",
-                       "source":  "Antigravity Builtin",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "migrate-workflows",
-                       "type":  "skill",
-                       "source":  "Antigravity Builtin",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "permissioned-github",
-                       "type":  "skill",
-                       "source":  "Antigravity Builtin",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "a11y-debugging",
-                       "type":  "skill",
-                       "source":  "Chrome DevTools Plugin",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "chrome-devtools",
-                       "type":  "skill",
-                       "source":  "Chrome DevTools Plugin",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "debug-optimize-lcp",
-                       "type":  "skill",
-                       "source":  "Chrome DevTools Plugin",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "memory-leak-debugging",
-                       "type":  "skill",
-                       "source":  "Chrome DevTools Plugin",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "troubleshooting",
-                       "type":  "skill",
-                       "source":  "Chrome DevTools Plugin",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "agents-custom-rules",
-                       "type":  "rule",
-                       "source":  "Antigravity",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "evidence-integrity-rules",
-                       "type":  "rule",
-                       "source":  "Antigravity",
-                       "classification":  "SAFE",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "deep-evidence-audit",
-                       "type":  "workflow",
-                       "source":  "Antigravity Global Workflows",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "teamwork_preview_explorer_1",
-                       "type":  "agent",
-                       "source":  "Antigravity Projects",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "teamwork_preview_explorer_2",
-                       "type":  "agent",
-                       "source":  "Antigravity Projects",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "teamwork_preview_explorer_3",
-                       "type":  "agent",
-                       "source":  "Antigravity Projects",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "teamwork_preview_orchestrator_1",
-                       "type":  "agent",
-                       "source":  "Antigravity Projects",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
-                   },
-                   {
-                       "name":  "teamwork_preview_victory_auditor_1",
-                       "type":  "agent",
-                       "source":  "Antigravity Projects",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
                        "name":  "presentation-generator",
-                       "type":  "mcp-tool",
-                       "source":  "Antigravity MCP",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "originalName":  "presentation_generator",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/presentation-generator",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "windsor",
-                       "type":  "mcp-tool",
-                       "source":  "Antigravity MCP",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "name":  "telegram-marriage-extractor",
+                       "originalName":  "telegram_marriage_extractor",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/telegram-marriage-extractor",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "github-mcp-server",
-                       "type":  "mcp-tool",
-                       "source":  "Antigravity MCP",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "name":  "verify-claims-and-plans",
+                       "originalName":  "verify-claims-and-plans",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/verify-claims-and-plans",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "chrome-devtools-mcp",
-                       "type":  "mcp-tool",
-                       "source":  "Antigravity MCP",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "name":  "agy-customizations",
+                       "originalName":  "agy-customizations",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/agy-customizations",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    },
                    {
-                       "name":  "claude-desktop-profile",
-                       "type":  "tool-config",
-                       "source":  "Claude Desktop",
-                       "classification":  "REVIEW_REQUIRED",
-                       "status":  "discovered"
+                       "name":  "antigravity-guide",
+                       "originalName":  "antigravity_guide",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/antigravity-guide",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "generative-ui",
+                       "originalName":  "generative_ui",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/generative-ui",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "migrate-workflows",
+                       "originalName":  "migrate-workflows",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/migrate-workflows",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "permissioned-github",
+                       "originalName":  "permissioned-github",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/permissioned-github",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "agents-custom-rules",
+                       "originalName":  "AGENTS.md",
+                       "type":  "instruction",
+                       "source":  "Antigravity Root Config",
+                       "path":  "02-AI-ASSETS/instructions/AGENTS.md",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "evidence-integrity-rules",
+                       "originalName":  "GEMINI.md",
+                       "type":  "instruction",
+                       "source":  "Antigravity Root Config",
+                       "path":  "02-AI-ASSETS/instructions/GEMINI.md",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0"
                    }
                ]
 }

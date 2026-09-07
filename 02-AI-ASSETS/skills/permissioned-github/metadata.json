@@ -1,0 +1,20 @@
+﻿{
+    "name":  "permissioned-github",
+    "originalName":  "permissioned-github",
+    "displayName":  "Permissioned GitHub Operations",
+    "version":  "1.0.0",
+    "status":  "active",
+    "normalized":  true,
+    "source":  "Antigravity Builtin",
+    "classification":  "SAFE",
+    "domain":  "GitHub / Security",
+    "description":  "Guidelines for interacting with GitHub and request permissions from the user when commands fail due to restrictions in the agent environment.",
+    "portable":  true,
+    "supportedConsumers":  [
+                               "antigravity",
+                               "claude-code",
+                               "cursor",
+                               "windsurf"
+                           ],
+    "dateIngested":  "2026-09-07"
+}
