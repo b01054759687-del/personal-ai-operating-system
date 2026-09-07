@@ -1,0 +1,30 @@
+﻿# Secrets, Tokens & Credentials (NEVER COMMIT)
+.env
+.env.*
+*.env
+*.key
+*.pem
+tokens/
+credentials/
+secrets/
+*.token
+*.credential
+*.secret
+
+# Dependencies & Package Managers
+node_modules/
+dist/
+build/
+
+# Temporary files & Logs
+*.tmp
+*.temp
+*~
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.cache/
+temp/
+temporary files/
