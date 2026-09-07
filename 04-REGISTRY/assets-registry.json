@@ -1,3 +1,249 @@
 ﻿{
-  "assets": []
+    "assets":  [
+                   {
+                       "name":  "amlaak_content_creator",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "amlaak_design_brand",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "amlaak_sales_support",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "branded_playbook_generator",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "expert_reviewer",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "github_config_sync",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "harir_sewbt_brand",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "loay-career-specialist",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "premium_presentation_strategist",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "presentation_generator",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "telegram_marriage_extractor",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "verify-claims-and-plans",
+                       "type":  "skill",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "agy-customizations",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "antigravity_guide",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "generative_ui",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "migrate-workflows",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "permissioned-github",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "a11y-debugging",
+                       "type":  "skill",
+                       "source":  "Chrome DevTools Plugin",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "chrome-devtools",
+                       "type":  "skill",
+                       "source":  "Chrome DevTools Plugin",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "debug-optimize-lcp",
+                       "type":  "skill",
+                       "source":  "Chrome DevTools Plugin",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "memory-leak-debugging",
+                       "type":  "skill",
+                       "source":  "Chrome DevTools Plugin",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "troubleshooting",
+                       "type":  "skill",
+                       "source":  "Chrome DevTools Plugin",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "agents-custom-rules",
+                       "type":  "rule",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "evidence-integrity-rules",
+                       "type":  "rule",
+                       "source":  "Antigravity",
+                       "classification":  "SAFE",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "deep-evidence-audit",
+                       "type":  "workflow",
+                       "source":  "Antigravity Global Workflows",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "teamwork_preview_explorer_1",
+                       "type":  "agent",
+                       "source":  "Antigravity Projects",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "teamwork_preview_explorer_2",
+                       "type":  "agent",
+                       "source":  "Antigravity Projects",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "teamwork_preview_explorer_3",
+                       "type":  "agent",
+                       "source":  "Antigravity Projects",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "teamwork_preview_orchestrator_1",
+                       "type":  "agent",
+                       "source":  "Antigravity Projects",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "teamwork_preview_victory_auditor_1",
+                       "type":  "agent",
+                       "source":  "Antigravity Projects",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "presentation-generator",
+                       "type":  "mcp-tool",
+                       "source":  "Antigravity MCP",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "windsor",
+                       "type":  "mcp-tool",
+                       "source":  "Antigravity MCP",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "github-mcp-server",
+                       "type":  "mcp-tool",
+                       "source":  "Antigravity MCP",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "chrome-devtools-mcp",
+                       "type":  "mcp-tool",
+                       "source":  "Antigravity MCP",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   },
+                   {
+                       "name":  "claude-desktop-profile",
+                       "type":  "tool-config",
+                       "source":  "Claude Desktop",
+                       "classification":  "REVIEW_REQUIRED",
+                       "status":  "discovered"
+                   }
+               ]
 }

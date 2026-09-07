@@ -1,3 +1,28 @@
 ﻿{
-  "tools": []
+    "tools":  [
+                  {
+                      "name":  "Antigravity",
+                      "version":  "2.12.2",
+                      "status":  "detected",
+                      "configPath":  "C:\\Users\\l\\.gemini"
+                  },
+                  {
+                      "name":  "Claude Desktop / Code CLI",
+                      "version":  "2.1.260",
+                      "status":  "detected",
+                      "configPath":  "C:\\Users\\l\\.claude.json"
+                  },
+                  {
+                      "name":  "Cursor",
+                      "version":  null,
+                      "status":  "not_detected",
+                      "configPath":  null
+                  },
+                  {
+                      "name":  "Windsurf",
+                      "version":  null,
+                      "status":  "not_detected",
+                      "configPath":  null
+                  }
+              ]
 }

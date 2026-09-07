@@ -1,0 +1,40 @@
+﻿{
+    "mcpServers":  {
+                       "presentation-generator":  {
+                                                      "args":  [
+                                                                   "C:\\\\Users\\\\\u003cUSERNAME\u003e\\\\.gemini\\\\antigravity\\\\scratch\\\\presentation_mcp\\\\src\\\\index.js"
+                                                               ],
+                                                      "command":  "node"
+                                                  },
+                       "windsor":  {
+                                       "serverUrl":  "https://mcp.windsor.ai",
+                                       "disabled":  true
+                                   },
+                       "github-mcp-server":  {
+                                                 "args":  [
+                                                              "run",
+                                                              "-i",
+                                                              "--rm",
+                                                              "-e",
+                                                              "GITHUB_PERSONAL_ACCESS_TOKEN",
+                                                              "ghcr.io/github/github-mcp-server"
+                                                          ],
+                                                 "env":  {
+                                                             "GITHUB_PERSONAL_ACCESS_TOKEN":  "[REDACTED_GITHUB_TOKEN]"
+                                                         },
+                                                 "command":  "docker"
+                                             },
+                       "chrome-devtools":  {
+                                               "args":  [
+                                                            "-ExecutionPolicy",
+                                                            "Bypass",
+                                                            "-NonInteractive",
+                                                            "-File",
+                                                            "C:\\\\Users\\\\\u003cUSERNAME\u003e\\\\ChromeDevToolsLauncher\\\\Start-MCPWrapper.ps1"
+                                                        ],
+                                               "command":  "powershell.exe"
+                                           }
+                   },
+    "_note":  "TEMPLATE ONLY — fill in values"
+}
+

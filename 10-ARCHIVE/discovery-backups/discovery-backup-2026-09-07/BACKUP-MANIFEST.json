@@ -1,0 +1,26 @@
+﻿{
+    "backupDate":  "2026-09-07T19:42:34.3302921+03:00",
+    "backupName":  "discovery-backup-2026-09-07",
+    "sourceSystem":  "Windows 11 (desktop-bratqc5-quantum-venus)",
+    "sanitizedSecretsPolicy":  "ENFORCED (Zero secrets, tokens replaced by [REDACTED])",
+    "filesCount":  17,
+    "backedUpFiles":  [
+                          "antigravity-config\\AGENTS.md",
+                          "antigravity-config\\GEMINI.md",
+                          "antigravity-config\\mcp_config.sanitized.json",
+                          "antigravity-config\\config.json",
+                          "antigravity-skills-meta\\amlaak_content_creator.yaml",
+                          "antigravity-skills-meta\\amlaak_design_brand.yaml",
+                          "antigravity-skills-meta\\amlaak_sales_support.yaml",
+                          "antigravity-skills-meta\\branded_playbook_generator.yaml",
+                          "antigravity-skills-meta\\expert_reviewer.yaml",
+                          "antigravity-skills-meta\\github_config_sync.yaml",
+                          "antigravity-skills-meta\\harir_sewbt_brand.yaml",
+                          "antigravity-skills-meta\\loay-career-specialist.yaml",
+                          "antigravity-skills-meta\\premium_presentation_strategist.yaml",
+                          "antigravity-skills-meta\\presentation_generator.yaml",
+                          "antigravity-skills-meta\\telegram_marriage_extractor.yaml",
+                          "antigravity-skills-meta\\verify-claims-and-plans.yaml",
+                          "claude-meta\\claude-account-meta.json"
+                      ]
+}
