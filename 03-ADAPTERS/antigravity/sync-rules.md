@@ -41,3 +41,11 @@
 1. **Pre-Sync Verification**: All canonical assets must pass schema validation before triggering a sync.
 2. **Secret Screening**: Scan for `\b(ghp_[a-zA-Z0-9_]{20,}|sk-[a-zA-Z0-9]{20,})\b` prior to copy.
 3. **Immutability Guarantee**: This adapter only writes to authorized Antigravity target paths and never touches OS system directories.
+
+### Knowledge & Memory (`knowledge/`)
+- **Source**: `07-KNOWLEDGE/{category}/{name}.md`
+- **Target**: `C:\Users\l\.gemini\config\knowledge\{category}\`
+- **Access Rules**:
+  - Antigravity queries `07-KNOWLEDGE/` directly via file view tools or via mirrored config path.
+  - Read-only consumption: Antigravity cannot mutate source knowledge files directly during chat sessions.
+  - Personal context (`personal-context/`) and decisions (`decisions/`) take precedence in query resolution.

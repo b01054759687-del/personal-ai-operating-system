@@ -1,71 +1,75 @@
 ﻿{
-  "schemaVersion": "2.0.0",
-  "lastUpdated": "2026-09-08T15:48:00+03:00",
-  "totalTools": 4,
-  "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
-  "governance": "06-DOCUMENTATION/adapter-standard.md",
-  "tools": [
-    {
-      "name": "Antigravity",
-      "tool_id": "antigravity",
-      "version": "2.12.2",
-      "status": "detected",
-      "configPath": "C:\\Users\\l\\.gemini",
-      "adapter": "03-ADAPTERS/antigravity",
-      "adapter_status": "active",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "supported_asset_types": [
-        "skills",
-        "agents",
-        "rules",
-        "prompts"
-      ]
-    },
-    {
-      "name": "Claude Desktop / Code CLI",
-      "tool_id": "claude",
-      "version": "2.1.260",
-      "status": "detected",
-      "configPath": "C:\\Users\\l\\.claude.json",
-      "adapter": "03-ADAPTERS/claude",
-      "adapter_status": "active",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "supported_asset_types": [
-        "skills",
-        "agents",
-        "commands",
-        "instructions"
-      ]
-    },
-    {
-      "name": "Cursor",
-      "tool_id": "cursor",
-      "version": null,
-      "status": "not_detected",
-      "configPath": null,
-      "adapter": "03-ADAPTERS/cursor",
-      "adapter_status": "configured",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "supported_asset_types": [
-        "rules",
-        "instructions",
-        "ai_assets"
-      ]
-    },
-    {
-      "name": "Windsurf",
-      "tool_id": "windsurf",
-      "version": null,
-      "status": "not_detected",
-      "configPath": null,
-      "adapter": "03-ADAPTERS/windsurf",
-      "adapter_status": "configured",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "supported_asset_types": [
-        "rules",
-        "workflows",
-        "ai_assets"
-      ]
-    }
-  ]
+    "schemaVersion":  "2.0.0",
+    "lastUpdated":  "2026-09-08T15:54:00+03:00",
+    "totalTools":  4,
+    "sync_architecture":  "OPTION_A_ONE_WAY_ONLY",
+    "governance":  "06-DOCUMENTATION/adapter-standard.md",
+    "tools":  [
+                  {
+                      "name":  "Antigravity",
+                      "tool_id":  "antigravity",
+                      "version":  "2.12.2",
+                      "status":  "detected",
+                      "configPath":  "C:\\Users\\l\\.gemini",
+                      "adapter":  "03-ADAPTERS/antigravity",
+                      "adapter_status":  "active",
+                      "sync_direction":  "SOURCE_TO_TARGET",
+                      "supported_asset_types":  [
+                                                    "skills",
+                                                    "agents",
+                                                    "rules",
+                                                    "prompts",
+                                                    "knowledge"
+                                                ]
+                  },
+                  {
+                      "name":  "Claude Desktop / Code CLI",
+                      "tool_id":  "claude",
+                      "version":  "2.1.260",
+                      "status":  "detected",
+                      "configPath":  "C:\\Users\\l\\.claude.json",
+                      "adapter":  "03-ADAPTERS/claude",
+                      "adapter_status":  "active",
+                      "sync_direction":  "SOURCE_TO_TARGET",
+                      "supported_asset_types":  [
+                                                    "skills",
+                                                    "agents",
+                                                    "commands",
+                                                    "instructions",
+                                                    "knowledge"
+                                                ]
+                  },
+                  {
+                      "name":  "Cursor",
+                      "tool_id":  "cursor",
+                      "version":  null,
+                      "status":  "not_detected",
+                      "configPath":  null,
+                      "adapter":  "03-ADAPTERS/cursor",
+                      "adapter_status":  "configured",
+                      "sync_direction":  "SOURCE_TO_TARGET",
+                      "supported_asset_types":  [
+                                                    "rules",
+                                                    "instructions",
+                                                    "ai_assets",
+                                                    "knowledge"
+                                                ]
+                  },
+                  {
+                      "name":  "Windsurf",
+                      "tool_id":  "windsurf",
+                      "version":  null,
+                      "status":  "not_detected",
+                      "configPath":  null,
+                      "adapter":  "03-ADAPTERS/windsurf",
+                      "adapter_status":  "configured",
+                      "sync_direction":  "SOURCE_TO_TARGET",
+                      "supported_asset_types":  [
+                                                    "rules",
+                                                    "workflows",
+                                                    "ai_assets",
+                                                    "knowledge"
+                                                ]
+                  }
+              ]
 }

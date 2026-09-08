@@ -1,44 +1,52 @@
 ﻿{
-  "adapter": "antigravity",
-  "version": "1.0.0",
-  "direction": "SOURCE_TO_TARGET",
-  "mappings": [
-    {
-      "asset_type": "skills",
-      "source_pattern": "02-AI-ASSETS/skills/{name}/",
-      "target_pattern": "C:\\Users\\l\\.gemini\\config\\skills\\{name}\\",
-      "transform": "DIRECT_DIRECTORY_MIRROR",
-      "mandatory_files": [
-        "SKILL.md",
-        "README.md",
-        "metadata.json",
-        "CHANGELOG.md"
-      ],
-      "target_entrypoint": "SKILL.md",
-      "notes": "Copies entire skill folder preserving YAML frontmatter, scripts, and documentation."
-    },
-    {
-      "asset_type": "agents",
-      "source_pattern": "02-AI-ASSETS/agents/{category}/{name}/AGENT.md",
-      "target_pattern": "C:\\Users\\l\\.gemini\\antigravity\\agents\\{name}.md",
-      "transform": "SUBAGENT_SPEC_PROJECTION",
-      "target_entrypoint": "AGENT.md",
-      "notes": "Translates canonical AGENT.md specification into Antigravity subagent definition."
-    },
-    {
-      "asset_type": "rules",
-      "source_pattern": "02-AI-ASSETS/rules/{name}.md",
-      "target_pattern": "C:\\Users\\l\\.gemini\\config\\rules\\{name}.md",
-      "transform": "TAGGED_RULE_WRAPPER",
-      "wrapper_format": "<RULE[user_global]>\n{content}\n</RULE[user_global]>",
-      "notes": "Wraps OS rules into Antigravity user_global rule tags."
-    },
-    {
-      "asset_type": "prompts",
-      "source_pattern": "05-PROMPT-LIBRARY/system-workflows/{name}.md",
-      "target_pattern": "C:\\Users\\l\\.gemini\\config\\workflows\\{name}.md",
-      "transform": "SLASH_COMMAND_WORKFLOW",
-      "notes": "Exports canonical system workflow prompts for invocation as custom slash commands."
-    }
-  ]
+    "adapter":  "antigravity",
+    "version":  "1.0.0",
+    "direction":  "SOURCE_TO_TARGET",
+    "mappings":  [
+                     {
+                         "asset_type":  "skills",
+                         "source_pattern":  "02-AI-ASSETS/skills/{name}/",
+                         "target_pattern":  "C:\\Users\\l\\.gemini\\config\\skills\\{name}\\",
+                         "transform":  "DIRECT_DIRECTORY_MIRROR",
+                         "mandatory_files":  [
+                                                 "SKILL.md",
+                                                 "README.md",
+                                                 "metadata.json",
+                                                 "CHANGELOG.md"
+                                             ],
+                         "target_entrypoint":  "SKILL.md",
+                         "notes":  "Copies entire skill folder preserving YAML frontmatter, scripts, and documentation."
+                     },
+                     {
+                         "asset_type":  "agents",
+                         "source_pattern":  "02-AI-ASSETS/agents/{category}/{name}/AGENT.md",
+                         "target_pattern":  "C:\\Users\\l\\.gemini\\antigravity\\agents\\{name}.md",
+                         "transform":  "SUBAGENT_SPEC_PROJECTION",
+                         "target_entrypoint":  "AGENT.md",
+                         "notes":  "Translates canonical AGENT.md specification into Antigravity subagent definition."
+                     },
+                     {
+                         "asset_type":  "rules",
+                         "source_pattern":  "02-AI-ASSETS/rules/{name}.md",
+                         "target_pattern":  "C:\\Users\\l\\.gemini\\config\\rules\\{name}.md",
+                         "transform":  "TAGGED_RULE_WRAPPER",
+                         "wrapper_format":  "\u003cRULE[user_global]\u003e\n{content}\n\u003c/RULE[user_global]\u003e",
+                         "notes":  "Wraps OS rules into Antigravity user_global rule tags."
+                     },
+                     {
+                         "asset_type":  "prompts",
+                         "source_pattern":  "05-PROMPT-LIBRARY/system-workflows/{name}.md",
+                         "target_pattern":  "C:\\Users\\l\\.gemini\\config\\workflows\\{name}.md",
+                         "transform":  "SLASH_COMMAND_WORKFLOW",
+                         "notes":  "Exports canonical system workflow prompts for invocation as custom slash commands."
+                     },
+                     {
+                         "asset_type":  "knowledge",
+                         "source_pattern":  "07-KNOWLEDGE/{category}/{name}.md",
+                         "target_pattern":  "C:\\\\Users\\\\l\\\\.gemini\\\\config\\\\knowledge\\\\{category}\\\\{name}.md",
+                         "transform":  "STRUCTURED_KNOWLEDGE_MIRROR",
+                         "target_entrypoint":  "{name}.md",
+                         "notes":  "Mirrors structured markdown knowledge assets directly to Antigravity knowledge base."
+                     }
+                 ]
 }

@@ -34,3 +34,11 @@
 ## 3. Operational Integrity
 - Strict one-way synchronization overwrites local Windsurf configurations upon deployment.
 - Zero credentials or internal system tokens allowed in exported files.
+
+### Knowledge & Memory (`knowledge/`)
+- **Source**: `07-KNOWLEDGE/{category}/{name}.md`
+- **Target**: `.windsurf/knowledge/{category}/`
+- **Access Rules**:
+  - Windsurf Cascade queries structured knowledge assets during multi-file reasoning steps.
+  - Architectural decisions (ADRs) anchor Cascade against code generation hallucinations.
+  - Local Cascade memories remain ephemeral and never pollute upstream PAI-OS knowledge.

@@ -1,0 +1,160 @@
+﻿{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-09-08T15:54:00+03:00",
+  "totalEntries": 6,
+  "governance": "06-DOCUMENTATION/memory-governance.md",
+  "architecture_option": "OPTION_A_STRUCTURED_MEMORY_ONLY",
+  "entries": [
+    {
+      "identity": {
+        "id": "ADR-001",
+        "title": "Personal AI Operating System Core Architecture",
+        "slug": "ai-operating-system-architecture"
+      },
+      "category": "decisions",
+      "owner": "ai-workspace-manager",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "ACCEPTED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/decisions/ADR-001-ai-operating-system-architecture.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "adr",
+        "architecture",
+        "core-system"
+      ]
+    },
+    {
+      "identity": {
+        "id": "ADR-002",
+        "title": "Agent Governance, Permissions, and Lifecycle Principles",
+        "slug": "agent-governance-principles"
+      },
+      "category": "decisions",
+      "owner": "ai-workspace-manager",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "ACCEPTED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/decisions/ADR-002-agent-governance-principles.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "adr",
+        "agents",
+        "governance"
+      ]
+    },
+    {
+      "identity": {
+        "id": "kb-github-source-of-truth",
+        "title": "GitHub as Exclusive Source of Truth",
+        "slug": "github-source-of-truth"
+      },
+      "category": "technical",
+      "owner": "ai-workspace-manager",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "VERIFIED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/technical/github-source-of-truth.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "technical",
+        "source-of-truth",
+        "git"
+      ]
+    },
+    {
+      "identity": {
+        "id": "kb-one-way-adapter-strategy",
+        "title": "One-Way Adapter Synchronization Strategy",
+        "slug": "one-way-adapter-strategy"
+      },
+      "category": "technical",
+      "owner": "ai-workspace-manager",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "VERIFIED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/technical/one-way-adapter-strategy.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "technical",
+        "adapters",
+        "synchronization"
+      ]
+    },
+    {
+      "identity": {
+        "id": "kb-security-principles",
+        "title": "System Security and Zero-Leakage Principles",
+        "slug": "security-principles"
+      },
+      "category": "technical",
+      "owner": "ai-workspace-manager",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "VERIFIED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/technical/security-principles.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "security",
+        "zero-leakage",
+        "credential-hygiene"
+      ]
+    },
+    {
+      "identity": {
+        "id": "pc-user-profile-and-principles",
+        "title": "User Profile, Domain Context, and Execution Rules",
+        "slug": "user-profile-and-principles"
+      },
+      "category": "personal-context",
+      "owner": "user",
+      "version": "1.0.0",
+      "lifecycle": {
+        "stage": "ACTIVE",
+        "status": "VERIFIED",
+        "created": "2026-09-08",
+        "last_verified": "2026-09-08"
+      },
+      "source": {
+        "path": "07-KNOWLEDGE/personal-context/user-profile-and-principles.md",
+        "format": "markdown"
+      },
+      "tags": [
+        "personal-context",
+        "interior-design",
+        "arabic-rtl",
+        "turbo-mode"
+      ]
+    }
+  ]
+}

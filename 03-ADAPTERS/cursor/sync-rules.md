@@ -35,3 +35,11 @@
 ## 3. Security & Safety
 - Exclude internal OS files (e.g., `00-META/`, `04-REGISTRY/`) from direct Cursor export.
 - Overwrite target files deterministically without prompting.
+
+### Knowledge & Memory (`knowledge/`)
+- **Source**: `07-KNOWLEDGE/{category}/{name}.md`
+- **Target**: `.cursor/context/knowledge/{category}/`
+- **Access Rules**:
+  - Indexed by Cursor Agent and Composer as semantic context files using `@knowledge`.
+  - Decisions (ADRs) provide technical justification for architecture refactors.
+  - Changes in Cursor local context do not write back into PAI-OS canonical memory.

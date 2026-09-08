@@ -1,32 +1,33 @@
 ﻿{
-  "adapter_name": "claude",
-  "display_name": "Claude Code & Claude Desktop Adapter",
-  "version": "1.0.0",
-  "status": "active",
-  "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
-  "sync_direction": "SOURCE_TO_TARGET",
-  "source_of_truth": {
-    "repository": "personal-ai-operating-system",
-    "base_path": "02-AI-ASSETS/",
-    "instructions_path": "02-AI-ASSETS/instructions/",
-    "prompt_library": "05-PROMPT-LIBRARY/"
-  },
-  "target_environment": {
-    "tool": "Claude Code CLI / Desktop",
-    "global_config_path": "C:\\Users\\l\\.claude.json",
-    "project_claude_dir": ".claude/",
-    "project_instructions_file": "CLAUDE.md"
-  },
-  "supported_asset_types": [
-    "skills",
-    "agents",
-    "commands",
-    "instructions"
-  ],
-  "policies": {
-    "allow_two_way_sync": false,
-    "allow_automatic_imports": false,
-    "conflict_resolution": "OVERWRITE_TARGET_FROM_SOURCE_OF_TRUTH",
-    "backup_before_sync": true
-  }
+    "adapter_name":  "claude",
+    "display_name":  "Claude Code \u0026 Claude Desktop Adapter",
+    "version":  "1.0.0",
+    "status":  "active",
+    "sync_architecture":  "OPTION_A_ONE_WAY_ONLY",
+    "sync_direction":  "SOURCE_TO_TARGET",
+    "source_of_truth":  {
+                            "repository":  "personal-ai-operating-system",
+                            "base_path":  "02-AI-ASSETS/",
+                            "instructions_path":  "02-AI-ASSETS/instructions/",
+                            "prompt_library":  "05-PROMPT-LIBRARY/"
+                        },
+    "target_environment":  {
+                               "tool":  "Claude Code CLI / Desktop",
+                               "global_config_path":  "C:\\Users\\l\\.claude.json",
+                               "project_claude_dir":  ".claude/",
+                               "project_instructions_file":  "CLAUDE.md"
+                           },
+    "supported_asset_types":  [
+                                  "skills",
+                                  "agents",
+                                  "commands",
+                                  "instructions",
+                                  "knowledge"
+                              ],
+    "policies":  {
+                     "allow_two_way_sync":  false,
+                     "allow_automatic_imports":  false,
+                     "conflict_resolution":  "OVERWRITE_TARGET_FROM_SOURCE_OF_TRUTH",
+                     "backup_before_sync":  true
+                 }
 }

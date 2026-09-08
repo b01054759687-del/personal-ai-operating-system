@@ -23,7 +23,8 @@
                          "backup-before-change",
                          "health-check",
                          "tool-sync",
-                         "tool-sync-management"
+                         "tool-sync-management",
+                         "knowledge-management"
                      ],
     "permissions":  {
                         "read":  [
@@ -55,7 +56,8 @@
                          "tools-registry",
                          "versions-registry",
                          "lifecycle-governance",
-                         "adapter-registry"
+                         "adapter-registry",
+                         "knowledge-registry"
                      ],
     "lifecycle":  {
                       "stage":  "ACTIVE",
@@ -77,5 +79,5 @@
                        "permission_policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md"
                    },
     "dateCreated":  "2026-09-08",
-    "lastUpdated":  "2026-09-08T15:49:00+03:00"
+    "lastUpdated":  "2026-09-08T15:54:00+03:00"
 }

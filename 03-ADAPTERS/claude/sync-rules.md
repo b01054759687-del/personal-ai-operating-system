@@ -36,3 +36,11 @@
 ## 3. Security & Integrity Rules
 - Ensure zero tokens or credentials exist in exported `.claude/` artifacts.
 - Target files are overwritten deterministically on synchronization.
+
+### Knowledge & Memory (`knowledge/`)
+- **Source**: `07-KNOWLEDGE/{category}/{name}.md`
+- **Target**: `.claude/knowledge/{category}/`
+- **Access Rules**:
+  - Claude accesses canonical knowledge as reference documents within `.claude/knowledge/`.
+  - Core decisions (ADRs) and personal profile are summarized into `CLAUDE.md` context headers.
+  - Claude cannot automatically persist ephemeral chat memory back into `07-KNOWLEDGE/` without a governed migration commit.
