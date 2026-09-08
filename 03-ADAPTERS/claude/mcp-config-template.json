@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://json.schemastore.org/partial-claude-desktop-config.json",
+  "mcpServers": {
+    "github-personal-ai-os": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "Read-only connection to the Personal AI Operating System repository",
+      "repository": "personal-ai-operating-system",
+      "access_mode": "READ_ONLY"
+    }
+  }
+}

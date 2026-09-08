@@ -24,7 +24,8 @@
                          "health-check",
                          "tool-sync",
                          "tool-sync-management",
-                         "knowledge-management"
+                         "knowledge-management",
+                         "claude-integration-management"
                      ],
     "permissions":  {
                         "read":  [
@@ -57,7 +58,8 @@
                          "versions-registry",
                          "lifecycle-governance",
                          "adapter-registry",
-                         "knowledge-registry"
+                         "knowledge-registry",
+                         "claude-adapter"
                      ],
     "lifecycle":  {
                       "stage":  "ACTIVE",
@@ -79,5 +81,5 @@
                        "permission_policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md"
                    },
     "dateCreated":  "2026-09-08",
-    "lastUpdated":  "2026-09-08T15:54:00+03:00"
+    "lastUpdated":  "2026-09-08T16:09:00+03:00"
 }
