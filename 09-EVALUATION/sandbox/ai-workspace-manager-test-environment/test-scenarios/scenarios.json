@@ -1,0 +1,48 @@
+﻿{
+    "versioningScenarios":  [
+                                {
+                                    "expectedBump":  "PATCH",
+                                    "files":  [
+                                                  "SKILL.md"
+                                              ],
+                                    "breaking":  false,
+                                    "changeType":  "typo_fix"
+                                },
+                                {
+                                    "expectedBump":  "MINOR",
+                                    "files":  [
+                                                  "examples/demo.json"
+                                              ],
+                                    "breaking":  false,
+                                    "changeType":  "added_capability"
+                                },
+                                {
+                                    "expectedBump":  "MAJOR",
+                                    "files":  [
+                                                  "AGENT.md"
+                                              ],
+                                    "breaking":  true,
+                                    "changeType":  "schema_rewrite"
+                                }
+                            ],
+    "approvalScenarios":  [
+                              {
+                                  "expectedGate":  "APPROVAL_REQUIRED",
+                                  "isDestructive":  true,
+                                  "asset":  "amlaak-sales-support",
+                                  "action":  "archive_asset"
+                              },
+                              {
+                                  "expectedGate":  "APPROVAL_REQUIRED",
+                                  "isExternal":  true,
+                                  "target":  "C:\\\\Users\\\\l\\\\.gemini\\\\config",
+                                  "action":  "mutate_host_config"
+                              },
+                              {
+                                  "expectedGate":  "AUTO_APPROVED",
+                                  "target":  "04-REGISTRY/assets-registry.json",
+                                  "action":  "audit_health",
+                                  "isReadOnly":  true
+                              }
+                          ]
+}

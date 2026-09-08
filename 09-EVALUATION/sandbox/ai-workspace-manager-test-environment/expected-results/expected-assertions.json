@@ -1,0 +1,35 @@
+﻿{
+    "discovery":  {
+                      "totalDetected":  3,
+                      "reviewCount":  1,
+                      "blockedCount":  1,
+                      "safeCount":  1
+                  },
+    "import":  {
+                   "mandatoryFilesRequired":  [
+                                                  "SKILL.md",
+                                                  "README.md",
+                                                  "metadata.json",
+                                                  "CHANGELOG.md"
+                                              ],
+                   "normalizedName":  "raw-customer-insights"
+               },
+    "registry":  {
+                     "phantomDetected":  "ghost-skill",
+                     "orphanDetected":  "orphan-skill"
+                 },
+    "security":  {
+                     "status":  "BLOCKED",
+                     "quarantined":  "compromised-tool",
+                     "tokenPatternDetected":  "ghp_*"
+                 },
+    "versioning":  {
+                       "typoFix":  "PATCH",
+                       "newFeature":  "MINOR",
+                       "breaking":  "MAJOR"
+                   },
+    "approval":  {
+                     "readOnlyAutonomous":  true,
+                     "sensitiveOperationsGated":  true
+                 }
+}

@@ -1,0 +1,53 @@
+﻿{
+    "timestamp":  "2026-09-08T15:39:42.1060762+03:00",
+    "environment":  "SANDBOX_ISOLATED (Safe Simulation Only)",
+    "tests":  [
+                  {
+                      "testName":  "01-Discovery",
+                      "objective":  "Detect unknown assets and classify accurately into SAFE, REVIEW_REQUIRED, BLOCKED",
+                      "expected":  "Detect 4 assets: 1 BLOCKED, 1 REVIEW_REQUIRED, 2 SAFE",
+                      "actual":  "Detected 4 assets: compromised-tool: BLOCKED; dynamic-webhook-agent: REVIEW_REQUIRED; RAW_CUSTOMER_INSIGHTS: SAFE; unregistered-analysis-tool: SAFE",
+                      "status":  "PASS"
+                  },
+                  {
+                      "testName":  "02-Import-and-Normalisation",
+                      "objective":  "Convert name to kebab-case and validate 4-file structure completeness",
+                      "expected":  "Normalized to \u0027raw-customer-insights\u0027 and flag missing 3 mandatory files",
+                      "actual":  "Normalized: \u0027raw-customer-insights\u0027, Missing scaffold detected: README.md, metadata.json, CHANGELOG.md",
+                      "status":  "PASS"
+                  },
+                  {
+                      "testName":  "03-Registry-Drift-Detection",
+                      "objective":  "Detect phantom records and unindexed orphan directories",
+                      "expected":  "Identify \u0027ghost-skill\u0027 as missing from disk, and \u0027orphan-skill\u0027 as missing from registry",
+                      "actual":  "Phantom detected: ghost-skill (on disk: False); Orphan detected: orphan-skill (in registry: False)",
+                      "status":  "PASS"
+                  },
+                  {
+                      "testName":  "04-Security-Secret-Detection",
+                      "objective":  "Intercept hardcoded plaintext secrets and abort/quarantine",
+                      "expected":  "Match token regex and block asset from ingestion",
+                      "actual":  "Intercepted secret in compromised-tool: ghp_mockSe***; Quarantined: True",
+                      "status":  "PASS"
+                  },
+                  {
+                      "testName":  "05-Versioning-SemVer-Logic",
+                      "objective":  "Recommend appropriate SemVer bump based on change impact",
+                      "expected":  "Typo=PATCH, New Capability=MINOR, Breaking=MAJOR",
+                      "actual":  "All 3 scenarios evaluated correctly: typo_fix: PATCH; added_capability: MINOR; schema_rewrite: MAJOR",
+                      "status":  "PASS"
+                  },
+                  {
+                      "testName":  "06-Approval-Gate-Enforcement",
+                      "objective":  "Require human approval for sensitive/destructive actions, permit safe tasks",
+                      "expected":  "Destructive/External=APPROVAL_REQUIRED; Read-Only=AUTO_APPROVED",
+                      "actual":  "All approval policies evaluated correctly: archive_asset: APPROVAL_REQUIRED; mutate_host_config: APPROVAL_REQUIRED; audit_health: AUTO_APPROVED",
+                      "status":  "PASS"
+                  }
+              ],
+    "summary":  {
+                    "totalTests":  6,
+                    "passed":  6,
+                    "failed":  0
+                }
+}

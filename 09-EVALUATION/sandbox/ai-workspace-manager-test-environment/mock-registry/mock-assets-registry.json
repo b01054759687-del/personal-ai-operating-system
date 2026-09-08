@@ -1,0 +1,10 @@
+﻿{
+    "assets": [
+        {
+            "name": "ghost-skill",
+            "type": "skill",
+            "path": "mock-registry/ghost-skill",
+            "status": "active"
+        }
+    ]
+}

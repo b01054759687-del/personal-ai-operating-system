@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  "2.0.0",
-    "lastUpdated":  "2026-09-08T15:12:26.5290184+03:00",
+    "lastUpdated":  "2026-09-08T15:40:00+03:00",
     "totalAgents":  1,
     "governance":  "06-DOCUMENTATION/agent-governance.md",
     "policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md",
@@ -69,9 +69,9 @@
                                          "last_verified":  "2026-09-08T15:12:26+03:00"
                                      },
                        "evaluation":  {
-                                          "status":  "VERIFIED",
-                                          "test_suite":  "09-EVALUATION/agent-tests/",
-                                          "last_run":  "2026-09-08T15:12:26+03:00",
+                                          "status":  "passed",
+                                          "test_suite":  "09-EVALUATION/agent-tests/ai-workspace-manager/",
+                                          "last_run":  "2026-09-08T15:39:42+03:00",
                                           "score":  "100%"
                                       }
                    }
