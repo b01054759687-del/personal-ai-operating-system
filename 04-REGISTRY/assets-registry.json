@@ -1,6 +1,8 @@
 ﻿{
     "totalActiveAssets":  26,
-    "lastUpdated":  "2026-09-08T05:47:26.0759637+03:00",
+    "schemaVersion":  "1.1.0",
+    "lastUpdated":  "2026-09-08T05:52:20.1282817+03:00",
+    "lifecycleGovernance":  "06-DOCUMENTATION/asset-lifecycle.md",
     "assets":  [
                    {
                        "name":  "amlaak-content-creator",
@@ -11,7 +13,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "amlaak-design-brand",
@@ -22,7 +28,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "amlaak-sales-support",
@@ -33,7 +43,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "branded-playbook-generator",
@@ -44,7 +58,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "expert-reviewer",
@@ -55,7 +73,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "github-config-sync",
@@ -66,7 +88,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "harir-sewbt-brand",
@@ -77,7 +103,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "loay-career-specialist",
@@ -88,7 +118,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "premium-presentation-strategist",
@@ -99,7 +133,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "presentation-generator",
@@ -110,7 +148,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "telegram-marriage-extractor",
@@ -121,7 +163,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "verify-claims-and-plans",
@@ -132,7 +178,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "agy-customizations",
@@ -143,7 +193,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "antigravity-guide",
@@ -154,7 +208,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "generative-ui",
@@ -165,7 +223,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "migrate-workflows",
@@ -176,7 +238,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "permissioned-github",
@@ -187,7 +253,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "agents-custom-rules",
@@ -198,7 +268,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "evidence-integrity-rules",
@@ -209,7 +283,11 @@
                        "classification":  "SAFE",
                        "normalized":  true,
                        "status":  "active",
-                       "version":  "1.0.0"
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "phase-1-foundation-creation",
@@ -218,7 +296,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/phase-1-foundation-creation.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "phase-2-ai-environment-discovery",
@@ -227,7 +309,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/phase-2-ai-environment-discovery.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "phase-3-asset-ingestion",
@@ -236,7 +322,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3-asset-ingestion.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "phase-3.5-workflow-preservation",
@@ -245,7 +335,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3.5-workflow-preservation.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "backup-workflow",
@@ -254,7 +348,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/backup-workflow.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "restore-workflow",
@@ -263,7 +361,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/restore-workflow.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    },
                    {
                        "name":  "health-check-workflow",
@@ -272,7 +374,11 @@
                        "path":  "05-PROMPT-LIBRARY/system-workflows/health-check-workflow.md",
                        "status":  "active",
                        "version":  "1.0.0",
-                       "portable":  true
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
                    }
                ]
 }
