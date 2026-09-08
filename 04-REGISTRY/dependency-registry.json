@@ -1,3 +1,41 @@
 ﻿{
-  "dependencies": []
+    "totalDependencies":  1,
+    "lastUpdated":  "2026-09-08T11:46:23.6858693+03:00",
+    "dependencies":  [
+                         {
+                             "target":  "ai-workspace-manager",
+                             "targetType":  "agent",
+                             "category":  "system",
+                             "dependsOn":  [
+                                               {
+                                                   "name":  "assets-registry",
+                                                   "type":  "registry",
+                                                   "path":  "04-REGISTRY/assets-registry.json",
+                                                   "mandatory":  true,
+                                                   "purpose":  "Query and update canonical AI assets, skills, rules, and prompts"
+                                               },
+                                               {
+                                                   "name":  "tools-registry",
+                                                   "type":  "registry",
+                                                   "path":  "04-REGISTRY/tools-registry.json",
+                                                   "mandatory":  true,
+                                                   "purpose":  "Monitor installed AI tools and downstream consumer runtime states"
+                                               },
+                                               {
+                                                   "name":  "versions-registry",
+                                                   "type":  "registry",
+                                                   "path":  "04-REGISTRY/versions-registry.json",
+                                                   "mandatory":  true,
+                                                   "purpose":  "Track system releases and asset semantic version increments"
+                                               },
+                                               {
+                                                   "name":  "lifecycle-governance",
+                                                   "type":  "governance-policy",
+                                                   "path":  "06-DOCUMENTATION/asset-lifecycle.md",
+                                                   "mandatory":  true,
+                                                   "purpose":  "Enforce 6-stage lifecycle transitions, zero-deletion, and SemVer rules"
+                                               }
+                                           ]
+                         }
+                     ]
 }

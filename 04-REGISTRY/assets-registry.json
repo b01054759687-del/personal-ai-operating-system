@@ -1,7 +1,7 @@
 ﻿{
-    "totalActiveAssets":  26,
-    "schemaVersion":  "1.1.0",
-    "lastUpdated":  "2026-09-08T05:52:20.1282817+03:00",
+    "totalActiveAssets":  27,
+    "schemaVersion":  "1.2.0",
+    "lastUpdated":  "2026-09-08T11:46:18.5300761+03:00",
     "lifecycleGovernance":  "06-DOCUMENTATION/asset-lifecycle.md",
     "assets":  [
                    {
@@ -378,6 +378,21 @@
                        "lifecycle":  {
                                          "stage":  "ACTIVE",
                                          "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "ai-workspace-manager",
+                       "type":  "agent",
+                       "category":  "system",
+                       "path":  "02-AI-ASSETS/agents/system/ai-workspace-manager",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T11:46:18+03:00"
                                      }
                    }
                ]

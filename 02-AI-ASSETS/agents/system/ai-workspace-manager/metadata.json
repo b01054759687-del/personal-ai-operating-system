@@ -1,0 +1,28 @@
+﻿{
+    "name":  "ai-workspace-manager",
+    "type":  "agent",
+    "category":  "system",
+    "version":  "1.0.0",
+    "status":  "active",
+    "portable":  true,
+    "supported_tools":  [
+                            "antigravity",
+                            "claude-code",
+                            "cursor",
+                            "windsurf"
+                        ],
+    "capabilities":  [
+                         "asset-discovery",
+                         "asset-import",
+                         "registry-management",
+                         "backup-before-change",
+                         "health-check",
+                         "tool-sync"
+                     ],
+    "governance":  {
+                       "constitution":  "00-META/SYSTEM-CONSTITUTION.md",
+                       "lifecycle":  "06-DOCUMENTATION/asset-lifecycle.md",
+                       "policies":  "02-AI-ASSETS/agents/system/ai-workspace-manager/policies"
+                   },
+    "dateCreated":  "2026-09-08"
+}

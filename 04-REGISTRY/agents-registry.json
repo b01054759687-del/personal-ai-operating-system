@@ -1,0 +1,26 @@
+﻿{
+    "totalAgents":  1,
+    "lastUpdated":  "2026-09-08T11:46:18.4111378+03:00",
+    "agents":  [
+                   {
+                       "name":  "ai-workspace-manager",
+                       "displayName":  "AI Workspace Manager Agent",
+                       "type":  "agent",
+                       "category":  "system",
+                       "version":  "1.0.0",
+                       "status":  "active",
+                       "path":  "02-AI-ASSETS/agents/system/ai-workspace-manager",
+                       "portable":  true,
+                       "supported_tools":  [
+                                               "antigravity",
+                                               "claude-code",
+                                               "cursor",
+                                               "windsurf"
+                                           ],
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T11:46:18+03:00"
+                                     }
+                   }
+               ]
+}
