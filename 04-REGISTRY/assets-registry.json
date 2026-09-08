@@ -1,6 +1,6 @@
 ﻿{
-    "totalActiveAssets":  19,
-    "lastUpdated":  "2026-09-07T20:16:20.9100272+03:00",
+    "totalActiveAssets":  26,
+    "lastUpdated":  "2026-09-08T05:47:26.0759637+03:00",
     "assets":  [
                    {
                        "name":  "amlaak-content-creator",
@@ -210,6 +210,69 @@
                        "normalized":  true,
                        "status":  "active",
                        "version":  "1.0.0"
+                   },
+                   {
+                       "name":  "phase-1-foundation-creation",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-1-foundation-creation.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "phase-2-ai-environment-discovery",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-2-ai-environment-discovery.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "phase-3-asset-ingestion",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3-asset-ingestion.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "phase-3.5-workflow-preservation",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3.5-workflow-preservation.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "backup-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/backup-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "restore-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/restore-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
+                   },
+                   {
+                       "name":  "health-check-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/health-check-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true
                    }
                ]
 }

@@ -1,0 +1,10 @@
+﻿{
+    "name":  "restore-workflow",
+    "type":  "prompt",
+    "category":  "system-workflow",
+    "version":  "1.0.0",
+    "status":  "active",
+    "portable":  true,
+    "filePath":  "05-PROMPT-LIBRARY/system-workflows/restore-workflow.md",
+    "dateCreated":  "2026-09-08"
+}
