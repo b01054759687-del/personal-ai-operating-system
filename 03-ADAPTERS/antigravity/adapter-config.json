@@ -1,0 +1,31 @@
+﻿{
+  "adapter_name": "antigravity",
+  "display_name": "Google Antigravity Adapter",
+  "version": "1.0.0",
+  "status": "active",
+  "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
+  "sync_direction": "SOURCE_TO_TARGET",
+  "source_of_truth": {
+    "repository": "personal-ai-operating-system",
+    "base_path": "02-AI-ASSETS/",
+    "prompt_library": "05-PROMPT-LIBRARY/"
+  },
+  "target_environment": {
+    "tool": "Google Antigravity",
+    "global_config_path": "C:\\Users\\l\\.gemini\\config",
+    "builtin_skills_path": "C:\\Users\\l\\.gemini\\antigravity\\builtin\\skills",
+    "app_data_path": "C:\\Users\\l\\.gemini\\antigravity"
+  },
+  "supported_asset_types": [
+    "skills",
+    "agents",
+    "rules",
+    "prompts"
+  ],
+  "policies": {
+    "allow_two_way_sync": false,
+    "allow_automatic_imports": false,
+    "conflict_resolution": "OVERWRITE_TARGET_FROM_SOURCE_OF_TRUTH",
+    "backup_before_sync": true
+  }
+}

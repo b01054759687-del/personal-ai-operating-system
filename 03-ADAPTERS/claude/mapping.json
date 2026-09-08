@@ -1,0 +1,39 @@
+﻿{
+  "adapter": "claude",
+  "version": "1.0.0",
+  "direction": "SOURCE_TO_TARGET",
+  "mappings": [
+    {
+      "asset_type": "skills",
+      "source_pattern": "02-AI-ASSETS/skills/{name}/SKILL.md",
+      "target_pattern": ".claude/skills/{name}.md",
+      "transform": "CLAUDE_SKILL_PROJECTION",
+      "target_entrypoint": "{name}.md",
+      "notes": "Transforms canonical skills into Claude Code skill markdown files or tool definitions."
+    },
+    {
+      "asset_type": "agents",
+      "source_pattern": "02-AI-ASSETS/agents/{category}/{name}/AGENT.md",
+      "target_pattern": ".claude/agents/{name}.md",
+      "transform": "CLAUDE_AGENT_PERSONA_PROJECTION",
+      "target_entrypoint": "{name}.md",
+      "notes": "Exports agent role and mission into Claude subagent system prompt format."
+    },
+    {
+      "asset_type": "commands",
+      "source_pattern": "05-PROMPT-LIBRARY/system-workflows/{name}.md",
+      "target_pattern": ".claude/commands/{name}.md",
+      "transform": "CLAUDE_CUSTOM_COMMAND",
+      "target_entrypoint": "{name}.md",
+      "notes": "Projects workflow prompt files to Claude Code custom slash commands."
+    },
+    {
+      "asset_type": "instructions",
+      "source_pattern": "02-AI-ASSETS/instructions/{name}.md",
+      "target_pattern": "CLAUDE.md",
+      "transform": "CLAUDE_MARKDOWN_CONCATENATION",
+      "target_entrypoint": "CLAUDE.md",
+      "notes": "Aggregates base instructions and guidelines into the root CLAUDE.md memory file."
+    }
+  ]
+}
