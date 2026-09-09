@@ -1,7 +1,7 @@
 ﻿{
-    "totalActiveAssets":  31,
+    "totalActiveAssets":  27,
     "schemaVersion":  "1.2.0",
-    "lastUpdated":  "2026-09-09T08:41:00+03:00",
+    "lastUpdated":  "2026-09-08T11:46:18.5300761+03:00",
     "lifecycleGovernance":  "06-DOCUMENTATION/asset-lifecycle.md",
     "assets":  [
                    {
@@ -393,58 +393,6 @@
                        "lifecycle":  {
                                          "stage":  "ACTIVE",
                                          "last_verified":  "2026-09-08T11:46:18+03:00"
-                                     }
-                   },
-                   {
-                       "name":  "create-release",
-                       "type":  "prompt",
-                       "category":  "system-workflow",
-                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/create-release.md",
-                       "status":  "active",
-                       "version":  "1.0.0",
-                       "portable":  true,
-                       "lifecycle":  {
-                                         "stage":  "ACTIVE",
-                                         "last_verified":  "2026-09-09T08:41:00+03:00"
-                                     }
-                   },
-                   {
-                       "name":  "validate-release",
-                       "type":  "prompt",
-                       "category":  "system-workflow",
-                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/validate-release.md",
-                       "status":  "active",
-                       "version":  "1.0.0",
-                       "portable":  true,
-                       "lifecycle":  {
-                                         "stage":  "ACTIVE",
-                                         "last_verified":  "2026-09-09T08:41:00+03:00"
-                                     }
-                   },
-                   {
-                       "name":  "publish-release",
-                       "type":  "prompt",
-                       "category":  "system-workflow",
-                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/publish-release.md",
-                       "status":  "active",
-                       "version":  "1.0.0",
-                       "portable":  true,
-                       "lifecycle":  {
-                                         "stage":  "ACTIVE",
-                                         "last_verified":  "2026-09-09T08:41:00+03:00"
-                                     }
-                   },
-                   {
-                       "name":  "rollback-release",
-                       "type":  "prompt",
-                       "category":  "system-workflow",
-                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/rollback-release.md",
-                       "status":  "active",
-                       "version":  "1.0.0",
-                       "portable":  true,
-                       "lifecycle":  {
-                                         "stage":  "ACTIVE",
-                                         "last_verified":  "2026-09-09T08:41:00+03:00"
                                      }
                    }
                ]
