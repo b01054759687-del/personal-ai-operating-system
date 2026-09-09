@@ -1,0 +1,42 @@
+{
+    "backupType": "PRE_INTAKE_SYSTEM_SNAPSHOT",
+    "timestamp": "2026-09-09T10:10:00+03:00",
+    "reason": "Phase 9 - AI Workspace Intake & Activation System",
+    "files": [
+        {
+            "originalPath": "04-REGISTRY\\agents-registry.json",
+            "sha256": "7717F386E6BFF47DBE403369F446BD5317A3E2EDBC163CCF5975A814A8C5992E",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\04-REGISTRY\\agents-registry.json"
+        },
+        {
+            "originalPath": "04-REGISTRY\\dependency-registry.json",
+            "sha256": "F16AE6109636EAC1E0DD24D66AA30557D72ABF45CDF0FDDED8E1D95AC793593F",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\04-REGISTRY\\dependency-registry.json"
+        },
+        {
+            "originalPath": "04-REGISTRY\\assets-registry.json",
+            "sha256": "458EDA9C30540A9941F3C0047C9479AE60018794704B28FEAE7069989DDAFACE",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\04-REGISTRY\\assets-registry.json"
+        },
+        {
+            "originalPath": "04-REGISTRY\\publishing-registry.json",
+            "sha256": "D613C7CADF26D10E6935E730A169B9BB66D392A51F231787B4D275B5F3844A43",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\04-REGISTRY\\publishing-registry.json"
+        },
+        {
+            "originalPath": "04-REGISTRY\\adapter-registry.json",
+            "sha256": "DEDA73050EDF241FE524C251C0018B16881C0BBA5D1E002E2E67E7A48D60DAC1",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\04-REGISTRY\\adapter-registry.json"
+        },
+        {
+            "originalPath": "02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json",
+            "sha256": "7D863D6FD6C0B165D55AA4D4AB007FC21E597E118D0E7142082581A103403A37",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json"
+        },
+        {
+            "originalPath": "00-META\\INDEX.md",
+            "sha256": "437CB85ED78D3521D72E335BD1B6DF586731700642E05B53AA6E42B4494029E9",
+            "backupPath": "10-ARCHIVE\\maintenance-backups\\intake-system-backup-2026-09-09\\00-META\\INDEX.md"
+        }
+    ]
+}

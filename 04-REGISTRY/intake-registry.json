@@ -1,0 +1,28 @@
+{
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2026-09-09T10:10:00+03:00",
+    "totalItems": 0,
+    "governance": "06-DOCUMENTATION/intake-governance.md",
+    "intakePolicy": {
+        "architecture": "OPTION_A_ONE_WAY_ONLY",
+        "quarantineRequired": true,
+        "humanApprovalRequiredForImport": true,
+        "zeroSecretsMandatory": true,
+        "zeroDeletionEnforced": true
+    },
+    "lifecycleStates": [
+        "DISCOVERED",
+        "VALIDATING",
+        "APPROVED",
+        "IMPORTED",
+        "REJECTED"
+    ],
+    "stateDefinitions": {
+        "DISCOVERED": "Item detected in incoming dropzone and staged in 11-INTAKE/staging/",
+        "VALIDATING": "Security scanning, schema linting, and quality audits active in 11-INTAKE/validation/",
+        "APPROVED": "Validation passed and human approval gate cleared for production integration",
+        "IMPORTED": "Asset successfully copied to canonical location and cataloged in registries",
+        "REJECTED": "Validation failed or discarded by human operator; archived in 11-INTAKE/rejected/"
+    },
+    "items": []
+}

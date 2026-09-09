@@ -1,7 +1,7 @@
 {
-    "totalActiveAssets": 41,
+    "totalActiveAssets": 36,
     "schemaVersion": "1.2.0",
-    "lastUpdated": "2026-09-09T10:10:00+03:00",
+    "lastUpdated": "2026-09-09T09:05:00+03:00",
     "lifecycleGovernance": "06-DOCUMENTATION/asset-lifecycle.md",
     "assets": [
         {
@@ -510,71 +510,6 @@
             "lifecycle": {
                 "stage": "ACTIVE",
                 "last_verified": "2026-09-09T09:05:00+03:00"
-            }
-        },
-        {
-            "name": "discover-incoming",
-            "type": "prompt",
-            "category": "system-workflow",
-            "path": "05-PROMPT-LIBRARY/system-workflows/intake/discover-incoming.md",
-            "status": "active",
-            "version": "1.0.0",
-            "portable": true,
-            "lifecycle": {
-                "stage": "ACTIVE",
-                "last_verified": "2026-09-09T10:10:00+03:00"
-            }
-        },
-        {
-            "name": "classify-incoming",
-            "type": "prompt",
-            "category": "system-workflow",
-            "path": "05-PROMPT-LIBRARY/system-workflows/intake/classify-incoming.md",
-            "status": "active",
-            "version": "1.0.0",
-            "portable": true,
-            "lifecycle": {
-                "stage": "ACTIVE",
-                "last_verified": "2026-09-09T10:10:00+03:00"
-            }
-        },
-        {
-            "name": "validate-incoming",
-            "type": "prompt",
-            "category": "system-workflow",
-            "path": "05-PROMPT-LIBRARY/system-workflows/intake/validate-incoming.md",
-            "status": "active",
-            "version": "1.0.0",
-            "portable": true,
-            "lifecycle": {
-                "stage": "ACTIVE",
-                "last_verified": "2026-09-09T10:10:00+03:00"
-            }
-        },
-        {
-            "name": "import-project",
-            "type": "prompt",
-            "category": "system-workflow",
-            "path": "05-PROMPT-LIBRARY/system-workflows/intake/import-project.md",
-            "status": "active",
-            "version": "1.0.0",
-            "portable": true,
-            "lifecycle": {
-                "stage": "ACTIVE",
-                "last_verified": "2026-09-09T10:10:00+03:00"
-            }
-        },
-        {
-            "name": "register-import",
-            "type": "prompt",
-            "category": "system-workflow",
-            "path": "05-PROMPT-LIBRARY/system-workflows/intake/register-import.md",
-            "status": "active",
-            "version": "1.0.0",
-            "portable": true,
-            "lifecycle": {
-                "stage": "ACTIVE",
-                "last_verified": "2026-09-09T10:10:00+03:00"
             }
         }
     ]

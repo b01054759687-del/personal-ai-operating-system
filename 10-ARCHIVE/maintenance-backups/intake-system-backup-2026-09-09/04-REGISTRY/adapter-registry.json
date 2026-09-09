@@ -1,0 +1,137 @@
+{
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2026-09-09T09:58:00+03:00",
+    "totalAdapters": 4,
+    "governance": "06-DOCUMENTATION/adapter-standard.md",
+    "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
+    "adapters": [
+        {
+            "name": "antigravity",
+            "displayName": "Google Antigravity Adapter",
+            "version": "1.0.0",
+            "path": "03-ADAPTERS/antigravity",
+            "config": "03-ADAPTERS/antigravity/adapter-config.json",
+            "mapping": "03-ADAPTERS/antigravity/mapping.json",
+            "syncRules": "03-ADAPTERS/antigravity/sync-rules.md",
+            "sync_direction": "SOURCE_TO_TARGET",
+            "status": "active",
+            "supported_asset_types": [
+                "skills",
+                "agents",
+                "rules",
+                "prompts",
+                "knowledge",
+                "registries",
+                "releases"
+            ],
+            "publishing_capabilities": [
+                "direct-directory-mirror",
+                "skill-sync",
+                "agent-projection",
+                "rules-injection",
+                "workflows-sync"
+            ],
+            "publishing_status": "active",
+            "validation_requirements": [
+                "valid-yaml-frontmatter",
+                "zero-secrets-detected",
+                "valid-directory-structure",
+                "markdown-header-hierarchy"
+            ]
+        },
+        {
+            "name": "claude",
+            "displayName": "Claude Code & Claude Desktop Adapter",
+            "version": "1.1.0",
+            "path": "03-ADAPTERS/claude",
+            "config": "03-ADAPTERS/claude/adapter-config.json",
+            "mapping": "03-ADAPTERS/claude/mapping.json",
+            "syncRules": "03-ADAPTERS/claude/sync-rules.md",
+            "mcpTemplate": "03-ADAPTERS/claude/mcp-config-template.json",
+            "instructions": "03-ADAPTERS/claude/CLAUDE.md",
+            "sync_direction": "SOURCE_TO_TARGET",
+            "status": "active",
+            "integration_mode": "GITHUB_MCP_READ_ONLY",
+            "supported_asset_types": [
+                "skills",
+                "agents",
+                "rules",
+                "prompts",
+                "knowledge",
+                "registries",
+                "releases"
+            ],
+            "publishing_capabilities": [
+                "mcp-read-only-sync",
+                "claude-md-compilation",
+                "commands-projection",
+                "skills-guide-mirror"
+            ],
+            "publishing_status": "active",
+            "validation_requirements": [
+                "mcp-read-only-enforced",
+                "zero-secrets-detected",
+                "valid-frontmatter",
+                "valid-file-references"
+            ]
+        },
+        {
+            "name": "cursor",
+            "displayName": "Cursor IDE Adapter",
+            "version": "1.0.0",
+            "path": "03-ADAPTERS/cursor",
+            "config": "03-ADAPTERS/cursor/adapter-config.json",
+            "mapping": "03-ADAPTERS/cursor/mapping.json",
+            "syncRules": "03-ADAPTERS/cursor/sync-rules.md",
+            "sync_direction": "SOURCE_TO_TARGET",
+            "status": "configured",
+            "supported_asset_types": [
+                "rules",
+                "instructions",
+                "ai_assets",
+                "knowledge",
+                "releases"
+            ],
+            "publishing_capabilities": [
+                "cursorrules-compilation",
+                "mdc-rules-generation",
+                "context-mirroring"
+            ],
+            "publishing_status": "configured",
+            "validation_requirements": [
+                "mdc-frontmatter-schema",
+                "zero-secrets-detected",
+                "valid-glob-patterns"
+            ]
+        },
+        {
+            "name": "windsurf",
+            "displayName": "Codeium Windsurf IDE Adapter",
+            "version": "1.0.0",
+            "path": "03-ADAPTERS/windsurf",
+            "config": "03-ADAPTERS/windsurf/adapter-config.json",
+            "mapping": "03-ADAPTERS/windsurf/mapping.json",
+            "syncRules": "03-ADAPTERS/windsurf/sync-rules.md",
+            "sync_direction": "SOURCE_TO_TARGET",
+            "status": "configured",
+            "supported_asset_types": [
+                "rules",
+                "workflows",
+                "ai_assets",
+                "knowledge",
+                "releases"
+            ],
+            "publishing_capabilities": [
+                "windsurfrules-compilation",
+                "cascade-workflow-projection",
+                "skills-mirroring"
+            ],
+            "publishing_status": "configured",
+            "validation_requirements": [
+                "cascade-step-declarations",
+                "zero-secrets-detected",
+                "windsurfrules-syntax"
+            ]
+        }
+    ]
+}

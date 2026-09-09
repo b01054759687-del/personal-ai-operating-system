@@ -1,0 +1,11 @@
+{
+    "name": "register-import",
+    "type": "prompt",
+    "category": "system-workflow",
+    "subcategory": "intake",
+    "version": "1.0.0",
+    "status": "active",
+    "portable": true,
+    "filePath": "05-PROMPT-LIBRARY/system-workflows/intake/register-import.md",
+    "dateCreated": "2026-09-09"
+}

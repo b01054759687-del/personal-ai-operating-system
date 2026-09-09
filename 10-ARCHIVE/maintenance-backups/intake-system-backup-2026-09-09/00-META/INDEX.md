@@ -14,4 +14,3 @@ This master index provides navigation across all modules of the operating system
 - [Releases](../08-RELEASES/) — Enterprise release manifests, compatibility matrices, and rollback protocols.
 - [Evaluation](../09-EVALUATION/) — Testing suites and quality checklists.
 - [Archive](../10-ARCHIVE/) — Deprecated assets and historical release artifacts.
-- [Intake Layer](../11-INTAKE/) — Safe entry gateway, staging, quarantine, validation, and import pipelines.

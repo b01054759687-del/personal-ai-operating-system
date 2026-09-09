@@ -32,10 +32,7 @@
         "publishing-preparation",
         "publish-execution",
         "publication-verification",
-        "publication-rollback",
-        "intake-management",
-        "project-import",
-        "asset-classification"
+        "publication-rollback"
     ],
     "permissions": {
         "read": [
@@ -50,8 +47,7 @@
             "07-MEMORY/*",
             "09-EVALUATION/*",
             "10-ARCHIVE/*",
-            "08-RELEASES/*",
-            "11-INTAKE/*"
+            "08-RELEASES/*"
         ],
         "write": [
             "02-AI-ASSETS/*",
@@ -60,8 +56,7 @@
             "06-DOCUMENTATION/*",
             "07-KNOWLEDGE/*",
             "10-ARCHIVE/*",
-            "08-RELEASES/*",
-            "11-INTAKE/*"
+            "08-RELEASES/*"
         ],
         "delete": "PROHIBITED_ARCHIVE_ONLY",
         "git_push": "APPROVAL_REQUIRED_OR_TURBO_GATED",
@@ -76,8 +71,7 @@
         "knowledge-registry",
         "claude-adapter",
         "release-registry",
-        "publishing-registry",
-        "intake-registry"
+        "publishing-registry"
     ],
     "lifecycle": {
         "stage": "ACTIVE",
@@ -99,5 +93,5 @@
         "permission_policy": "02-AI-ASSETS/agents/policies/agent-permission-policy.md"
     },
     "dateCreated": "2026-09-08",
-    "lastUpdated": "2026-09-09T10:10:00+03:00"
+    "lastUpdated": "2026-09-09T09:05:00+03:00"
 }
