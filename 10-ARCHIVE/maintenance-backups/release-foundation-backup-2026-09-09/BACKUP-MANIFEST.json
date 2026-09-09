@@ -1,0 +1,23 @@
+﻿{
+    "backupType":  "PRE_RELEASE_FOUNDATION_SNAPSHOT",
+    "timestamp":  "2026-09-09T08:30:00+03:00",
+    "reason":  "Phase 8.1 - AI Asset Release \u0026 Publishing Foundation",
+    "productionAssetsImmunity":  "CONFIRMED_02_AI_ASSETS_UNTOUCHED",
+    "files":  [
+                  {
+                      "originalPath":  "04-REGISTRY\\agents-registry.json",
+                      "sha256":  "2503789BD3EDD72F0E77DCF5CE79D463F8444C1FC44A0D3D64484CF14E48727B",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\release-foundation-backup-2026-09-09\\04-REGISTRY\\agents-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\dependency-registry.json",
+                      "sha256":  "45AB2AFB8388ADFC6B3A4BE1B86870AA88E5CA9EC54200A23F565A093BE69897",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\release-foundation-backup-2026-09-09\\04-REGISTRY\\dependency-registry.json"
+                  },
+                  {
+                      "originalPath":  "00-META\\INDEX.md",
+                      "sha256":  "BE294A7E20D00FA406CF5C631E219CCE84F790EB00AA95DBA91F34169FA02C40",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\release-foundation-backup-2026-09-09\\00-META\\INDEX.md"
+                  }
+              ]
+}

@@ -1,0 +1,38 @@
+﻿{
+  "schemaVersion": "1.0.0",
+  "releaseId": "REL-20260909-v1.0.0",
+  "version": "1.0.0",
+  "releaseType": "MAJOR",
+  "timestamp": "2026-09-09T08:30:00+03:00",
+  "author": "ai-workspace-manager",
+  "approval": {
+    "status": "APPROVED",
+    "approver": "user",
+    "gate": "HUMAN_APPROVAL_GATE"
+  },
+  "summary": "Baseline foundation release for Personal AI Operating System",
+  "includedAssetSummary": {
+    "totalSkills": 17,
+    "totalAgents": 1,
+    "totalAdapters": 4,
+    "totalKnowledgeDossiers": 6,
+    "totalRegistries": 6
+  },
+  "publishingTargets": [
+    {
+      "tool": "github",
+      "target": "origin/main",
+      "syncStatus": "DEPLOYED"
+    },
+    {
+      "tool": "antigravity",
+      "target": "03-ADAPTERS/antigravity",
+      "syncStatus": "CONFIGURED"
+    },
+    {
+      "tool": "claude",
+      "target": "03-ADAPTERS/claude",
+      "syncStatus": "CONFIGURED"
+    }
+  ]
+}

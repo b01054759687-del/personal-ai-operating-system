@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schemaVersion": "1.0.0",
+  "releaseId": "REL-YYYYMMDD-{{NAME}}",
+  "version": "{{SEMVER}}",
+  "releaseType": "MAJOR|MINOR|PATCH",
+  "timestamp": "{{TIMESTAMP}}",
+  "author": "ai-workspace-manager",
+  "approval": {
+    "status": "APPROVED",
+    "approver": "user",
+    "gate": "HUMAN_APPROVAL_GATE"
+  },
+  "includedAssets": [
+    {
+      "assetType": "skill|agent|rule|prompt|adapter|knowledge",
+      "name": "{{ASSET_NAME}}",
+      "version": "{{ASSET_VERSION}}",
+      "path": "{{ASSET_PATH}}",
+      "sha256": "{{SHA256_HASH}}"
+    }
+  ],
+  "publishingTargets": [
+    {
+      "tool": "antigravity",
+      "targetPath": "C:\\Users\\l\\.gemini\\config\\",
+      "syncStatus": "PENDING|DEPLOYED"
+    },
+    {
+      "tool": "claude",
+      "targetPath": ".claude/",
+      "syncStatus": "PENDING|DEPLOYED"
+    }
+  ],
+  "rollbackPlan": {
+    "archiveSnapshot": "10-ARCHIVE/releases/{{RELEASE_ID}}/",
+    "strategy": "FULL_SNAPSHOT_REVERT"
+  }
+}

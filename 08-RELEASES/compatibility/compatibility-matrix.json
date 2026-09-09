@@ -1,0 +1,59 @@
+﻿{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-09-09T08:30:00+03:00",
+  "systemVersion": "1.0.0",
+  "matrix": [
+    {
+      "tool": "antigravity",
+      "supportedVersions": ">=2.12.0",
+      "adapter": "03-ADAPTERS/antigravity",
+      "compatibilityStatus": "FULLY_COMPATIBLE",
+      "supportedAssetClasses": [
+        "skills",
+        "agents",
+        "rules",
+        "prompts",
+        "knowledge"
+      ]
+    },
+    {
+      "tool": "claude",
+      "supportedVersions": ">=2.1.0",
+      "adapter": "03-ADAPTERS/claude",
+      "integrationMode": "GITHUB_MCP_READ_ONLY",
+      "compatibilityStatus": "FULLY_COMPATIBLE",
+      "supportedAssetClasses": [
+        "skills",
+        "agents",
+        "rules",
+        "prompts",
+        "knowledge",
+        "registries"
+      ]
+    },
+    {
+      "tool": "cursor",
+      "supportedVersions": ">=0.40.0",
+      "adapter": "03-ADAPTERS/cursor",
+      "compatibilityStatus": "COMPATIBLE",
+      "supportedAssetClasses": [
+        "rules",
+        "instructions",
+        "ai_assets",
+        "knowledge"
+      ]
+    },
+    {
+      "tool": "windsurf",
+      "supportedVersions": ">=1.0.0",
+      "adapter": "03-ADAPTERS/windsurf",
+      "compatibilityStatus": "COMPATIBLE",
+      "supportedAssetClasses": [
+        "rules",
+        "workflows",
+        "ai_assets",
+        "knowledge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-09-09T08:30:00+03:00",
+  "totalReleases": 1,
+  "governance": "06-DOCUMENTATION/release-governance.md",
+  "manifestTemplate": "08-RELEASES/manifests/release-manifest-template.json",
+  "compatibilityMatrix": "08-RELEASES/compatibility/compatibility-matrix.json",
+  "releases": [
+    {
+      "releaseId": "REL-20260909-v1.0.0",
+      "version": "1.0.0",
+      "title": "Personal AI Operating System Foundation Release",
+      "releaseType": "MAJOR",
+      "releaseDate": "2026-09-09",
+      "status": "PUBLISHED",
+      "releaseNotes": "08-RELEASES/release-notes/v1.0.0-foundation.md",
+      "manifest": "08-RELEASES/manifests/v1.0.0-foundation-manifest.json",
+      "compatibility": {
+        "antigravity": ">=2.12.0",
+        "claude": ">=2.1.0",
+        "cursor": ">=0.40.0",
+        "windsurf": ">=1.0.0"
+      },
+      "publishingTargets": [
+        {
+          "target": "github",
+          "repository": "personal-ai-operating-system",
+          "branch": "main",
+          "status": "SYNCED"
+        },
+        {
+          "target": "antigravity",
+          "adapter": "03-ADAPTERS/antigravity",
+          "status": "READY"
+        },
+        {
+          "target": "claude",
+          "adapter": "03-ADAPTERS/claude",
+          "status": "READY"
+        },
+        {
+          "target": "cursor",
+          "adapter": "03-ADAPTERS/cursor",
+          "status": "READY"
+        },
+        {
+          "target": "windsurf",
+          "adapter": "03-ADAPTERS/windsurf",
+          "status": "READY"
+        }
+      ]
+    }
+  ]
+}

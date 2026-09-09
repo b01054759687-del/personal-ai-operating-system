@@ -1,6 +1,6 @@
 ﻿{
     "totalDependencies":  1,
-    "lastUpdated":  "2026-09-09T08:30:00+03:00",
+    "lastUpdated":  "2026-09-09T08:20:00+03:00",
     "dependencies":  [
                          {
                              "target":  "ai-workspace-manager",
@@ -55,13 +55,6 @@
                                                    "path":  "03-ADAPTERS/claude/adapter-config.json",
                                                    "mandatory":  true,
                                                    "purpose":  "Maintain Claude Desktop integration, MCP read-only connection, and instructions"
-                                               },
-                                               {
-                                                   "name":  "release-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/release-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Track enterprise asset releases, versions, manifests, compatibility, and rollback status"
                                                }
                                            ]
                          }
