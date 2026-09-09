@@ -1,6 +1,6 @@
 ﻿{
     "totalDependencies":  1,
-    "lastUpdated":  "2026-09-09T08:20:00+03:00",
+    "lastUpdated":  "2026-09-08T11:46:23.6858693+03:00",
     "dependencies":  [
                          {
                              "target":  "ai-workspace-manager",
@@ -34,27 +34,6 @@
                                                    "path":  "06-DOCUMENTATION/asset-lifecycle.md",
                                                    "mandatory":  true,
                                                    "purpose":  "Enforce 6-stage lifecycle transitions, zero-deletion, and SemVer rules"
-                                               },
-                                               {
-                                                   "name":  "adapter-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/adapter-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Catalog and coordinate downstream tool adapters and synchronization policies"
-                                               },
-                                               {
-                                                   "name":  "knowledge-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/knowledge-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Index and govern structured memory, personal context, and architectural decisions"
-                                               },
-                                               {
-                                                   "name":  "claude-adapter",
-                                                   "type":  "adapter",
-                                                   "path":  "03-ADAPTERS/claude/adapter-config.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Maintain Claude Desktop integration, MCP read-only connection, and instructions"
                                                }
                                            ]
                          }

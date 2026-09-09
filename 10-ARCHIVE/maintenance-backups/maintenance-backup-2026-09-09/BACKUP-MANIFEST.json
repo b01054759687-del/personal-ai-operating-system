@@ -1,0 +1,22 @@
+﻿{
+    "backupType":  "PRE_MAINTENANCE_SNAPSHOT",
+    "timestamp":  "2026-09-09T08:20:00+03:00",
+    "reason":  "Resolve registry and documentation drift identified during read-only audit",
+    "files":  [
+                  {
+                      "originalPath":  "00-META\\INDEX.md",
+                      "sha256":  "4C9599D7650EA78CE1CAEF7321EBFC582DC38DD5908D41CF71224235FA00E902",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\maintenance-backup-2026-09-09\\00-META\\INDEX.md"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\agents-registry.json",
+                      "sha256":  "457AF68E8211E6C2738A49A91DBB59C5C71B6793F4AEF8FAA3E18A8C15212600",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\maintenance-backup-2026-09-09\\04-REGISTRY\\agents-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\dependency-registry.json",
+                      "sha256":  "71A343E6DC49E5FCB6F3954D27AAC3CAED07602F83DCBDA243C267787FB35B0B",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\maintenance-backup-2026-09-09\\04-REGISTRY\\dependency-registry.json"
+                  }
+              ]
+}

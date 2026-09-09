@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  "2.0.0",
-    "lastUpdated":  "2026-09-09T08:20:00+03:00",
+    "lastUpdated":  "2026-09-08T16:09:00+03:00",
     "totalAgents":  1,
     "governance":  "06-DOCUMENTATION/agent-governance.md",
     "policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md",
@@ -16,7 +16,7 @@
                        "portable":  true,
                        "supported_tools":  [
                                                "antigravity",
-                                               "claude",
+                                               "claude-code",
                                                "cursor",
                                                "windsurf"
                                            ],
@@ -43,10 +43,10 @@
                                                         "02-AI-ASSETS/*",
                                                         "03-ADAPTERS/*",
                                                         "04-REGISTRY/*",
-                                                        "05-PROMPT-LIBRARY/*",
+                                                        "05-SYNC/*",
                                                         "06-DOCUMENTATION/*",
-                                                        "07-KNOWLEDGE/*",
                                                         "07-MEMORY/*",
+                                                        "08-KNOWLEDGE-BASE/*",
                                                         "09-EVALUATION/*",
                                                         "10-ARCHIVE/*"
                                                     ],
@@ -55,7 +55,6 @@
                                                          "04-REGISTRY/*",
                                                          "05-PROMPT-LIBRARY/*",
                                                          "06-DOCUMENTATION/*",
-                                                         "07-KNOWLEDGE/*",
                                                          "10-ARCHIVE/*"
                                                      ],
                                            "delete":  "PROHIBITED_ARCHIVE_ONLY",
