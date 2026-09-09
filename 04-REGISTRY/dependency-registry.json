@@ -1,76 +1,76 @@
-﻿{
-    "totalDependencies":  1,
-    "lastUpdated":  "2026-09-09T08:52:00+03:00",
-    "dependencies":  [
-                         {
-                             "target":  "ai-workspace-manager",
-                             "targetType":  "agent",
-                             "category":  "system",
-                             "dependsOn":  [
-                                               {
-                                                   "name":  "assets-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/assets-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Query and update canonical AI assets, skills, rules, and prompts"
-                                               },
-                                               {
-                                                   "name":  "tools-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/tools-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Monitor installed AI tools and downstream consumer runtime states"
-                                               },
-                                               {
-                                                   "name":  "versions-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/versions-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Track system releases and asset semantic version increments"
-                                               },
-                                               {
-                                                   "name":  "lifecycle-governance",
-                                                   "type":  "governance-policy",
-                                                   "path":  "06-DOCUMENTATION/asset-lifecycle.md",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Enforce 6-stage lifecycle transitions, zero-deletion, and SemVer rules"
-                                               },
-                                               {
-                                                   "name":  "adapter-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/adapter-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Catalog and coordinate downstream tool adapters and synchronization policies"
-                                               },
-                                               {
-                                                   "name":  "knowledge-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/knowledge-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Index and govern structured memory, personal context, and architectural decisions"
-                                               },
-                                               {
-                                                   "name":  "claude-adapter",
-                                                   "type":  "adapter",
-                                                   "path":  "03-ADAPTERS/claude/adapter-config.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Maintain Claude Desktop integration, MCP read-only connection, and instructions"
-                                               },
-                                               {
-                                                   "name":  "release-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/release-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Track enterprise asset releases, versions, manifests, compatibility, and rollback status"
-                                               },
-                                               {
-                                                   "name":  "publishing-registry",
-                                                   "type":  "registry",
-                                                   "path":  "04-REGISTRY/publishing-registry.json",
-                                                   "mandatory":  true,
-                                                   "purpose":  "Track published AI assets, target tool deployments, sync states, and publishing approval gates"
-                                               }
-                                           ]
-                         }
-                     ]
+{
+    "totalDependencies": 1,
+    "lastUpdated": "2026-09-09T09:58:00+03:00",
+    "dependencies": [
+        {
+            "target": "ai-workspace-manager",
+            "targetType": "agent",
+            "category": "system",
+            "dependsOn": [
+                {
+                    "name": "assets-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/assets-registry.json",
+                    "mandatory": true,
+                    "purpose": "Query and update canonical AI assets, skills, rules, and prompts"
+                },
+                {
+                    "name": "tools-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/tools-registry.json",
+                    "mandatory": true,
+                    "purpose": "Monitor installed AI tools and downstream consumer runtime states"
+                },
+                {
+                    "name": "versions-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/versions-registry.json",
+                    "mandatory": true,
+                    "purpose": "Track system releases and asset semantic version increments"
+                },
+                {
+                    "name": "lifecycle-governance",
+                    "type": "governance-policy",
+                    "path": "06-DOCUMENTATION/asset-lifecycle.md",
+                    "mandatory": true,
+                    "purpose": "Enforce 6-stage lifecycle transitions, zero-deletion, and SemVer rules"
+                },
+                {
+                    "name": "adapter-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/adapter-registry.json",
+                    "mandatory": true,
+                    "purpose": "Catalog and coordinate downstream tool adapters and synchronization policies"
+                },
+                {
+                    "name": "knowledge-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/knowledge-registry.json",
+                    "mandatory": true,
+                    "purpose": "Index and govern structured memory, personal context, and architectural decisions"
+                },
+                {
+                    "name": "claude-adapter",
+                    "type": "adapter",
+                    "path": "03-ADAPTERS/claude/adapter-config.json",
+                    "mandatory": true,
+                    "purpose": "Maintain Claude Desktop integration, MCP read-only connection, and instructions"
+                },
+                {
+                    "name": "release-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/release-registry.json",
+                    "mandatory": true,
+                    "purpose": "Track enterprise asset releases, versions, manifests, compatibility, and rollback status"
+                },
+                {
+                    "name": "publishing-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/publishing-registry.json",
+                    "mandatory": true,
+                    "purpose": "Track published AI assets, target tool deployments, sync states, and publishing approval gates"
+                }
+            ]
+        }
+    ]
 }

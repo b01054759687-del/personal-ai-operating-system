@@ -43,50 +43,112 @@ The **AI Tool Adapter Publishing Layer** orchestrates the controlled, determinis
 
 ---
 
-## 2. Target Path Resolution
-
-Each tool adapter implements deterministic path mapping from the canonical PAI-OS repository paths to tool-specific runtimes:
+## 2. Adapter Publishing Specifications
 
 ### 2.1 Google Antigravity
 - **Adapter Path**: `03-ADAPTERS/antigravity/`
-- **Configuration Root**: `C:\Users\l\.gemini\config\`
-- **Resolution Matrix**:
-  | Canonical Source Path | Target Runtime Path | Projection Type |
-  | :--- | :--- | :--- |
-  | `02-AI-ASSETS/skills/{name}/` | `C:\Users\l\.gemini\config\skills\{name}\` | Direct directory mirror (`SKILL.md` + resources) |
-  | `02-AI-ASSETS/agents/system/{name}/` | `C:\Users\l\.gemini\config\agents\{name}.md` | Markdown projection + prompt injection |
-  | `02-AI-ASSETS/rules/{name}.md` | Global configuration rules | Wrapped `<RULE[user_global]>` blocks |
-  | `05-PROMPT-LIBRARY/system-workflows/` | `C:\Users\l\.gemini\config\workflows\` | Workflow projection & slash commands |
-  | `07-KNOWLEDGE/{category}/{name}.md` | `C:\Users\l\.gemini\config\knowledge/{category}/` | Structured context file mirror |
+- **Supported Asset Types**:
+  - `skills`: Modular AI skills and toolsets
+  - `agents`: System and domain agent personas
+  - `rules`: System constitutional and behavioral rules
+  - `prompts`: Workflows and prompt templates
+  - `knowledge`: Structured context and memory dossiers
+- **Target Locations**:
+  - Skills: `C:\Users\l\.gemini\config\skills\{name}\`
+  - Agents: `C:\Users\l\.gemini\config\agents\{name}.md`
+  - Rules: Antigravity global configuration rules
+  - Workflows: `C:\Users\l\.gemini\config\workflows\`
+  - Knowledge: `C:\Users\l\.gemini\config\knowledge/{category}/`
+- **Mapping Rules**:
+  - Skills: Direct folder mirror retaining `SKILL.md` and companion script resources.
+  - Agents: Agent specification compiled with tool permissions and system instructions.
+  - Rules: Wrapped inside `<RULE[user_global]>` blocks with Egyptian Arabic and `<div dir="rtl">` styling preserved.
+  - Workflows: System workflows projected for slash command consumption.
+  - Knowledge: Context files mirrored into local config tree for instant retrieval.
+- **Validation Requirements**:
+  - Source must contain `SKILL.md` with valid YAML frontmatter (`name`, `description`).
+  - Zero plaintext secrets (`\b(ghp_[a-zA-Z0-9_]{20,}|sk-[a-zA-Z0-9]{20,})\b`).
+  - Target files must exist and match canonical SHA-256 digests.
+- **Rollback Behavior**:
+  - Remove projected files from target directory in `C:\Users\l\.gemini\config\skills\{name}\`.
+  - Restore previous snapshot from `10-ARCHIVE/maintenance-backups/`.
+  - Update `04-REGISTRY/publishing-registry.json` status to `ROLLED_BACK`.
+  - Strictly preserve canonical source in `02-AI-ASSETS/`.
 
 ### 2.2 Claude Code & Claude Desktop
 - **Adapter Path**: `03-ADAPTERS/claude/`
-- **Integration Mode**: `GITHUB_MCP_READ_ONLY` & local instructions
-- **Resolution Matrix**:
-  | Canonical Source Path | Target Runtime Path | Projection Type |
-  | :--- | :--- | :--- |
-  | `00-META/` + `07-KNOWLEDGE/` | `03-ADAPTERS/claude/CLAUDE.md` | Compiled master instructions file |
-  | `02-AI-ASSETS/skills/` | `.claude/skills/` | Markdown skill summaries + entrypoint catalog |
-  | `05-PROMPT-LIBRARY/system-workflows/` | `.claude/commands/` | Custom slash command definitions |
-  | Repository Root | GitHub MCP Server | Read-only remote tools (`get_file_contents`, `search`) |
+- **Supported Asset Types**:
+  - `instructions`: Master repository directives (`CLAUDE.md`)
+  - `skills`: Reference skill definitions and summaries
+  - `prompts`: Slash command prompt scripts
+  - `knowledge`: Read-only architectural context
+- **Target Locations**:
+  - Master Directives: `03-ADAPTERS/claude/CLAUDE.md` and repo root `CLAUDE.md`
+  - Commands: `.claude/commands/`
+  - Skills Reference: `.claude/skills/`
+  - MCP Server: Read-only GitHub MCP connection to repository
+- **Mapping Rules**:
+  - Instructions: Compiled from `00-META/SYSTEM-CONSTITUTION.md` and `07-KNOWLEDGE/personal-context/`.
+  - Skills: Translated into reference guides without tool-binding conflicts.
+  - Commands: Workflows exposed as Claude Code slash commands.
+  - Knowledge: Exposed strictly via read-only GitHub MCP tools (`get_file_contents`, `search`).
+- **Validation Requirements**:
+  - GitHub MCP configuration enforces read-only permissions (`write: false`, `push: false`).
+  - `CLAUDE.md` contains zero hardcoded API tokens or personal credentials.
+  - Valid markdown syntax with valid relative file references.
+- **Rollback Behavior**:
+  - Revert `CLAUDE.md` to previous stable revision from `10-ARCHIVE/`.
+  - Remove deprecated commands from `.claude/commands/`.
+  - Update publishing registry to `ROLLED_BACK`.
+  - Canonical assets in `02-AI-ASSETS/` remain 100% untouched.
 
 ### 2.3 Cursor IDE
 - **Adapter Path**: `03-ADAPTERS/cursor/`
-- **Resolution Matrix**:
-  | Canonical Source Path | Target Runtime Path | Projection Type |
-  | :--- | :--- | :--- |
-  | `02-AI-ASSETS/rules/{name}.md` | `.cursor/rules/{name}.mdc` | MDC metadata rule files with glob filters |
-  | Global Rules Aggregation | `.cursorrules` | Combined root project rules |
-  | `07-KNOWLEDGE/` | `.cursor/context/` | Reference markdown context files |
+- **Supported Asset Types**:
+  - `rules`: System and language rules (`.cursorrules` & `.cursor/rules/*.mdc`)
+  - `instructions`: Project-wide context instructions
+  - `knowledge`: Architecture and domain standards
+- **Target Locations**:
+  - Legacy Rules: `.cursorrules` (workspace root)
+  - Modular Rules: `.cursor/rules/{rule-name}.mdc`
+  - Context: `.cursor/context/`
+- **Mapping Rules**:
+  - Global Rules: Concatenate constitutional principles and code formatting standards into `.cursorrules`.
+  - MDC Rules: Translate rule assets into MDC frontmatter format with `description`, `globs`, and `alwaysApply` flags.
+  - Knowledge: Mirror relevant ADRs and technical standards into `.cursor/context/`.
+- **Validation Requirements**:
+  - MDC frontmatter conforms to Cursor schema (`description` string, `globs` array).
+  - Clean regex and glob pattern matching without syntax errors.
+  - Zero secrets detected across rule definitions.
+- **Rollback Behavior**:
+  - Delete generated `.cursor/rules/{rule-name}.mdc` file.
+  - Restore previous `.cursorrules` from archive snapshot.
+  - Update `04-REGISTRY/publishing-registry.json` status to `ROLLED_BACK`.
+  - Preserve canonical source files in `02-AI-ASSETS/rules/`.
 
 ### 2.4 Codeium Windsurf
 - **Adapter Path**: `03-ADAPTERS/windsurf/`
-- **Resolution Matrix**:
-  | Canonical Source Path | Target Runtime Path | Projection Type |
-  | :--- | :--- | :--- |
-  | `02-AI-ASSETS/rules/` | `.windsurfrules` | Unified rules configuration |
-  | `05-PROMPT-LIBRARY/system-workflows/` | `.windsurf/workflows/{name}.md` | Cascade workflow scripts |
-  | `02-AI-ASSETS/skills/` | `.windsurf/skills/` | Read-only reference prompts |
+- **Supported Asset Types**:
+  - `rules`: IDE rules (`.windsurfrules`)
+  - `workflows`: Cascade operational workflows
+  - `knowledge`: Technical architecture context
+- **Target Locations**:
+  - Rules: `.windsurfrules` (workspace root)
+  - Workflows: `.windsurf/workflows/{name}.md`
+  - Knowledge: `.windsurf/context/`
+- **Mapping Rules**:
+  - Rules: Translate constitutional and engineering rules into concise bulleted directives for Cascade.
+  - Workflows: Convert system workflows from `05-PROMPT-LIBRARY/` into Cascade actionable step templates.
+  - Knowledge: Reference architectural patterns and domain standards.
+- **Validation Requirements**:
+  - Cascade workflow files include required trigger conditions and step declarations.
+  - Zero plaintext secrets or sensitive tokens.
+  - Clean formatting compatible with Windsurf parser.
+- **Rollback Behavior**:
+  - Remove deployed workflow from `.windsurf/workflows/`.
+  - Revert `.windsurfrules` to previous archived snapshot.
+  - Record rollback in `04-REGISTRY/publishing-registry.json`.
+  - Keep canonical assets in `02-AI-ASSETS/` completely intact.
 
 ---
 

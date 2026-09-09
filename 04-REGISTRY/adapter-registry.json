@@ -1,6 +1,6 @@
 {
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-09-09T09:05:00+03:00",
+    "lastUpdated": "2026-09-09T09:58:00+03:00",
     "totalAdapters": 4,
     "governance": "06-DOCUMENTATION/adapter-standard.md",
     "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
@@ -30,6 +30,13 @@
                 "agent-projection",
                 "rules-injection",
                 "workflows-sync"
+            ],
+            "publishing_status": "active",
+            "validation_requirements": [
+                "valid-yaml-frontmatter",
+                "zero-secrets-detected",
+                "valid-directory-structure",
+                "markdown-header-hierarchy"
             ]
         },
         {
@@ -59,6 +66,13 @@
                 "claude-md-compilation",
                 "commands-projection",
                 "skills-guide-mirror"
+            ],
+            "publishing_status": "active",
+            "validation_requirements": [
+                "mcp-read-only-enforced",
+                "zero-secrets-detected",
+                "valid-frontmatter",
+                "valid-file-references"
             ]
         },
         {
@@ -82,6 +96,12 @@
                 "cursorrules-compilation",
                 "mdc-rules-generation",
                 "context-mirroring"
+            ],
+            "publishing_status": "configured",
+            "validation_requirements": [
+                "mdc-frontmatter-schema",
+                "zero-secrets-detected",
+                "valid-glob-patterns"
             ]
         },
         {
@@ -105,6 +125,12 @@
                 "windsurfrules-compilation",
                 "cascade-workflow-projection",
                 "skills-mirroring"
+            ],
+            "publishing_status": "configured",
+            "validation_requirements": [
+                "cascade-step-declarations",
+                "zero-secrets-detected",
+                "windsurfrules-syntax"
             ]
         }
     ]
