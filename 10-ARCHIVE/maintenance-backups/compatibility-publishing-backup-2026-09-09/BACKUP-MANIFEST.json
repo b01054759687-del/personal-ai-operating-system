@@ -1,0 +1,37 @@
+﻿{
+    "backupType":  "PRE_COMPATIBILITY_PUBLISHING_SNAPSHOT",
+    "timestamp":  "2026-09-09T08:52:00+03:00",
+    "reason":  "Phase 8.3 - AI Asset Compatibility \u0026 Publishing Engine",
+    "files":  [
+                  {
+                      "originalPath":  "04-REGISTRY\\agents-registry.json",
+                      "sha256":  "A922129E1261F695E9CA2A02B657EDBD8F239D2DD427F638037944D70586B1A3",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\04-REGISTRY\\agents-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\dependency-registry.json",
+                      "sha256":  "8A4D1EC7D944571BB829A458E07DD4031C053195228967AE3A2F72E0DAF490FA",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\04-REGISTRY\\dependency-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\adapter-registry.json",
+                      "sha256":  "5510FB99D13EC1A095D8A6C9745F2B1059C3BA282D1DB8202E60007A4CC74735",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\04-REGISTRY\\adapter-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\assets-registry.json",
+                      "sha256":  "2563F8D0FCC10AE23D5A2861DD2D20FECC13668F09D85FEA982725CD13BBD1DF",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\04-REGISTRY\\assets-registry.json"
+                  },
+                  {
+                      "originalPath":  "02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json",
+                      "sha256":  "B0D98CDC143932719A95E57A96B8FAA9A8406952489F1FD2834816BF25645206",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json"
+                  },
+                  {
+                      "originalPath":  "08-RELEASES\\compatibility\\compatibility-matrix.json",
+                      "sha256":  "96EA3CA423F2E4893E8DCAFB22FC85CC48FFBADDF23F80B63AE9F3747849BA7A",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\compatibility-publishing-backup-2026-09-09\\08-RELEASES\\compatibility\\compatibility-matrix.json"
+                  }
+              ]
+}

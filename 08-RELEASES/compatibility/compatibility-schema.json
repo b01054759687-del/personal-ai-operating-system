@@ -1,0 +1,81 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PAI-OS Compatibility Matrix Schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "lastUpdated",
+    "systemVersion",
+    "matrix"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "systemVersion": {
+      "type": "string"
+    },
+    "governance": {
+      "type": "string"
+    },
+    "matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tool",
+          "displayName",
+          "minSupportedVersion",
+          "adapter",
+          "compatibilityStatus",
+          "supportedAssetClasses"
+        ],
+        "properties": {
+          "tool": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "minSupportedVersion": {
+            "type": "string"
+          },
+          "adapter": {
+            "type": "string"
+          },
+          "compatibilityStatus": {
+            "type": "string",
+            "enum": [
+              "FULLY_COMPATIBLE",
+              "COMPATIBLE",
+              "PARTIALLY_COMPATIBLE",
+              "DEPRECATED",
+              "INCOMPATIBLE"
+            ]
+          },
+          "supportedAssetClasses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "projectionMechanism": {
+            "type": "string"
+          },
+          "requiredEntrypoint": {
+            "type": "string"
+          },
+          "validationRules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

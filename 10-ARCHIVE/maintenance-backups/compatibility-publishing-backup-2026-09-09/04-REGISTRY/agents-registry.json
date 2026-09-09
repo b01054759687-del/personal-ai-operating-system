@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  "2.0.0",
-    "lastUpdated":  "2026-09-09T08:52:00+03:00",
+    "lastUpdated":  "2026-09-09T08:41:00+03:00",
     "totalAgents":  1,
     "governance":  "06-DOCUMENTATION/agent-governance.md",
     "policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md",
@@ -36,9 +36,7 @@
                                             "knowledge-management",
                                             "claude-integration-management",
                                             "release-management",
-                                            "release-orchestration",
-                                            "compatibility-check",
-                                            "publishing-preparation"
+                                            "release-orchestration"
                                         ],
                        "permissions":  {
                                            "read":  [
@@ -76,8 +74,7 @@
                                             "adapter-registry",
                                             "knowledge-registry",
                                             "claude-adapter",
-                                            "release-registry",
-                                            "publishing-registry"
+                                            "release-registry"
                                         ],
                        "lifecycle":  {
                                          "stage":  "ACTIVE",

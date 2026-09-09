@@ -1,83 +1,88 @@
 ﻿{
-  "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-09-09T08:20:00+03:00",
-  "totalAdapters": 4,
-  "governance": "06-DOCUMENTATION/adapter-standard.md",
-  "sync_architecture": "OPTION_A_ONE_WAY_ONLY",
-  "adapters": [
-    {
-      "name": "antigravity",
-      "displayName": "Google Antigravity Adapter",
-      "version": "1.0.0",
-      "path": "03-ADAPTERS/antigravity",
-      "config": "03-ADAPTERS/antigravity/adapter-config.json",
-      "mapping": "03-ADAPTERS/antigravity/mapping.json",
-      "syncRules": "03-ADAPTERS/antigravity/sync-rules.md",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "status": "active",
-      "supported_asset_types": [
-        "skills",
-        "agents",
-        "rules",
-        "prompts",
-        "knowledge"
-      ]
-    },
-    {
-      "name": "claude",
-      "displayName": "Claude Code & Claude Desktop Adapter",
-      "version": "1.1.0",
-      "path": "03-ADAPTERS/claude",
-      "config": "03-ADAPTERS/claude/adapter-config.json",
-      "mapping": "03-ADAPTERS/claude/mapping.json",
-      "syncRules": "03-ADAPTERS/claude/sync-rules.md",
-      "mcpTemplate": "03-ADAPTERS/claude/mcp-config-template.json",
-      "instructions": "03-ADAPTERS/claude/CLAUDE.md",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "status": "active",
-      "integration_mode": "GITHUB_MCP_READ_ONLY",
-      "supported_asset_types": [
-        "skills",
-        "agents",
-        "rules",
-        "prompts",
-        "knowledge",
-        "registries"
-      ]
-    },
-    {
-      "name": "cursor",
-      "displayName": "Cursor IDE Adapter",
-      "version": "1.0.0",
-      "path": "03-ADAPTERS/cursor",
-      "config": "03-ADAPTERS/cursor/adapter-config.json",
-      "mapping": "03-ADAPTERS/cursor/mapping.json",
-      "syncRules": "03-ADAPTERS/cursor/sync-rules.md",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "status": "configured",
-      "supported_asset_types": [
-        "rules",
-        "instructions",
-        "ai_assets",
-        "knowledge"
-      ]
-    },
-    {
-      "name": "windsurf",
-      "displayName": "Codeium Windsurf IDE Adapter",
-      "version": "1.0.0",
-      "path": "03-ADAPTERS/windsurf",
-      "config": "03-ADAPTERS/windsurf/adapter-config.json",
-      "mapping": "03-ADAPTERS/windsurf/mapping.json",
-      "syncRules": "03-ADAPTERS/windsurf/sync-rules.md",
-      "sync_direction": "SOURCE_TO_TARGET",
-      "status": "configured",
-      "supported_asset_types": [
-        "rules",
-        "workflows",
-        "ai_assets",
-        "knowledge"
-      ]
-    }
-  ]
+    "schemaVersion":  "1.0.0",
+    "lastUpdated":  "2026-09-09T08:52:00+03:00",
+    "totalAdapters":  4,
+    "governance":  "06-DOCUMENTATION/adapter-standard.md",
+    "sync_architecture":  "OPTION_A_ONE_WAY_ONLY",
+    "adapters":  [
+                     {
+                         "name":  "antigravity",
+                         "displayName":  "Google Antigravity Adapter",
+                         "version":  "1.0.0",
+                         "path":  "03-ADAPTERS/antigravity",
+                         "config":  "03-ADAPTERS/antigravity/adapter-config.json",
+                         "mapping":  "03-ADAPTERS/antigravity/mapping.json",
+                         "syncRules":  "03-ADAPTERS/antigravity/sync-rules.md",
+                         "sync_direction":  "SOURCE_TO_TARGET",
+                         "status":  "active",
+                         "supported_asset_types":  [
+                                                       "skills",
+                                                       "agents",
+                                                       "rules",
+                                                       "prompts",
+                                                       "knowledge",
+                                                       "registries",
+                                                       "releases"
+                                                   ]
+                     },
+                     {
+                         "name":  "claude",
+                         "displayName":  "Claude Code \u0026 Claude Desktop Adapter",
+                         "version":  "1.1.0",
+                         "path":  "03-ADAPTERS/claude",
+                         "config":  "03-ADAPTERS/claude/adapter-config.json",
+                         "mapping":  "03-ADAPTERS/claude/mapping.json",
+                         "syncRules":  "03-ADAPTERS/claude/sync-rules.md",
+                         "mcpTemplate":  "03-ADAPTERS/claude/mcp-config-template.json",
+                         "instructions":  "03-ADAPTERS/claude/CLAUDE.md",
+                         "sync_direction":  "SOURCE_TO_TARGET",
+                         "status":  "active",
+                         "integration_mode":  "GITHUB_MCP_READ_ONLY",
+                         "supported_asset_types":  [
+                                                       "skills",
+                                                       "agents",
+                                                       "rules",
+                                                       "prompts",
+                                                       "knowledge",
+                                                       "registries",
+                                                       "releases"
+                                                   ]
+                     },
+                     {
+                         "name":  "cursor",
+                         "displayName":  "Cursor IDE Adapter",
+                         "version":  "1.0.0",
+                         "path":  "03-ADAPTERS/cursor",
+                         "config":  "03-ADAPTERS/cursor/adapter-config.json",
+                         "mapping":  "03-ADAPTERS/cursor/mapping.json",
+                         "syncRules":  "03-ADAPTERS/cursor/sync-rules.md",
+                         "sync_direction":  "SOURCE_TO_TARGET",
+                         "status":  "configured",
+                         "supported_asset_types":  [
+                                                       "rules",
+                                                       "instructions",
+                                                       "ai_assets",
+                                                       "knowledge",
+                                                       "releases"
+                                                   ]
+                     },
+                     {
+                         "name":  "windsurf",
+                         "displayName":  "Codeium Windsurf IDE Adapter",
+                         "version":  "1.0.0",
+                         "path":  "03-ADAPTERS/windsurf",
+                         "config":  "03-ADAPTERS/windsurf/adapter-config.json",
+                         "mapping":  "03-ADAPTERS/windsurf/mapping.json",
+                         "syncRules":  "03-ADAPTERS/windsurf/sync-rules.md",
+                         "sync_direction":  "SOURCE_TO_TARGET",
+                         "status":  "configured",
+                         "supported_asset_types":  [
+                                                       "rules",
+                                                       "workflows",
+                                                       "ai_assets",
+                                                       "knowledge",
+                                                       "releases"
+                                                   ]
+                     }
+                 ]
 }

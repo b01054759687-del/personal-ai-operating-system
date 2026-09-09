@@ -1,11 +1,14 @@
 ﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-09-09T08:30:00+03:00",
+  "lastUpdated": "2026-09-09T08:52:00+03:00",
   "systemVersion": "1.0.0",
+  "governance": "08-RELEASES/compatibility/compatibility-rules.md",
   "matrix": [
     {
       "tool": "antigravity",
-      "supportedVersions": ">=2.12.0",
+      "displayName": "Google Antigravity",
+      "minSupportedVersion": "2.12.0",
       "adapter": "03-ADAPTERS/antigravity",
       "compatibilityStatus": "FULLY_COMPATIBLE",
       "supportedAssetClasses": [
@@ -13,12 +16,21 @@
         "agents",
         "rules",
         "prompts",
-        "knowledge"
+        "knowledge",
+        "registries"
+      ],
+      "projectionMechanism": "DIRECT_DIRECTORY_MIRROR",
+      "requiredEntrypoint": "SKILL.md",
+      "validationRules": [
+        "check_yaml_frontmatter",
+        "check_4_file_scaffold",
+        "check_zero_secrets"
       ]
     },
     {
       "tool": "claude",
-      "supportedVersions": ">=2.1.0",
+      "displayName": "Claude Code & Claude Desktop",
+      "minSupportedVersion": "2.1.0",
       "adapter": "03-ADAPTERS/claude",
       "integrationMode": "GITHUB_MCP_READ_ONLY",
       "compatibilityStatus": "FULLY_COMPATIBLE",
@@ -29,11 +41,19 @@
         "prompts",
         "knowledge",
         "registries"
+      ],
+      "projectionMechanism": "MCP_READ_AND_FILE_MIRROR",
+      "requiredEntrypoint": "CLAUDE.md",
+      "validationRules": [
+        "check_mcp_read_only",
+        "check_placeholder_env_tokens",
+        "check_zero_secrets"
       ]
     },
     {
       "tool": "cursor",
-      "supportedVersions": ">=0.40.0",
+      "displayName": "Cursor IDE",
+      "minSupportedVersion": "0.40.0",
       "adapter": "03-ADAPTERS/cursor",
       "compatibilityStatus": "COMPATIBLE",
       "supportedAssetClasses": [
@@ -41,11 +61,18 @@
         "instructions",
         "ai_assets",
         "knowledge"
+      ],
+      "projectionMechanism": "MDC_AND_CURSORRULES_PROJECTION",
+      "requiredEntrypoint": ".cursorrules",
+      "validationRules": [
+        "check_mdc_frontmatter",
+        "check_zero_secrets"
       ]
     },
     {
       "tool": "windsurf",
-      "supportedVersions": ">=1.0.0",
+      "displayName": "Codeium Windsurf IDE",
+      "minSupportedVersion": "1.0.0",
       "adapter": "03-ADAPTERS/windsurf",
       "compatibilityStatus": "COMPATIBLE",
       "supportedAssetClasses": [
@@ -53,6 +80,12 @@
         "workflows",
         "ai_assets",
         "knowledge"
+      ],
+      "projectionMechanism": "CASCADE_WORKFLOW_PROJECTION",
+      "requiredEntrypoint": ".windsurfrules",
+      "validationRules": [
+        "check_cascade_workflow_syntax",
+        "check_zero_secrets"
       ]
     }
   ]

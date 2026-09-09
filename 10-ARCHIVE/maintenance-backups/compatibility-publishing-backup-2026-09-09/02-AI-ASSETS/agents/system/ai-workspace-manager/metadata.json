@@ -7,7 +7,7 @@
     "portable":  true,
     "supported_tools":  [
                             "antigravity",
-                            "claude",
+                            "claude-code",
                             "cursor",
                             "windsurf"
                         ],
@@ -25,11 +25,7 @@
                          "tool-sync",
                          "tool-sync-management",
                          "knowledge-management",
-                         "claude-integration-management",
-                         "release-management",
-                         "release-orchestration",
-                         "compatibility-check",
-                         "publishing-preparation"
+                         "claude-integration-management"
                      ],
     "permissions":  {
                         "read":  [
@@ -38,22 +34,19 @@
                                      "02-AI-ASSETS/*",
                                      "03-ADAPTERS/*",
                                      "04-REGISTRY/*",
-                                     "05-PROMPT-LIBRARY/*",
+                                     "05-SYNC/*",
                                      "06-DOCUMENTATION/*",
-                                     "07-KNOWLEDGE/*",
                                      "07-MEMORY/*",
+                                     "08-KNOWLEDGE-BASE/*",
                                      "09-EVALUATION/*",
-                                     "10-ARCHIVE/*",
-                                     "08-RELEASES/*"
+                                     "10-ARCHIVE/*"
                                  ],
                         "write":  [
                                       "02-AI-ASSETS/*",
                                       "04-REGISTRY/*",
                                       "05-PROMPT-LIBRARY/*",
                                       "06-DOCUMENTATION/*",
-                                      "07-KNOWLEDGE/*",
-                                      "10-ARCHIVE/*",
-                                      "08-RELEASES/*"
+                                      "10-ARCHIVE/*"
                                   ],
                         "delete":  "PROHIBITED_ARCHIVE_ONLY",
                         "git_push":  "APPROVAL_REQUIRED_OR_TURBO_GATED",
@@ -66,9 +59,7 @@
                          "lifecycle-governance",
                          "adapter-registry",
                          "knowledge-registry",
-                         "claude-adapter",
-                         "release-registry",
-                         "publishing-registry"
+                         "claude-adapter"
                      ],
     "lifecycle":  {
                       "stage":  "ACTIVE",
@@ -90,5 +81,5 @@
                        "permission_policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md"
                    },
     "dateCreated":  "2026-09-08",
-    "lastUpdated":  "2026-09-09T08:52:00+03:00"
+    "lastUpdated":  "2026-09-08T16:09:00+03:00"
 }

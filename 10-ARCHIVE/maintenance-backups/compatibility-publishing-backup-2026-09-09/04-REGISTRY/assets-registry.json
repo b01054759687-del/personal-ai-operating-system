@@ -1,7 +1,7 @@
 ﻿{
-    "totalActiveAssets":  32,
+    "totalActiveAssets":  31,
     "schemaVersion":  "1.2.0",
-    "lastUpdated":  "2026-09-09T08:52:00+03:00",
+    "lastUpdated":  "2026-09-09T08:41:00+03:00",
     "lifecycleGovernance":  "06-DOCUMENTATION/asset-lifecycle.md",
     "assets":  [
                    {
@@ -445,19 +445,6 @@
                        "lifecycle":  {
                                          "stage":  "ACTIVE",
                                          "last_verified":  "2026-09-09T08:41:00+03:00"
-                                     }
-                   },
-                   {
-                       "name":  "validate-compatibility",
-                       "type":  "prompt",
-                       "category":  "system-workflow",
-                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/validate-compatibility.md",
-                       "status":  "active",
-                       "version":  "1.0.0",
-                       "portable":  true,
-                       "lifecycle":  {
-                                         "stage":  "ACTIVE",
-                                         "last_verified":  "2026-09-09T08:52:00+03:00"
                                      }
                    }
                ]
