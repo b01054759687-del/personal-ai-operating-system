@@ -1,0 +1,464 @@
+﻿{
+    "totalActiveAssets":  32,
+    "schemaVersion":  "1.2.0",
+    "lastUpdated":  "2026-09-09T08:52:00+03:00",
+    "lifecycleGovernance":  "06-DOCUMENTATION/asset-lifecycle.md",
+    "assets":  [
+                   {
+                       "name":  "amlaak-content-creator",
+                       "originalName":  "amlaak_content_creator",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-content-creator",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "amlaak-design-brand",
+                       "originalName":  "amlaak_design_brand",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-design-brand",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "amlaak-sales-support",
+                       "originalName":  "amlaak_sales_support",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/amlaak-sales-support",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "branded-playbook-generator",
+                       "originalName":  "branded_playbook_generator",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/branded-playbook-generator",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "expert-reviewer",
+                       "originalName":  "expert_reviewer",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/expert-reviewer",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "github-config-sync",
+                       "originalName":  "github_config_sync",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/github-config-sync",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "harir-sewbt-brand",
+                       "originalName":  "harir_sewbt_brand",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/harir-sewbt-brand",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "loay-career-specialist",
+                       "originalName":  "loay-career-specialist",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/loay-career-specialist",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "premium-presentation-strategist",
+                       "originalName":  "premium_presentation_strategist",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/premium-presentation-strategist",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "presentation-generator",
+                       "originalName":  "presentation_generator",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/presentation-generator",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "telegram-marriage-extractor",
+                       "originalName":  "telegram_marriage_extractor",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/telegram-marriage-extractor",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "verify-claims-and-plans",
+                       "originalName":  "verify-claims-and-plans",
+                       "type":  "skill",
+                       "source":  "Antigravity Config Skills",
+                       "path":  "02-AI-ASSETS/skills/verify-claims-and-plans",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "agy-customizations",
+                       "originalName":  "agy-customizations",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/agy-customizations",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "antigravity-guide",
+                       "originalName":  "antigravity_guide",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/antigravity-guide",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "generative-ui",
+                       "originalName":  "generative_ui",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/generative-ui",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "migrate-workflows",
+                       "originalName":  "migrate-workflows",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/migrate-workflows",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "permissioned-github",
+                       "originalName":  "permissioned-github",
+                       "type":  "skill",
+                       "source":  "Antigravity Builtin Skills",
+                       "path":  "02-AI-ASSETS/skills/permissioned-github",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "agents-custom-rules",
+                       "originalName":  "AGENTS.md",
+                       "type":  "instruction",
+                       "source":  "Antigravity Root Config",
+                       "path":  "02-AI-ASSETS/instructions/AGENTS.md",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "evidence-integrity-rules",
+                       "originalName":  "GEMINI.md",
+                       "type":  "instruction",
+                       "source":  "Antigravity Root Config",
+                       "path":  "02-AI-ASSETS/instructions/GEMINI.md",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "phase-1-foundation-creation",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-1-foundation-creation.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "phase-2-ai-environment-discovery",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-2-ai-environment-discovery.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "phase-3-asset-ingestion",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3-asset-ingestion.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "phase-3.5-workflow-preservation",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/phase-3.5-workflow-preservation.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "backup-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/backup-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "restore-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/restore-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "health-check-workflow",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/health-check-workflow.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T05:52:20+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "ai-workspace-manager",
+                       "type":  "agent",
+                       "category":  "system",
+                       "path":  "02-AI-ASSETS/agents/system/ai-workspace-manager",
+                       "classification":  "SAFE",
+                       "normalized":  true,
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-08T11:46:18+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "create-release",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/create-release.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-09T08:41:00+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "validate-release",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/validate-release.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-09T08:41:00+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "publish-release",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/publish-release.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-09T08:41:00+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "rollback-release",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/rollback-release.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-09T08:41:00+03:00"
+                                     }
+                   },
+                   {
+                       "name":  "validate-compatibility",
+                       "type":  "prompt",
+                       "category":  "system-workflow",
+                       "path":  "05-PROMPT-LIBRARY/system-workflows/release-management/validate-compatibility.md",
+                       "status":  "active",
+                       "version":  "1.0.0",
+                       "portable":  true,
+                       "lifecycle":  {
+                                         "stage":  "ACTIVE",
+                                         "last_verified":  "2026-09-09T08:52:00+03:00"
+                                     }
+                   }
+               ]
+}

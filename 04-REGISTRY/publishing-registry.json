@@ -1,155 +1,173 @@
-﻿{
-  "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-09-09T08:52:00+03:00",
-  "totalPublishedEntries": 6,
-  "governance": "06-DOCUMENTATION/release-governance.md",
-  "compatibilityReference": "08-RELEASES/compatibility/compatibility-matrix.json",
-  "publishingPolicy": {
-    "syncArchitecture": "OPTION_A_ONE_WAY_ONLY",
-    "approvalRequired": true,
-    "immutableSource": "personal-ai-operating-system"
-  },
-  "publishedAssets": [
-    {
-      "assetName": "ai-workspace-manager",
-      "assetType": "agent",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "02-AI-ASSETS/agents/system/ai-workspace-manager",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:30:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
-        {
-          "tool": "antigravity",
-          "status": "SYNCED",
-          "entrypoint": "C:\\Users\\l\\.gemini\\config\\agents\\ai-workspace-manager.md"
-        },
-        {
-          "tool": "claude",
-          "status": "SYNCED",
-          "entrypoint": ".claude/agents/ai-workspace-manager.md"
-        },
-        {
-          "tool": "cursor",
-          "status": "CONFIGURED",
-          "entrypoint": ".cursor/context/agents/ai-workspace-manager.md"
-        },
-        {
-          "tool": "windsurf",
-          "status": "CONFIGURED",
-          "entrypoint": ".windsurf/agents/ai-workspace-manager.md"
-        }
-      ]
+{
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2026-09-09T09:03:00+03:00",
+    "totalPublishedEntries": 6,
+    "governance": "06-DOCUMENTATION/release-governance.md",
+    "compatibilityReference": "08-RELEASES/compatibility/compatibility-matrix.json",
+    "publishingPolicy": {
+        "syncArchitecture": "OPTION_A_ONE_WAY_ONLY",
+        "approvalRequired": true,
+        "immutableSource": "personal-ai-operating-system"
     },
-    {
-      "assetName": "amlaak-content-creator",
-      "assetType": "skill",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "02-AI-ASSETS/skills/amlaak-content-creator",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:30:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
+    "publishedAssets": [
         {
-          "tool": "antigravity",
-          "status": "SYNCED",
-          "entrypoint": "C:\\Users\\l\\.gemini\\config\\skills\\amlaak-content-creator\\SKILL.md"
+            "assetName": "ai-workspace-manager",
+            "assetType": "agent",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "02-AI-ASSETS/agents/system/ai-workspace-manager",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:30:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "SYNCED",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\agents\\ai-workspace-manager.md"
+                },
+                {
+                    "tool": "claude",
+                    "status": "SYNCED",
+                    "entrypoint": ".claude/agents/ai-workspace-manager.md"
+                },
+                {
+                    "tool": "cursor",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".cursor/context/agents/ai-workspace-manager.md"
+                },
+                {
+                    "tool": "windsurf",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".windsurf/agents/ai-workspace-manager.md"
+                }
+            ]
         },
         {
-          "tool": "claude",
-          "status": "SYNCED",
-          "entrypoint": ".claude/skills/amlaak-content-creator.md"
+            "assetName": "amlaak-content-creator",
+            "assetType": "skill",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "02-AI-ASSETS/skills/amlaak-content-creator",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:30:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "SYNCED",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\skills\\amlaak-content-creator\\SKILL.md"
+                },
+                {
+                    "tool": "claude",
+                    "status": "SYNCED",
+                    "entrypoint": ".claude/skills/amlaak-content-creator.md"
+                }
+            ]
+        },
+        {
+            "assetName": "amlaak-design-brand",
+            "assetType": "skill",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "02-AI-ASSETS/skills/amlaak-design-brand",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:30:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "SYNCED",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\skills\\amlaak-design-brand\\SKILL.md"
+                },
+                {
+                    "tool": "claude",
+                    "status": "SYNCED",
+                    "entrypoint": ".claude/skills/amlaak-design-brand.md"
+                }
+            ]
+        },
+        {
+            "assetName": "user-profile-and-principles",
+            "assetType": "knowledge",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "07-KNOWLEDGE/personal-context/user-profile-and-principles.md",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:30:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "SYNCED",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\knowledge\\personal-context\\user-profile-and-principles.md"
+                },
+                {
+                    "tool": "claude",
+                    "status": "SYNCED",
+                    "entrypoint": "03-ADAPTERS/claude/CLAUDE.md"
+                },
+                {
+                    "tool": "cursor",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".cursorrules"
+                },
+                {
+                    "tool": "windsurf",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".windsurfrules"
+                }
+            ]
+        },
+        {
+            "assetName": "release-management-workflows",
+            "assetType": "prompt",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "05-PROMPT-LIBRARY/system-workflows/release-management/",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:41:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "READY",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\workflows\\"
+                },
+                {
+                    "tool": "claude",
+                    "status": "READY",
+                    "entrypoint": ".claude/commands/"
+                }
+            ]
+        },
+        {
+            "assetName": "foundation-release-bundle-v1.0.0",
+            "assetType": "release-bundle",
+            "canonicalVersion": "1.0.0",
+            "sourcePath": "08-RELEASES/manifests/v1.0.0-foundation-manifest.json",
+            "publishingStatus": "PUBLISHED",
+            "lastPublished": "2026-09-09T08:30:00+03:00",
+            "approvalGate": "HUMAN_APPROVED",
+            "targetDeployments": [
+                {
+                    "tool": "github",
+                    "status": "SYNCED",
+                    "entrypoint": "origin/main"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "assetName": "amlaak-design-brand",
-      "assetType": "skill",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "02-AI-ASSETS/skills/amlaak-design-brand",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:30:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
-        {
-          "tool": "antigravity",
-          "status": "SYNCED",
-          "entrypoint": "C:\\Users\\l\\.gemini\\config\\skills\\amlaak-design-brand\\SKILL.md"
-        },
-        {
-          "tool": "claude",
-          "status": "SYNCED",
-          "entrypoint": ".claude/skills/amlaak-design-brand.md"
+    ],
+    "publishingLifecycle": {
+        "stages": [
+            "PREPARED",
+            "APPROVED",
+            "PUBLISHING",
+            "PUBLISHED",
+            "FAILED",
+            "ROLLED_BACK"
+        ],
+        "definitions": {
+            "PREPARED": "Asset release bundle staged and compatibility-verified",
+            "APPROVED": "Human approval gate granted for publication",
+            "PUBLISHING": "Adapter projection actively in progress",
+            "PUBLISHED": "Successfully projected to target tools and verified",
+            "FAILED": "Publishing encountered an error or validation failure",
+            "ROLLED_BACK": "Publication revoked and prior stable state restored"
         }
-      ]
-    },
-    {
-      "assetName": "user-profile-and-principles",
-      "assetType": "knowledge",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "07-KNOWLEDGE/personal-context/user-profile-and-principles.md",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:30:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
-        {
-          "tool": "antigravity",
-          "status": "SYNCED",
-          "entrypoint": "C:\\Users\\l\\.gemini\\config\\knowledge\\personal-context\\user-profile-and-principles.md"
-        },
-        {
-          "tool": "claude",
-          "status": "SYNCED",
-          "entrypoint": "03-ADAPTERS/claude/CLAUDE.md"
-        },
-        {
-          "tool": "cursor",
-          "status": "CONFIGURED",
-          "entrypoint": ".cursorrules"
-        },
-        {
-          "tool": "windsurf",
-          "status": "CONFIGURED",
-          "entrypoint": ".windsurfrules"
-        }
-      ]
-    },
-    {
-      "assetName": "release-management-workflows",
-      "assetType": "prompt",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "05-PROMPT-LIBRARY/system-workflows/release-management/",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:41:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
-        {
-          "tool": "antigravity",
-          "status": "READY",
-          "entrypoint": "C:\\Users\\l\\.gemini\\config\\workflows\\"
-        },
-        {
-          "tool": "claude",
-          "status": "READY",
-          "entrypoint": ".claude/commands/"
-        }
-      ]
-    },
-    {
-      "assetName": "foundation-release-bundle-v1.0.0",
-      "assetType": "release-bundle",
-      "canonicalVersion": "1.0.0",
-      "sourcePath": "08-RELEASES/manifests/v1.0.0-foundation-manifest.json",
-      "publishingStatus": "PUBLISHED",
-      "lastPublished": "2026-09-09T08:30:00+03:00",
-      "approvalGate": "HUMAN_APPROVED",
-      "targetDeployments": [
-        {
-          "tool": "github",
-          "status": "SYNCED",
-          "entrypoint": "origin/main"
-        }
-      ]
     }
-  ]
 }

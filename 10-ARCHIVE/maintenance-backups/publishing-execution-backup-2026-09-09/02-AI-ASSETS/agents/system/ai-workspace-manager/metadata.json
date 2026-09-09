@@ -1,0 +1,94 @@
+﻿{
+    "name":  "ai-workspace-manager",
+    "type":  "agent",
+    "category":  "system",
+    "version":  "1.0.0",
+    "status":  "active",
+    "portable":  true,
+    "supported_tools":  [
+                            "antigravity",
+                            "claude",
+                            "cursor",
+                            "windsurf"
+                        ],
+    "identity":  {
+                     "role":  "Official System-Level Workspace \u0026 Governance Agent",
+                     "mission":  "Manage and govern all AI assets, registries, workflows, and tool adapters across the Personal AI Operating System.",
+                     "prompt_file":  "02-AI-ASSETS/agents/system/ai-workspace-manager/AGENT.md"
+                 },
+    "capabilities":  [
+                         "asset-discovery",
+                         "asset-import",
+                         "registry-management",
+                         "backup-before-change",
+                         "health-check",
+                         "tool-sync",
+                         "tool-sync-management",
+                         "knowledge-management",
+                         "claude-integration-management",
+                         "release-management",
+                         "release-orchestration",
+                         "compatibility-check",
+                         "publishing-preparation"
+                     ],
+    "permissions":  {
+                        "read":  [
+                                     "00-META/*",
+                                     "01-FRAMEWORKS/*",
+                                     "02-AI-ASSETS/*",
+                                     "03-ADAPTERS/*",
+                                     "04-REGISTRY/*",
+                                     "05-PROMPT-LIBRARY/*",
+                                     "06-DOCUMENTATION/*",
+                                     "07-KNOWLEDGE/*",
+                                     "07-MEMORY/*",
+                                     "09-EVALUATION/*",
+                                     "10-ARCHIVE/*",
+                                     "08-RELEASES/*"
+                                 ],
+                        "write":  [
+                                      "02-AI-ASSETS/*",
+                                      "04-REGISTRY/*",
+                                      "05-PROMPT-LIBRARY/*",
+                                      "06-DOCUMENTATION/*",
+                                      "07-KNOWLEDGE/*",
+                                      "10-ARCHIVE/*",
+                                      "08-RELEASES/*"
+                                  ],
+                        "delete":  "PROHIBITED_ARCHIVE_ONLY",
+                        "git_push":  "APPROVAL_REQUIRED_OR_TURBO_GATED",
+                        "external_tools_mutation":  "APPROVAL_REQUIRED"
+                    },
+    "dependencies":  [
+                         "assets-registry",
+                         "tools-registry",
+                         "versions-registry",
+                         "lifecycle-governance",
+                         "adapter-registry",
+                         "knowledge-registry",
+                         "claude-adapter",
+                         "release-registry",
+                         "publishing-registry"
+                     ],
+    "lifecycle":  {
+                      "stage":  "ACTIVE",
+                      "last_verified":  "2026-09-08T15:13:00+03:00"
+                  },
+    "evaluation_status":  {
+                              "status":  "VERIFIED",
+                              "test_suite":  "09-EVALUATION/agent-tests/",
+                              "structure_test":  "PASS",
+                              "security_test":  "PASS",
+                              "capability_test":  "PASS",
+                              "release_test":  "PASS",
+                              "last_verified":  "2026-09-08T15:13:00+03:00"
+                          },
+    "governance":  {
+                       "constitution":  "00-META/SYSTEM-CONSTITUTION.md",
+                       "lifecycle":  "06-DOCUMENTATION/asset-lifecycle.md",
+                       "agent_governance":  "06-DOCUMENTATION/agent-governance.md",
+                       "permission_policy":  "02-AI-ASSETS/agents/policies/agent-permission-policy.md"
+                   },
+    "dateCreated":  "2026-09-08",
+    "lastUpdated":  "2026-09-09T08:52:00+03:00"
+}

@@ -1,0 +1,37 @@
+﻿{
+    "backupType":  "PRE_PUBLISHING_EXECUTION_SNAPSHOT",
+    "timestamp":  "2026-09-09T09:03:00+03:00",
+    "reason":  "Phase 8.4 - AI Asset Publishing Execution Layer",
+    "files":  [
+                  {
+                      "originalPath":  "04-REGISTRY\\publishing-registry.json",
+                      "sha256":  "6DDD0DCAF8C5C98C1A0A9AE1E86E0D6DB330EB03615FE49203B88FD395A772B9",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\04-REGISTRY\\publishing-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\adapter-registry.json",
+                      "sha256":  "BAF3192BF8B7C7AA77C91A1CEA8413C798D6AC6D0B15CB85460447B0CA7F6A10",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\04-REGISTRY\\adapter-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\agents-registry.json",
+                      "sha256":  "E713BAECF1779075F2149FC00CB616E5E51BF22BF1BFF5E9CC0FD1D2EADAA4B4",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\04-REGISTRY\\agents-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\assets-registry.json",
+                      "sha256":  "53A10F0032E2C740C948368C16A5E96B476999335620345E0DDE9807227DD669",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\04-REGISTRY\\assets-registry.json"
+                  },
+                  {
+                      "originalPath":  "04-REGISTRY\\dependency-registry.json",
+                      "sha256":  "786DB53F60DED90AE9D11AE08C040378AD79AEEF16B4E1CEEFC01E32BF45D638",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\04-REGISTRY\\dependency-registry.json"
+                  },
+                  {
+                      "originalPath":  "02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json",
+                      "sha256":  "FC35363A4EE4D5E1D25F8BDD35AFB932974FB0AB881B8E56A7B4CD41DC8A05A6",
+                      "backupPath":  "10-ARCHIVE\\maintenance-backups\\publishing-execution-backup-2026-09-09\\02-AI-ASSETS\\agents\\system\\ai-workspace-manager\\metadata.json"
+                  }
+              ]
+}
