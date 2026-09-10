@@ -1,6 +1,6 @@
 {
-    "totalDependencies": 1,
-    "lastUpdated": "2026-09-09T10:10:00+03:00",
+    "totalDependencies": 2,
+    "lastUpdated": "2026-09-10T10:45:00+03:00",
     "dependencies": [
         {
             "target": "ai-workspace-manager",
@@ -76,6 +76,48 @@
                     "path": "04-REGISTRY/intake-registry.json",
                     "mandatory": true,
                     "purpose": "Track incoming external assets, staging lifecycle, validation results, and import audits"
+                }
+            ]
+        },
+        {
+            "target": "software-delivery-orchestrator",
+            "targetType": "agent",
+            "category": "engineering",
+            "dependsOn": [
+                {
+                    "name": "ai-workspace-delivery-governor",
+                    "type": "skill",
+                    "path": "02-AI-ASSETS/skills/ai-workspace-delivery-governor",
+                    "mandatory": true,
+                    "purpose": "Main governance skill providing delivery layers, testing order, approval gates, and reporting standard"
+                },
+                {
+                    "name": "assets-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/assets-registry.json",
+                    "mandatory": true,
+                    "purpose": "Query and track canonical AI assets and dependencies"
+                },
+                {
+                    "name": "tools-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/tools-registry.json",
+                    "mandatory": true,
+                    "purpose": "Inspect host environment tools and downstream consumer runtime states"
+                },
+                {
+                    "name": "adapter-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/adapter-registry.json",
+                    "mandatory": true,
+                    "purpose": "Coordinate tool adapter mappings across Antigravity, Claude, Cursor, and Windsurf"
+                },
+                {
+                    "name": "publishing-registry",
+                    "type": "registry",
+                    "path": "04-REGISTRY/publishing-registry.json",
+                    "mandatory": true,
+                    "purpose": "Track publishing targets and release preparation states"
                 }
             ]
         }

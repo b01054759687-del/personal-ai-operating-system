@@ -2,145 +2,133 @@
 
 ## 1. Overview & Operating Principle
 
-Testing in the Personal AI Operating System is **strictly sequential and evidence-based**. Agents must never leap ahead to downstream tests without completing and verifying upstream foundational tests.
+Testing within the AI Workspace Delivery Governor framework must execute in a strictly defined, ascending sequence across 20 distinct verification stages.
 
-> [!IMPORTANT]
-> **Fundamental Testing Rules**:
-> 1. Never claim a test passed unless it actually ran and returned a verified zero exit code or matching assertion.
-> 2. Never treat a mock, regex check, or static analysis as a live functional test.
-> 3. Never report mock data as a live integration verification.
-> 4. Never use unit test-suite duration as application load-time or runtime performance.
-> 5. Never invent improvement percentages or synthetic benchmarks.
-> 6. Never claim production success before conducting live post-deployment verification.
+> [!CAUTION]
+> **Prohibited Testing Practices**:
+> 1. Never call a regular expression check or syntax pass a functional test.
+> 2. Never treat mock data, simulated responses, or MSW interceptions as live integration verification.
+> 3. Never quote test runner execution duration (e.g., "Jest ran in 140ms") as application load-time or runtime performance.
+> 4. Never report "100% tested" or "fully tested" when downstream stages remain Blocked or Not Run.
 
 ---
 
-## 2. Mandatory 18-Stage Testing Order
+## 2. Test Classification Taxonomy
 
-```
-[01. Source Inspection] ➔ [02. Syntax/Static] ➔ [03. Unit Tests] ➔ [04. Schema/Contract]
-         |
-         v
-[05. Integration Sims] ➔ [06. Build Verification] ➔ [07. Deterministic 2nd Build]
-         |
-         v
-[08. Browser Functional] ➔ [09. Responsive & A11y] ➔ [10. Security & Permissions]
-         |
-         v
-[11. Isolated Live Integration] ➔ [12. Auth & Unauth User Tests] ➔ [13. Test Deployment Smoke]
-         |
-         v
-[14. User Acceptance Testing] ➔ [15. Prod Readiness Review] ➔ [16. Production Deployment]
-         |
-         v
-[17. Post-Deploy Smoke Tests] ➔ [18. Handover & Recovery Verification]
-```
+Every test result must be classified into one of the following 4 canonical states:
+- **Passed**: The test executed against real assertions and exited with code 0 / expected outputs.
+- **Failed**: The test executed and triggered an assertion failure or unexpected exception.
+- **Blocked**: The test could not execute because an upstream prerequisite stage or environment dependency is incomplete.
+- **Not Run**: The test is defined for the target architecture but has not yet been triggered in the current execution cycle.
+
+Furthermore, agents must explicitly distinguish the nature of each test:
+- **Static Check**: Linting, type-checking, AST analysis, regex scans (non-runtime).
+- **Unit Test**: Isolated function/component logic executing in memory with stubbed dependencies.
+- **Simulation**: In-memory end-to-end flow with simulated network/database fixtures.
+- **Browser Test**: Headless or headed DOM rendering testing real user interactions.
+- **Integration Test**: Testing actual network requests against running sandbox or staging backend services.
+- **Live Production Test**: Non-destructive synthetic transactions validating live production health.
+
+---
+
+## 3. Mandatory 20-Stage Testing Order
 
 ### Stage 01: Source Inspection
-- **Objective**: Direct visual and structural examination of changed source files.
-- **Method**: View files on disk, check line boundaries, verify imports, and confirm absence of syntax anomalies or left-over scratch comments.
+- **Type**: Static Check.
+- **Focus**: Review raw source code, line counts, imports, formatting, and file locations.
+- **Tools**: `git diff`, tree inspection, source code review.
 
-### Stage 02: Syntax and Static Validation
-- **Objective**: Verify that code complies with language syntax rules and static type definitions.
-- **Method**: Run linters and type-checkers (e.g., `tsc --noEmit`, `eslint`, `flake8`, `mypy`).
+### Stage 02: Syntax and Static Checks
+- **Type**: Static Check.
+- **Focus**: Language syntax, AST parsing, linting, strict type-checking.
+- **Tools**: `tsc --noEmit`, `eslint`, `ruff`, compiler dry-runs.
 
 ### Stage 03: Unit Tests
-- **Objective**: Verify isolated pure functions, mathematical formulas, data parsers, and component logic.
-- **Method**: Run unit test runners (e.g., `vitest`, `jest`, `pytest`, `cargo test`).
+- **Type**: Unit Test.
+- **Focus**: Individual isolated functions, algorithmic correctness, edge cases.
+- **Tools**: `vitest`, `jest`, `pytest`, `go test`.
 
-### Stage 04: Schema and Contract Tests
-- **Objective**: Validate database schemas, API payload structures, serialization contracts, and data models.
-- **Method**: Validate migrations, JSON schemas, Zod/Pydantic models against representative edge-case inputs.
+### Stage 04: Contract and Schema Tests
+- **Type**: Unit / Contract Test.
+- **Focus**: API contract validation, JSON Schema, Zod models, OpenAPI specs, database migration definitions.
+- **Tools**: Schema validators, contract test runners.
 
 ### Stage 05: Integration Simulations
-- **Objective**: Verify inter-module communications using local fixtures, controlled stubs, or in-memory databases.
-- **Method**: Execute integration test suites simulating API routes, service calls, and state management.
+- **Type**: Simulation.
+- **Focus**: Multi-component interaction with in-memory SQLite, MSW handlers, mock servers.
+- **Rule**: Simulations verify wiring only; must never be claimed as live external integration.
 
 ### Stage 06: Build Verification
-- **Objective**: Confirm that the code compiles, bundles, and tree-shakes into valid distributable artifacts without errors or warnings.
-- **Method**: Execute official production build script (e.g., `npm run build`).
+- **Type**: Build Test.
+- **Focus**: First complete compilation of source into production bundle (`npm run build`).
+- **Tools**: Webpack, Vite, Rollup, Next.js build.
 
 ### Stage 07: Deterministic Second Build
-- **Objective**: Guarantee reproducibility and eliminate non-deterministic build artifacts or timestamp drift.
-- **Method**: Immediately trigger a second consecutive build and run `git status` or file diff to verify zero unstaged alterations.
+- **Type**: Build Test.
+- **Focus**: Second identical build run immediately following Stage 06.
+- **Exit Criteria**: Zero unintended file diff between consecutive builds (byte-for-byte / content hash match).
 
 ### Stage 08: Local Browser Functional Tests
-- **Objective**: Verify real DOM interactions, client routing, form submissions, and UI state changes in an actual browser environment.
-- **Method**: Execute Playwright, Cypress, or interactive browser tools connected to a live local development server.
-- *Strict Rule*: Static regex checks of HTML strings MUST NOT be claimed as browser functional tests.
+- **Type**: Browser Test.
+- **Focus**: Component rendering, local DOM state, button clicks, client-side routing.
+- **Tools**: Playwright (local webserver), Cypress, Puppeteer.
 
-### Stage 09: Responsive and Accessibility Checks
-- **Objective**: Validate layout rendering across viewport breakpoints (mobile, tablet, desktop) and WCAG accessibility standards.
-- **Method**: Inspect element contrast ratios, ARIA landmarks, keyboard tab navigation, and touch target sizes.
+### Stage 09: Responsive Tests
+- **Type**: Browser Test.
+- **Focus**: Visual layout stability across viewports: Mobile (375px), Tablet (768px), Desktop (1440px).
+- **Tools**: Viewport emulators, screenshot comparison.
 
-### Stage 10: Security and Permission Tests
-- **Objective**: Verify server-side authorization gates, session timeouts, input sanitization, and secret screening.
-- **Method**: Run automated secret scanners (`\b(ghp_|sk-)\b`), test invalid authorization tokens, and attempt unauthorized route access.
+### Stage 10: Accessibility Checks
+- **Type**: Browser / Static Check.
+- **Focus**: WCAG 2.1 AA compliance, ARIA attributes, color contrast, keyboard navigability.
+- **Tools**: Axe-core, Lighthouse a11y audit.
 
-### Stage 11: Isolated Live Integration Tests
-- **Objective**: Test live communication against real external sandbox APIs, test databases, or staging services.
-- **Method**: Issue real network requests against isolated test environments using dedicated sandbox credentials.
-- *Strict Rule*: Mocked HTTP responses MUST NOT be reported as live integration tests.
+### Stage 11: Security Tests
+- **Type**: Security Check.
+- **Focus**: Secret scan regex (`ghp_*`, `sk-*`), dependency vulnerability audit (`npm audit`), sanitization checks.
+- **Exit Criteria**: 0 hardcoded secrets, 0 critical unpatched CVEs.
 
-### Stage 12: Authorised and Unauthorised User Tests
-- **Objective**: Confirm that authenticated roles have access to appropriate capabilities while unauthenticated or low-privilege actors are blocked.
-- **Method**: Execute requests as unauthenticated user, standard user, and administrator; verify exact HTTP 401/403 responses.
+### Stage 12: Isolated Live Integration Tests
+- **Type**: Integration Test.
+- **Focus**: Real HTTP requests against isolated sandbox APIs or ephemeral containerized backends.
+- **Rule**: Real network packets must be sent and received.
 
-### Stage 13: Test Deployment Smoke Tests
-- **Objective**: Confirm that code uploaded to the staging or preview cloud environment boots and serves traffic cleanly.
-- **Method**: Execute automated HTTP health-check queries against the staging preview URL.
+### Stage 13: Authorised-User Tests
+- **Type**: Integration / Browser Test.
+- **Focus**: User flows executed with valid authentication tokens and authorized roles.
+- **Focus**: Verification of expected read/write permissions.
 
-### Stage 14: User Acceptance Testing (UAT)
-- **Objective**: Provide human operator with staging links, test cases, and verification checkpoints for sign-off.
-- **Method**: Await explicit user feedback confirming that business requirements are satisfied in the test deployment.
+### Stage 14: Unauthorised-User Tests
+- **Type**: Integration / Security Test.
+- **Focus**: Negative security testing: unauthenticated requests, expired tokens, tampered signatures, privilege escalation attempts.
+- **Exit Criteria**: Explicit HTTP 401 Unauthorized or 403 Forbidden responses.
 
-### Stage 15: Production Readiness Review
-- **Objective**: Final audit of deployment plans, rollback procedures, database migration readiness, and emergency contacts.
-- **Method**: Complete **Gate E (Production)** checklist and verify recovery rollback instructions.
+### Stage 15: Test-Deployment Smoke Tests
+- **Type**: Live Smoke Test (Staging).
+- **Focus**: High-level sanity check on remote staging or preview environment after Gate D approval.
+- **Exit Criteria**: HTTP 200 on healthcheck endpoint, CSS/JS assets load cleanly.
 
-### Stage 16: Production Deployment
-- **Objective**: Push verified release commit to production environment following the approved deployment pipeline.
-- **Method**: Execute production deployment script or automated CI/CD tag release.
+### Stage 16: User Acceptance Testing (UAT)
+- **Type**: Acceptance Verification.
+- **Focus**: Human operator validation of business workflows against real acceptance criteria.
+- **Exit Criteria**: Formal operator sign-off.
 
-### Stage 17: Post-Deployment Smoke Tests
-- **Objective**: Immediate live sanity verification of the production environment.
-- **Method**: Run non-destructive production health checks (ping endpoints, verify CDN cache headers, verify login page load).
-- *Strict Rule*: Never claim production success until post-deployment smoke tests execute cleanly.
+### Stage 17: Production-Readiness Review
+- **Type**: Governance Audit.
+- **Focus**: Pre-flight verification of Gate E dossier, rollback runbook, and environment variables.
+- **Exit Criteria**: Gate E clearance granted.
 
-### Stage 18: Handover and Recovery Verification
-- **Objective**: Document production deployment identifiers, verify rollback availability, and archive release manifest.
-- **Method**: Record production commit SHA, release tag, deployment timestamp, and deliver operating instructions to user.
+### Stage 18: Production Deployment
+- **Type**: Release Execution.
+- **Focus**: Controlled rollout of the verified release bundle to live production infrastructure.
+- **Exit Criteria**: Deployment pipeline finishes cleanly with exit code 0.
 
----
+### Stage 19: Post-Deployment Smoke Tests
+- **Type**: Live Production Test.
+- **Focus**: Read-only synthetic transactions against live production endpoints.
+- **Exit Criteria**: Production endpoints return 200 OK; error rate remains zero.
 
-## 3. Test Reporting Schema
-
-Every executed or evaluated test stage must be categorized into one of four mandatory statuses:
-
-| Status | Definition |
-| :--- | :--- |
-| **`Passed`** | Test was actually executed, assertions succeeded, and exit code was 0. |
-| **`Failed`** | Test was executed and returned errors, unhandled exceptions, or non-zero exit code. |
-| **`Blocked`** | Test could not run due to an upstream dependency, failed build, or ungranted approval gate. |
-| **`Not Run`** | Test is planned for a later stage or was deemed inapplicable with explicit documented rationale. |
-
-### Mandatory Result Entry Fields
-For every reported test, the report must record:
-1. **Test Type**: Stage number and category (e.g., `Stage 03: Unit Test`).
-2. **Exact Command / Action**: The verbatim command executed (e.g., `npm test -- --filter=auth`).
-3. **Environment**: Where the test executed (`Node v20.10.0 on Windows x64`, `Local Browser`, `Staging Cloud`).
-4. **Expected Result**: Specific assertion or status code expected.
-5. **Actual Result**: Exact output snippet, assertion count, and exit code.
-6. **Evidence**: File path to test log, test output summary, or screenshot.
-7. **Limitation**: Any aspect of functionality that this specific test did *not* cover.
-
----
-
-## 4. Prohibited Testing Practices (Zero-Tolerance Violations)
-
-The agent must strictly avoid and immediately reject:
-1. **Regex Substitution Fraud**: Claiming a page renders correctly because a regex matched a string in an HTML template without mounting it in a browser.
-2. **Mock-as-Live Deception**: Claiming third-party API integration works when requests were intercepted by MSW, nock, or mock functions.
-3. **Performance Fabrication**: Quoting the duration of a Jest unit test suite as proof that the web application loads in under 200ms.
-4. **Synthetic Percentage Claims**: Stating "Performance improved by 35%" without before-and-after benchmark traces from real hardware.
-5. **Premature Release Victory**: Claiming "Application successfully released to production" when deployment files were pushed but live smoke tests have not run.
+### Stage 20: Rollback Verification and Handover
+- **Type**: Handover Verification.
+- **Focus**: Confirmation that the active rollback commit is valid, release tags pushed, and handover documentation completed.
+- **Exit Criteria**: Final handover dossier approved by human operator.

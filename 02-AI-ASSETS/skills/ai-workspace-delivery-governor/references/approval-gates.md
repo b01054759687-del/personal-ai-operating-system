@@ -2,104 +2,66 @@
 
 ## 1. Overview & Operating Principle
 
-Approval gates provide absolute safety boundaries across the delivery lifecycle. When an agent reaches an approval gate, it must **halt immediately**, present a structured gate dossier, and await explicit human operator sign-off before proceeding.
+Approval gates are non-negotiable human authorization checkpoints embedded into the AI Workspace Delivery Governor framework.
 
-> [!CAUTION]
-> **Zero Self-Approval Rule**:
-> No AI agent or subagent may ever approve its own gated action. Passing local automated tests never grants permission to bypass an approval gate.
+An AI Agent must **immediately halt execution** and present a formal Gate Dossier whenever an impending operation triggers any of the conditions defined below. The agent is strictly prohibited from proceeding with the gated operation until explicit human authorization is received.
 
 ---
 
 ## 2. Gate Definitions
 
-```
-[Local Dev / Audit] ───(Gate A: Tooling)───> [Tool Installation]
-         |
-         +─────────────(Gate B: External Resources)───> [Cloud / DB Mutation]
-         |
-         +─────────────(Gate C: Source Control)───────> [Git Push / Merge]
-         |
-         +─────────────(Gate D: Test Deployment)──────> [Staging Upload]
-         |
-         +─────────────(Gate E: Production)───────────> [Live Release / Migration]
-```
+### Gate A: Tooling and Authentication
+Mandatory human approval is required before:
+- Installing new CLI utilities, runtimes, or system-level tools.
+- Installing packages outside pre-approved project dependencies (e.g., adding unvetted npm/pip libraries).
+- Adding or reconfiguring Model Context Protocol (MCP) servers.
+- Connecting external third-party accounts or cloud provider CLIs.
+- Starting authentication handshakes, OAuth flows, or requesting long-lived developer tokens.
 
-### Gate A — Tooling
-**Trigger Conditions**:
-Approval is strictly required before:
-- Installing a global or local CLI tool.
-- Adding or upgrading an npm, pip, or cargo package.
-- Registering or starting a new MCP (Model Context Protocol) server.
-- Connecting an external API, plugin, or cloud extension.
-- Initiating an interactive login or authentication handshake.
+### Gate B: External Resources
+Mandatory human approval is required before:
+- Creating, modifying, or deleting cloud resources (e.g., Google Drive folders, S3 buckets, Cloud Run instances).
+- Running database migrations (DDL/DML operations against remote or persistent stores).
+- Changing access permissions, IAM roles, or authorization policies.
+- Writing to real external data stores, production tables, or third-party webhooks.
 
-### Gate B — External Resources
-**Trigger Conditions**:
-Approval is strictly required before:
-- Creating or provisioning Google Sheets, cloud databases, S3 buckets, or storage folders.
-- Changing security policies, access control lists (ACLs), or IAM permissions.
-- Writing to, updating, or deleting records in live external resources.
-- Executing database schema migrations, table seeders, or cloud setup scripts.
+### Gate C: Source Control
+Mandatory human approval is required before:
+- Pushing code to any remote git repository (`git push`).
+- Opening, approving, or merging a Pull Request.
+- Updating or committing directly to protected branches (`main`, `master`, `production`).
+- Creating or deleting remote git tags or release markers.
 
-### Gate C — Source Control
-**Trigger Conditions**:
-Approval is strictly required before:
-- Pushing any local Git branch to a remote repository (`git push`).
-- Opening, approving, or merging a Pull Request / Merge Request.
-- Updating or committing directly to the repository's `main` / `master` branch.
-- Creating, modifying, or deleting remote Git tags or release markers.
+### Gate D: Test Deployment
+Mandatory human approval is required before:
+- Uploading code to a cloud application container or staging environment (e.g., clasp push, preview deploy).
+- Creating an ephemeral or persistent remote test deployment.
+- Utilizing real test accounts, non-mock API credentials, or remote test data fixtures.
 
-### Gate D — Test Deployment
-**Trigger Conditions**:
-Approval is strictly required before:
-- Uploading code bundles to a cloud application, staging server, or preview environment.
-- Creating a test release or preview deployment URL.
-- Using real user accounts, live sandbox environments, or customer-representative test files.
-
-### Gate E — Production
-**Trigger Conditions**:
-Approval is strictly required before:
-- Triggering a production deployment or activating production traffic.
-- Executing live production database migrations or schema alterations.
-- Running destructive operations (bulk deletes, record drops, service restarts).
-- Altering public access, CORS origins, domain DNS, or SSL configurations.
-- Reading, exporting, or modifying real customer data or PII.
+### Gate E: Production
+Mandatory human approval is required before:
+- Production deployment or cutover to live infrastructure.
+- Executing production database migrations or schema alterations.
+- Making public-access changes (DNS updates, CDN routing, CORS policies).
+- Any destructive operation that modifies or deletes existing production infrastructure.
+- Modifying, migrating, or touching real customer data.
 
 ---
 
 ## 3. Mandatory Gate Dossier Schema
 
-Whenever an approval gate is triggered, the agent must present the following 6-point dossier to the user:
+Whenever an approval gate is encountered, the agent must output a structured Gate Dossier containing the following 5 mandatory elements:
 
 ```markdown
 ### 🛑 APPROVAL GATE REQUIRED: [Gate Identifier - e.g., Gate C: Source Control]
 
-1. **Proposed Action**:
-   Exact description of what the agent plans to execute.
-   
-2. **Exact Target**:
-   Specific URL, branch name, file path, cloud resource, or database instance affected.
-   
-3. **Expected Impact**:
-   Positive technical or business consequence of executing this action.
-   
-4. **Risk Assessment**:
-   Potential side effects, downtime risk, data loss hazard, or unintended consequences.
-   
-5. **Recovery Method**:
-   Concrete, step-by-step rollback procedure to restore the previous state if failure occurs.
-   
-6. **Required User Action**:
-   Explicit decision prompt requesting user confirmation (e.g., "Please reply 'Approved' to push branch `feat/xyz` to origin, or provide alternative instructions.").
+1. **Exact Action**: Explicit shell command, API invocation, or file mutation proposed (e.g., `git push origin feat/new-feature`).
+2. **Exact Target**: Target repository, cloud resource ID, database table, or deployment environment (e.g., remote branch `origin/feat/new-feature`).
+3. **Expected Effect**: Direct outcome and consequence of executing the proposed action.
+4. **Risk Assessment**: Potential hazards, data loss risks, concurrency issues, or service disruption factors.
+5. **Rollback Method**: Verifiable, step-by-step procedure to undo the action if failure occurs (e.g., git commit SHA, database down-migration script, snapshot ID).
 ```
 
----
-
-## 4. Gate Behavior Standards
-
-1. **Safe Continuation of Non-Blocked Work**:
-   If an agent is executing multiple tasks and one task hits an approval gate while others are purely local and non-gated, the agent may complete local non-blocked work, but must NEVER cross the gated boundary.
-2. **Refusal on Ambiguity**:
-   If user response is vague (e.g., "looks good", "continue"), the agent must clarify whether explicit approval for the gated action was granted before executing.
-3. **Audit Trail Logging**:
-   Every granted gate approval must be recorded in the stage audit log with the user's confirmation timestamp.
+> [!WARNING]
+> **Zero Guessing & Zero Bypass**:
+> If a rollback method cannot be identified, the gate must be marked as **BLOCKED** and execution must pause immediately. An agent must never propose a gated action without a viable, documented recovery path.

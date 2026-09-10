@@ -1,18 +1,23 @@
 ---
 name: ai-workspace-delivery-governor
 displayName: AI Workspace Delivery Orchestrator
-description: Cross-project software delivery governor managing the complete lifecycle of AI-assisted engineering with layered implementation (Layers 0-10), strict 18-stage testing order, defensive approval gates (Gates A-E), and source-control safety. Activates when building or hardening a real application, continuing a multi-stage implementation, reviewing AI-generated implementation claims, preparing an application for testing or deployment, managing GitHub as the source of truth, coordinating local/test/production environments, or enforcing ordered testing and approval gates. Do NOT activate for simple isolated code snippets, text-only writing, presentation creation, or pure brainstorming without an implementation lifecycle.
+description: Reusable cross-project software delivery governor managing the complete lifecycle of AI-assisted software delivery with layered implementation (Layers 01-14), strict 20-stage testing order, defensive approval gates (Gates A-E), three adaptive execution modes (Quick, Standard, Controlled Release), and source-control safety. Activates when building a real application, continuing a staged implementation, reviewing AI-generated code, reviewing claimed test results, preparing software for deployment, coordinating source, build and production states, or managing risky code or infrastructure changes. Do NOT activate for basic informational programming questions where Quick Mode is sufficient, simple isolated snippets, or pure brainstorming without an implementation lifecycle.
 version: 1.0.0
 status: testing
 category: orchestration
 portable: true
+supported_adapters:
+  - antigravity
+  - claude
+  - cursor
+  - windsurf
 ---
 
 # AI Workspace Delivery Governor
 
 ## 1. Objective & Architectural Scope
 
-The **AI Workspace Delivery Governor** (`ai-workspace-delivery-governor`) is a reusable cross-project orchestration skill designed to manage the end-to-end lifecycle of AI-assisted software delivery across any codebase.
+The **AI Workspace Delivery Governor** (`ai-workspace-delivery-governor`) is a reusable cross-project orchestration skill designed to govern the complete lifecycle of AI-assisted engineering across any codebase.
 
 It eliminates premature release claims, accidental data loss, unverified test assertions, and unauthorized production mutations by establishing strict, evidence-based engineering boundaries.
 
@@ -24,156 +29,87 @@ It eliminates premature release claims, accidental data loss, unverified test as
 
 ## 2. Activation Triggers
 
-### When to Activate This Skill:
+### When to Activate
 Activate this skill whenever the task involves:
-1. **Building or Hardening a Real Application**: Developing full features, refactoring core subsystems, or securing existing codebases.
-2. **Continuing a Multi-Stage Implementation**: Resuming work across distinct engineering phases where decisions and context must be reconstructed.
-3. **Reviewing AI-Generated Implementation Claims**: Auditing PRs, diffs, or agent claims to verify whether reported tests and features actually work.
-4. **Preparing for Testing or Deployment**: Structuring build pipelines, compiling release candidates, and staging test environments.
-5. **Managing GitHub as Source of Truth**: Enforcing branch isolation, protecting `main`, preventing accidental resets, and establishing rollback baselines.
-6. **Coordinating Multi-Tier Environments**: Orchestrating transitions across local development, staging/preview, and production runtimes.
-7. **Enforcing Ordered Testing & Approval Gates**: Requiring sequential validation from unit tests to live smoke tests with human authorization checkpoints.
+1. **Building a Real Application**: Writing, refactoring, or assembling software intended for execution, testing, or deployment.
+2. **Continuing Staged Implementation**: Resuming a multi-stage feature or following up on architectural plans across multiple steps.
+3. **Reviewing AI-Generated Code**: Performing code reviews or sanity audits on pull requests or AI-generated patches.
+4. **Reviewing Claimed Test Results**: Auditing test claims to verify that assertions actually ran against real code rather than mocks or static analysis.
+5. **Preparing Software for Deployment**: Bundling, compiling, staging, or preparing release artifacts.
+6. **Coordinating Source, Build, and Production States**: Enforcing that canonical source is edited first and generated bundles are derived outputs.
+7. **Managing Risky Code or Infrastructure Changes**: Executing database migrations, authentication alterations, or external resource provisioning.
 
-### When NOT to Activate This Skill:
-Do **NOT** activate this skill for:
-- Simple isolated code questions (e.g., "How do I reverse an array in TypeScript?").
-- Text-only prose, marketing copy, or documentation drafting without implementation.
-- Presentation creation or slide deck generation.
-- Pure exploratory brainstorming with no active implementation lifecycle or codebase mutations.
-
----
-
-## 3. Core Operating Principles
-
-The Governor enforces 15 non-negotiable principles across all delivery stages:
-
-1. **Evidence Before Claims**: Never claim a feature exists, a bug is fixed, or a build succeeds without inspecting verified output.
-2. **Real Test Execution**: Never claim a test passed unless it actually ran and returned an exit code of 0.
-3. **No Mock-as-Live Deception**: Never treat a mock, stub, regex string match, or static check as a live functional test.
-4. **Strict Requirement Classification**: Always categorize information explicitly into:
-   - *Confirmed Requirement*
-   - *Existing Implementation*
-   - *Proposed Improvement*
-   - *Unknown*
-   - *Blocked*
-5. **Preserve User Files & Working Trees**: Never execute `git reset --hard`, `git clean -fd`, or destructive overwrites on uncommitted user work.
-6. **GitHub Single Source of Truth**: The Git repository is the authoritative source for code; consumer runtimes receive one-way projections.
-7. **Source-Derived Bundles**: Keep compiled distributions strictly derived from source; never manually patch generated output.
-8. **Zero Credentials in Git**: Never store passwords, API keys, service tokens, production database dumps, or real user media in the repository.
-9. **Approval Gate for Tooling**: Do not install global/local CLI tools, packages, or MCP servers without human approval (Gate A).
-10. **Approval Gate for External Resources**: Do not provision or mutate cloud databases, buckets, or third-party resources without human approval (Gate B).
-11. **Approval Gate for Source Control & Release**: Do not push branches, merge PRs, or deploy simply because local tests pass (Gates C, D, E).
-12. **Mandatory Rollback Baseline**: Always record the starting commit SHA and define rollback instructions before making changes.
-13. **Claims Require Verification**: Treat previous agent reports or assistant summaries as claims requiring independent code verification.
-14. **Inspect Real Code**: Always inspect real code on disk when available rather than relying on model memory or chat transcripts.
-15. **Safe Continuation**: Continue local, non-blocked work autonomously without silently crossing gated approval boundaries.
+### When NOT to Activate
+Do NOT activate this skill for:
+1. **Basic Informational Programming Questions**: Answering "How does array filtering work in TypeScript?" or simple conceptual inquiries where Quick Mode is sufficient.
+2. **Isolated Code Snippets**: Writing a one-off math formula or regex pattern without application context.
+3. **Text-Only Writing & Presentations**: Generating slide decks, marketing content, or blog articles.
+4. **Pure Brainstorming**: Ideating on high-level business ideas without touching a repository or filesystem.
 
 ---
 
-## 4. Delivery Layers Model (Summary)
+## 3. Three Adaptive Execution Modes
 
-Software delivery proceeds strictly through 11 sequential layers. Full layer specifications are detailed in [references/delivery-layers.md](references/delivery-layers.md):
+The Governor does not apply an over-engineered process to trivial fixes. The agent autonomously selects one of three operating modes and explicitly states its selection and rationale:
 
-- **Layer 0 — Context & Decision Reconstruction**: Reconstruct prior decisions, parse requirements, and separate facts from assumptions.
-- **Layer 1 — Workspace & Tooling**: Audit installed runtimes and tools without unauthorized installations.
-- **Layer 2 — Repository & Source Control**: Verify git status, create dedicated feature branch, and record rollback point.
-- **Layer 3 — Architecture & Data Integrity**: Map system boundaries, schemas, and ensure production data stays outside git.
-- **Layer 4 — Local Implementation**: Implement approved requirements in canonical source files first.
-- **Layer 5 — Build & Reproducibility**: Run approved build twice consecutively to confirm zero non-deterministic diff.
-- **Layer 6 — Verification & Testing**: Execute tests following the sequential 18-stage order.
-- **Layer 7 — Security & Permissions**: Validate server-side authorization, input sanitization, and secret screening.
-- **Layer 8 — Test Environment**: Validate behavior against isolated test/staging resources without touching production.
-- **Layer 9 — Release & Deployment**: Present deployment plan, affected resources, and rollback method; await Gate E approval.
-- **Layer 10 — Post-Deployment Verification & Handover**: Run production smoke tests, confirm access control, and deliver handover docs.
+### 1. Quick Mode
+- **Applicability**: Small isolated code corrections, explanations, minor refactoring, one-file low-risk changes, local changes with no external systems.
+- **Expected Flow**: `Inspect → Change → Targeted Test → Report`
+- **Layers Used**: Layer 01 (Context), Layer 02 (Tooling), Layer 05 (Implementation), Layer 07 (Targeted Test).
 
----
+### 2. Standard Mode
+- **Applicability**: Multi-file implementation, new features, database or API changes, build-system modifications, significant refactoring.
+- **Expected Flow**: `Context → Plan → Branch → Implement → Test → Build → Review → Report`
+- **Layers Used**: Layers 01-08 (Context through Security), with clean feature branching and double-build verification.
 
-## 5. Ordered Testing Framework (Summary)
-
-Testing must strictly follow the 18-stage sequence detailed in [references/testing-order.md](references/testing-order.md):
-
-1. Source inspection
-2. Syntax and static validation
-3. Unit tests
-4. Schema and contract tests
-5. Integration simulations
-6. Build verification
-7. Deterministic second build
-8. Local browser functional tests
-9. Responsive and accessibility checks
-10. Security and permission tests
-11. Isolated live integration tests
-12. Authorised and unauthorised user tests
-13. Test deployment smoke tests
-14. User acceptance testing (UAT)
-15. Production readiness review
-16. Production deployment
-17. Post-deployment smoke tests
-18. Handover and recovery verification
-
-Every test must report its exact command, environment, expected vs actual result, and status (`Passed`, `Failed`, `Blocked`, `Not Run`).
+### 3. Controlled Release Mode
+- **Applicability**: Production applications, authentication, customer data, cloud resources, external integrations, deployment, permissions, destructive or difficult-to-reverse actions.
+- **Expected Flow**: `Audit → Decisions → Implementation → Hardening → Test Environment → Security → UAT → Deployment Approval → Production → Verification → Handover`
+- **Layers Used**: All 14 delivery layers (Layers 01-14) with mandatory approval gates (Gate A through Gate E).
 
 ---
 
-## 6. Defensive Approval Gates (Summary)
+## 4. Non-Negotiable Core Principles
 
-The Governor enforces 5 human approval gates detailed in [references/approval-gates.md](references/approval-gates.md):
-
-- **Gate A — Tooling**: Installing CLIs, packages, MCP servers, or initiating authentication.
-- **Gate B — External Resources**: Creating databases, modifying cloud resources, or changing permissions.
-- **Gate C — Source Control**: Pushing to remote repositories, updating `main`, or merging PRs.
-- **Gate D — Test Deployment**: Uploading source to staging clouds or testing with real accounts.
-- **Gate E — Production**: Deploying to live production, running database migrations, or mutating customer data.
-
-When a gate is reached, the agent halts, presents the 6-point Approval Dossier (Proposed Action, Exact Target, Expected Impact, Risk Assessment, Recovery Method, Required User Action), and waits.
-
----
-
-## 7. Reporting & Cautious Factual Wording (Summary)
-
-All stage reports must implement the mandatory 13-point standard detailed in [references/reporting-standard.md](references/reporting-standard.md):
-1. Stage Status
-2. Evidence Inspected
-3. Files Changed
-4. External Resources Affected
-5. Tests Performed
-6. Test Results Summary (`Passed`, `Failed`, `Blocked`, `Not Run`)
-7. Security Findings
-8. Assumptions
-9. Known Limitations
-10. Rollback Point
-11. Actions Not Performed
-12. Next Proposed Stage
-13. Approvals Required
-
-### Language Guardrails:
-- ❌ **Prohibited**: "100% secure", "completely protected", "guaranteed performance", "fully tested", "no risks".
-- ✅ **Required**: "No issue was found in the checks performed", "Verified by the following test", "Not measured", "Requires live verification", "Unable to confirm from supplied evidence alone".
+1. **Evidence Before Claims**: Never claim a test passed, a build succeeded, or a deployment completed without quoting verifiable command execution logs and exit codes.
+2. **Real Code Inspection**: Inspect real files and existing code before proposing or applying changes.
+3. **No Fabricated Test Results**: Never fabricate test metrics, test case counts, or coverage percentages.
+4. **No Fabricated Performance Figures**: Never use unit test execution speed (e.g. "Jest finished in 120ms") to claim production runtime or load speed.
+5. **No Confusion Between Mocks and Live Integrations**: Mocked responses (MSW, nock, stubs) verify interface wiring only, never live external service connectivity.
+6. **No Confusion Between Local and Production**: Local execution never proves cloud deployment readiness without staging and smoke verification.
+7. **No Destructive Git Operations**: Never run `git reset --hard`, `git clean -fd`, or overwrite uncommitted user modifications. Always protect dirty worktrees.
+8. **No External Authentication Without Approval**: Halt at **Gate A** before initiating OAuth flows, setting up CLIs, or requesting long-lived developer tokens.
+9. **No Production Writes Without Approval**: Halt at **Gate B** before running migrations, provisioning cloud storage, or writing to remote production databases.
+10. **No Push, Merge, or Deployment Without Gate**: Halt at **Gate C** before pushing branches to remote, **Gate D** before test deployments, and **Gate E** before production rollout.
+11. **Clear Rollback and Recovery Planning**: Every proposed mutation must declare a verified rollback point (git commit SHA, migration down script, snapshot).
+12. **Preservation of Dirty Worktrees**: Quarantining and preserving unrelated user changes is mandatory before starting new work.
+13. **Source Code as the Single Source of Truth**: Always modify source files (`src/`).
+14. **Generated Bundles as Derived Output**: Never apply manual fixes directly to `dist/`, `build/`, or minified bundles. Rebuild cleanly from source.
+15. **Project-Specific Decoupling**: All repository-specific URLs, IDs, schemas, and credentials reside in project adapters or project instructions, never hardcoded inside this reusable skill.
 
 ---
 
-## 8. Agent Behavior & Execution Rules
+## 5. Architectural References
 
-When operating under this skill:
-1. **Lead with Status**: Start every response stating the current delivery layer, test stage, and pending decision.
-2. **Concise Blockers**: State blockers clearly with their exact technical root cause.
-3. **Material Questions Only**: Ask only questions that materially affect code implementation; resolve routine engineering choices autonomously using verified best practices.
-4. **Audit vs Execution**: Clearly distinguish auditing existing code from executing modifications.
-5. **Local vs Deployment**: Never conflate local build completion with deployment readiness.
-6. **No Self-Approval**: Stop at approval gates and wait for explicit human confirmation.
-7. **Smallest Toolchain**: Always choose the simplest, most lightweight toolchain that satisfies verified requirements.
+Detailed operational protocols are codified in the following companion documents:
+- [Delivery Layers Model](file:///02-AI-ASSETS/skills/ai-workspace-delivery-governor/references/delivery-layers.md): The 14 sequential delivery layers from Context Reconstruction to Handover.
+- [Testing Order Specification](file:///02-AI-ASSETS/skills/ai-workspace-delivery-governor/references/testing-order.md): The 20-stage testing order, classification taxonomy, and prohibited test practices.
+- [Approval Gates Protocol](file:///02-AI-ASSETS/skills/ai-workspace-delivery-governor/references/approval-gates.md): Non-negotiable human approval gates (Gates A through E) and the 5-point dossier schema.
+- [Reporting Standard](file:///02-AI-ASSETS/skills/ai-workspace-delivery-governor/references/reporting-standard.md): The 14-point stage report format and banned absolute claims.
 
 ---
 
-## 9. Project Adapters Model
+## 6. Project Adapter Model
 
-This reusable skill interacts with individual projects via lightweight **Project Adapters**. An individual project may provide a configuration file (e.g., `project-adapter.json` or `references/project-config.md`) defining:
-- Repository remote URL and primary branch policy.
-- Build and compilation commands (`build_command`, `test_command`).
-- Deployment platform and staging target URLs.
-- Cloud resource identifiers and database instances.
-- Domain taxonomy and allowed role definitions.
-- Test user accounts and sandbox credentials references (`ENV_VAR_NAME`).
-- Rollback scripts and procedures.
-
-The Governor treats project adapters purely as runtime configuration data, ensuring universal reusability across web apps, backend microservices, Google Apps Script projects, and mobile applications.
+When operating inside a specific client or application repository, the Governor loads repository configuration from the project's local instructions or dedicated adapter:
+- `repository`: Remote Git repository URL.
+- `base_branch`: Main or staging branch name.
+- `build_command`: Canonical build instruction (e.g., `npm run build`).
+- `test_commands`: Specific test commands for unit, integration, and linting.
+- `deployment_platform`: Hosting provider or runtime target (e.g., Cloud Run, Vercel, Apps Script).
+- `resource_ids`: Target environment resource identifiers (passed dynamically).
+- `environment_model`: Local vs Staging vs Production configuration.
+- `data_schema`: Application database schema definitions.
+- `approved_users`: Authorized operator usernames or roles.
+- `release_policy`: Project-specific release governance.
+- `rollback_procedure`: Application-specific rollback instructions.

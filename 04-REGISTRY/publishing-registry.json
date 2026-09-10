@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-09-10T09:05:00+03:00",
-    "totalPublishedEntries": 7,
+    "lastUpdated": "2026-09-10T10:45:00+03:00",
+    "totalPublishedEntries": 8,
     "governance": "06-DOCUMENTATION/release-governance.md",
     "compatibilityReference": "08-RELEASES/compatibility/compatibility-matrix.json",
     "publishingPolicy": {
@@ -269,6 +269,55 @@
                     "adapterUsed": "03-ADAPTERS/windsurf",
                     "publicationStatus": "CONFIGURED",
                     "timestamp": "2026-09-10T09:05:00+03:00"
+                }
+            ]
+        },
+        {
+            "assetName": "software-delivery-orchestrator",
+            "assetType": "agent",
+            "canonicalVersion": "1.0.0",
+            "version": "1.0.0",
+            "sourcePath": "02-AI-ASSETS/agents/engineering/software-delivery-orchestrator",
+            "publishingStatus": "PREPARED",
+            "lastPublished": null,
+            "timestamp": "2026-09-10T10:45:00+03:00",
+            "approvalGate": "PENDING_TESTING_VALIDATION",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "CONFIGURED",
+                    "entrypoint": "C:\\\\Users\\\\l\\\\.gemini\\\\config\\\\agents\\\\software-delivery-orchestrator.md",
+                    "targetTool": "antigravity",
+                    "adapterUsed": "03-ADAPTERS/antigravity",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T10:45:00+03:00"
+                },
+                {
+                    "tool": "claude",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".claude/agents/software-delivery-orchestrator.md",
+                    "targetTool": "claude",
+                    "adapterUsed": "03-ADAPTERS/claude",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T10:45:00+03:00"
+                },
+                {
+                    "tool": "cursor",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".cursor/context/agents/software-delivery-orchestrator.md",
+                    "targetTool": "cursor",
+                    "adapterUsed": "03-ADAPTERS/cursor",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T10:45:00+03:00"
+                },
+                {
+                    "tool": "windsurf",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".windsurf/agents/software-delivery-orchestrator.md",
+                    "targetTool": "windsurf",
+                    "adapterUsed": "03-ADAPTERS/windsurf",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T10:45:00+03:00"
                 }
             ]
         }

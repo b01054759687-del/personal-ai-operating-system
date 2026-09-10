@@ -1,44 +1,52 @@
-﻿{
-    "adapter":  "cursor",
-    "version":  "1.0.0",
-    "direction":  "SOURCE_TO_TARGET",
-    "mappings":  [
-                     {
-                         "asset_type":  "rules",
-                         "source_pattern":  "02-AI-ASSETS/rules/{name}.md",
-                         "target_pattern":  ".cursor/rules/{name}.mdc",
-                         "transform":  "CURSOR_MDC_WRAPPER",
-                         "target_entrypoint":  "{name}.mdc",
-                         "frontmatter_template":  {
-                                                      "description":  "Enforced rule from PAI-OS: {name}",
-                                                      "globs":  "*",
-                                                      "alwaysApply":  true
-                                                  },
-                         "notes":  "Wraps markdown rule files with Cursor MDC frontmatter."
-                     },
-                     {
-                         "asset_type":  "instructions",
-                         "source_pattern":  "02-AI-ASSETS/instructions/{name}.md",
-                         "target_pattern":  ".cursorrules",
-                         "transform":  "CURSORRULES_CONCATENATION",
-                         "target_entrypoint":  ".cursorrules",
-                         "notes":  "Compiles operational instructions into the standard legacy .cursorrules file."
-                     },
-                     {
-                         "asset_type":  "ai_assets",
-                         "source_pattern":  "02-AI-ASSETS/skills/{name}/SKILL.md",
-                         "target_pattern":  ".cursor/context/skills/{name}.md",
-                         "transform":  "CONTEXT_PROJECTION",
-                         "target_entrypoint":  "{name}.md",
-                         "notes":  "Exposes core skills as project context files readable by Cursor Agent."
-                     },
-                     {
-                         "asset_type":  "knowledge",
-                         "source_pattern":  "07-KNOWLEDGE/{category}/{name}.md",
-                         "target_pattern":  ".cursor/context/knowledge/{category}/{name}.md",
-                         "transform":  "CURSOR_CONTEXT_MIRROR",
-                         "target_entrypoint":  "{name}.md",
-                         "notes":  "Exposes structured knowledge files to Cursor Composer and Agent for codebase grounding."
-                     }
-                 ]
+{
+    "adapter": "cursor",
+    "version": "1.0.0",
+    "direction": "SOURCE_TO_TARGET",
+    "mappings": [
+        {
+            "asset_type": "rules",
+            "source_pattern": "02-AI-ASSETS/rules/{name}.md",
+            "target_pattern": ".cursor/rules/{name}.mdc",
+            "transform": "CURSOR_MDC_WRAPPER",
+            "target_entrypoint": "{name}.mdc",
+            "frontmatter_template": {
+                "description": "Enforced rule from PAI-OS: {name}",
+                "globs": "*",
+                "alwaysApply": true
+            },
+            "notes": "Wraps markdown rule files with Cursor MDC frontmatter."
+        },
+        {
+            "asset_type": "instructions",
+            "source_pattern": "02-AI-ASSETS/instructions/{name}.md",
+            "target_pattern": ".cursorrules",
+            "transform": "CURSORRULES_CONCATENATION",
+            "target_entrypoint": ".cursorrules",
+            "notes": "Compiles operational instructions into the standard legacy .cursorrules file."
+        },
+        {
+            "asset_type": "ai_assets",
+            "source_pattern": "02-AI-ASSETS/skills/{name}/SKILL.md",
+            "target_pattern": ".cursor/context/skills/{name}.md",
+            "transform": "CONTEXT_PROJECTION",
+            "target_entrypoint": "{name}.md",
+            "notes": "Exposes core skills as project context files readable by Cursor Agent."
+        },
+        {
+            "asset_type": "knowledge",
+            "source_pattern": "07-KNOWLEDGE/{category}/{name}.md",
+            "target_pattern": ".cursor/context/knowledge/{category}/{name}.md",
+            "transform": "CURSOR_CONTEXT_MIRROR",
+            "target_entrypoint": "{name}.md",
+            "notes": "Exposes structured knowledge files to Cursor Composer and Agent for codebase grounding."
+        },
+        {
+            "asset_type": "agents",
+            "source_pattern": "02-AI-ASSETS/agents/{category}/{name}/AGENT.md",
+            "target_pattern": ".cursor/context/agents/{name}.md",
+            "transform": "CURSOR_AGENT_CONTEXT_PROJECTION",
+            "target_entrypoint": "{name}.md",
+            "notes": "Projects canonical agent specifications into Cursor context for Agent and Composer invocation."
+        }
+    ]
 }

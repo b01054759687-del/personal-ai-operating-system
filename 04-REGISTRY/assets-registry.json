@@ -1,7 +1,7 @@
 {
-    "totalActiveAssets": 41,
+    "totalActiveAssets": 43,
     "schemaVersion": "1.2.0",
-    "lastUpdated": "2026-09-10T09:05:00+03:00",
+    "lastUpdated": "2026-09-10T10:45:00+03:00",
     "lifecycleGovernance": "06-DOCUMENTATION/asset-lifecycle.md",
     "assets": [
         {
@@ -602,6 +602,43 @@
                 "validation_status": "VALIDATED",
                 "last_validated": "2026-09-10T09:00:00+03:00",
                 "last_verified": "2026-09-10T09:00:00+03:00"
+            }
+        },
+        {
+            "name": "software-delivery-orchestrator",
+            "agentId": "software-delivery-orchestrator",
+            "displayName": "Software Delivery Orchestrator",
+            "type": "agent",
+            "category": "engineering",
+            "description": "Reusable programming and delivery orchestrator managing software engineering, code review, layered implementation, 20-stage testing order, and approval gates.",
+            "version": "1.0.0",
+            "status": "testing",
+            "location": "02-AI-ASSETS/agents/engineering/software-delivery-orchestrator",
+            "path": "02-AI-ASSETS/agents/engineering/software-delivery-orchestrator",
+            "main_skill": "ai-workspace-delivery-governor",
+            "main_skill_path": "02-AI-ASSETS/skills/ai-workspace-delivery-governor",
+            "source": "AI Workspace Native",
+            "classification": "SAFE",
+            "normalized": true,
+            "supported_adapters": [
+                "antigravity",
+                "claude",
+                "cursor",
+                "windsurf"
+            ],
+            "dependencies": [
+                "ai-workspace-delivery-governor",
+                "assets-registry",
+                "tools-registry",
+                "versions-registry",
+                "adapter-registry",
+                "publishing-registry"
+            ],
+            "lifecycle": {
+                "stage": "TESTING",
+                "validation_status": "VALIDATED",
+                "last_validated": "2026-09-10T10:45:00+03:00",
+                "last_verified": "2026-09-10T10:45:00+03:00"
             }
         }
     ]
