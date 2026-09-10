@@ -1,7 +1,7 @@
 {
     "totalActiveAssets": 41,
     "schemaVersion": "1.2.0",
-    "lastUpdated": "2026-09-09T10:10:00+03:00",
+    "lastUpdated": "2026-09-10T09:05:00+03:00",
     "lifecycleGovernance": "06-DOCUMENTATION/asset-lifecycle.md",
     "assets": [
         {
@@ -575,6 +575,33 @@
             "lifecycle": {
                 "stage": "ACTIVE",
                 "last_verified": "2026-09-09T10:10:00+03:00"
+            }
+        },
+        {
+            "name": "ai-workspace-delivery-governor",
+            "skillId": "ai-workspace-delivery-governor",
+            "displayName": "AI Workspace Delivery Orchestrator",
+            "type": "skill",
+            "category": "orchestration",
+            "description": "Cross-project software delivery governor managing the complete lifecycle of AI-assisted engineering with layered implementation (Layers 0-10), strict 18-stage testing order, defensive approval gates (Gates A-E), and source-control safety.",
+            "version": "1.0.0",
+            "status": "testing",
+            "location": "02-AI-ASSETS/skills/ai-workspace-delivery-governor",
+            "path": "02-AI-ASSETS/skills/ai-workspace-delivery-governor",
+            "source": "AI Workspace Native",
+            "classification": "SAFE",
+            "normalized": true,
+            "supported_adapters": [
+                "antigravity",
+                "claude",
+                "cursor",
+                "windsurf"
+            ],
+            "lifecycle": {
+                "stage": "TESTING",
+                "validation_status": "VALIDATED",
+                "last_validated": "2026-09-10T09:00:00+03:00",
+                "last_verified": "2026-09-10T09:00:00+03:00"
             }
         }
     ]

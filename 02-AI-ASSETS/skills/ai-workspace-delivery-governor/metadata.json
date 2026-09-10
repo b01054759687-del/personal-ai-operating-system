@@ -1,0 +1,20 @@
+{
+    "name": "ai-workspace-delivery-governor",
+    "originalName": "ai-workspace-delivery-governor",
+    "displayName": "AI Workspace Delivery Orchestrator",
+    "version": "1.0.0",
+    "status": "testing",
+    "normalized": true,
+    "source": "AI Workspace Native",
+    "classification": "SAFE",
+    "domain": "Software Delivery Orchestration & Governance",
+    "description": "Cross-project software delivery governor managing the complete lifecycle of AI-assisted engineering with layered implementation (Layers 0-10), strict 18-stage testing order, defensive approval gates (Gates A-E), and source-control safety.",
+    "portable": true,
+    "supportedConsumers": [
+        "antigravity",
+        "claude-code",
+        "cursor",
+        "windsurf"
+    ],
+    "dateIngested": "2026-09-10"
+}

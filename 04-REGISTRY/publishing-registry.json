@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-09-09T09:58:00+03:00",
-    "totalPublishedEntries": 6,
+    "lastUpdated": "2026-09-10T09:05:00+03:00",
+    "totalPublishedEntries": 7,
     "governance": "06-DOCUMENTATION/release-governance.md",
     "compatibilityReference": "08-RELEASES/compatibility/compatibility-matrix.json",
     "publishingPolicy": {
@@ -222,6 +222,55 @@
             ],
             "version": "1.0.0",
             "timestamp": "2026-09-09T08:30:00+03:00"
+        },
+        {
+            "assetName": "ai-workspace-delivery-governor",
+            "assetType": "skill",
+            "canonicalVersion": "1.0.0",
+            "version": "1.0.0",
+            "sourcePath": "02-AI-ASSETS/skills/ai-workspace-delivery-governor",
+            "publishingStatus": "PREPARED",
+            "lastPublished": null,
+            "timestamp": "2026-09-10T09:05:00+03:00",
+            "approvalGate": "PENDING_TESTING_VALIDATION",
+            "targetDeployments": [
+                {
+                    "tool": "antigravity",
+                    "status": "CONFIGURED",
+                    "entrypoint": "C:\\Users\\l\\.gemini\\config\\skills\\ai-workspace-delivery-governor\\SKILL.md",
+                    "targetTool": "antigravity",
+                    "adapterUsed": "03-ADAPTERS/antigravity",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T09:05:00+03:00"
+                },
+                {
+                    "tool": "claude",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".claude/skills/ai-workspace-delivery-governor.md",
+                    "targetTool": "claude",
+                    "adapterUsed": "03-ADAPTERS/claude",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T09:05:00+03:00"
+                },
+                {
+                    "tool": "cursor",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".cursor/context/skills/ai-workspace-delivery-governor.md",
+                    "targetTool": "cursor",
+                    "adapterUsed": "03-ADAPTERS/cursor",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T09:05:00+03:00"
+                },
+                {
+                    "tool": "windsurf",
+                    "status": "CONFIGURED",
+                    "entrypoint": ".windsurf/skills/ai-workspace-delivery-governor.md",
+                    "targetTool": "windsurf",
+                    "adapterUsed": "03-ADAPTERS/windsurf",
+                    "publicationStatus": "CONFIGURED",
+                    "timestamp": "2026-09-10T09:05:00+03:00"
+                }
+            ]
         }
     ],
     "publishingLifecycle": {
