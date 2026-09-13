@@ -1,3 +1,14 @@
-﻿{
-  "versions": []
+{
+  "versions": [
+    {
+      "asset": "software-delivery-orchestrator",
+      "displayName": "DevPilot",
+      "type": "agent",
+      "version": "1.0.1",
+      "previousVersion": "1.0.0",
+      "releaseClass": "PATCH",
+      "date": "2026-09-13",
+      "summary": "Adopted DevPilot display name and aliases, registered managed_by ai-workspace-manager, added research-architecture-review and uiux-browser-qa-governance workflows, added executable validator, promoted lifecycle stage to ACTIVE."
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-09-10T10:45:00+03:00",
+    "lastUpdated": "2026-09-13T12:00:00+03:00",
     "totalPublishedEntries": 8,
     "governance": "06-DOCUMENTATION/release-governance.md",
     "compatibilityReference": "08-RELEASES/compatibility/compatibility-matrix.json",
@@ -274,14 +274,19 @@
         },
         {
             "assetName": "software-delivery-orchestrator",
+            "displayName": "DevPilot",
+            "aliases": [
+                "dev-pilot",
+                "software-delivery-orchestrator-agent"
+            ],
             "assetType": "agent",
-            "canonicalVersion": "1.0.0",
-            "version": "1.0.0",
+            "canonicalVersion": "1.0.1",
+            "version": "1.0.1",
             "sourcePath": "02-AI-ASSETS/agents/engineering/software-delivery-orchestrator",
             "publishingStatus": "PREPARED",
             "lastPublished": null,
-            "timestamp": "2026-09-10T10:45:00+03:00",
-            "approvalGate": "PENDING_TESTING_VALIDATION",
+            "timestamp": "2026-09-13T12:00:00+03:00",
+            "approvalGate": "TESTING_VALIDATION_PASSED_AWAITING_PUBLISH_APPROVAL",
             "targetDeployments": [
                 {
                     "tool": "antigravity",

@@ -1,6 +1,6 @@
 {
     "totalDependencies": 2,
-    "lastUpdated": "2026-09-10T10:45:00+03:00",
+    "lastUpdated": "2026-09-13T12:00:00+03:00",
     "dependencies": [
         {
             "target": "ai-workspace-manager",
@@ -81,6 +81,12 @@
         },
         {
             "target": "software-delivery-orchestrator",
+            "displayName": "DevPilot",
+            "aliases": [
+                "dev-pilot",
+                "software-delivery-orchestrator-agent"
+            ],
+            "managedBy": "ai-workspace-manager",
             "targetType": "agent",
             "category": "engineering",
             "dependsOn": [
@@ -118,6 +124,27 @@
                     "path": "04-REGISTRY/publishing-registry.json",
                     "mandatory": true,
                     "purpose": "Track publishing targets and release preparation states"
+                },
+                {
+                    "name": "verify-claims-and-plans",
+                    "type": "skill",
+                    "path": "02-AI-ASSETS/skills/verify-claims-and-plans",
+                    "mandatory": false,
+                    "purpose": "Delegated fact-checking for technical research used in workflows/research-architecture-review.md"
+                },
+                {
+                    "name": "generative-ui",
+                    "type": "skill",
+                    "path": "02-AI-ASSETS/skills/generative-ui",
+                    "mandatory": false,
+                    "purpose": "Delegated interactive UI/UX prototyping used in workflows/uiux-browser-qa-governance.md"
+                },
+                {
+                    "name": "permissioned-github",
+                    "type": "skill",
+                    "path": "02-AI-ASSETS/skills/permissioned-github",
+                    "mandatory": false,
+                    "purpose": "Delegated recovery guidance when a git/GitHub command fails due to missing local authorization"
                 }
             ]
         }
